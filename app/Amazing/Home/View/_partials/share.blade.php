@@ -1,0 +1,23 @@
+<ul class="share">
+	<li>
+		<a
+			href="https://www.facebook.com/sharer/sharer.php?u=http://amazingradios.com"
+			target="frameShare"
+			ln-popup="width=555,height=453"
+		>facebook</a>
+	</li>
+	<li>
+		<a
+			href="https://twitter.com/home?status=http://amazingradios.com"
+			target="frameShare"
+			ln-popup="width=200,height=100"
+		>twitter</a>
+	</li>
+	<li>
+		<a
+			href="https://pinterest.com/pin/create/button/?url=http://amazingradios.com"
+			target="frameShare"
+			ln-popup="width=735,height=679"
+		>pinterest</a>
+	</li>
+</ul>
