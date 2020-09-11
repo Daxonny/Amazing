@@ -9,23 +9,23 @@ use App\Amazing\Home\Composer\StationsComposer;
 
 class MyServiceProvider extends ServiceProvider
 {
-    /**
-     * Register services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        //
-    }
+	/**
+	 * Register services.
+	 *
+	 * @return void
+	 */
+	public function register()
+	{
+		//
+	}
 
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        View::composer(['Home.View.layout.main'], StationsComposer::class);
-    }
+	/**
+	 * Bootstrap services.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		View::composer(['Home.View.layout.stations'], StationsComposer::class);
+	}
 }

@@ -2,13 +2,15 @@
 namespace App\Amazing\Home\Composer;
 
 use Illuminate\View\View;
+use App\Amazing\Home\Interactor\StationsInteractor;
 
 class StationsComposer {
-    public function compose(View $view) {
-        $data = json_decode(file_get_contents('stations.json'));
-        //dd($data);
+	public function compose(View $view) {
+		$stations = json_decode(file_get_contents('stations.json'));
 
-        $view->with('datas', $data);
-    }
+		StationsInteractor::prepare($stations);
+
+		$view->with('stations', $stations);
+	}
 }
 
