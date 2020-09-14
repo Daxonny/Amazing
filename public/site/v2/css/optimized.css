@@ -1,0 +1,483 @@
+:root {
+	--bg: #113041;
+	--text: #fff;
+	--track: #000;
+
+	--now-playing: #cbab30;
+
+	--playerBg: #b1ded7;
+
+	--favouriteNormal: #fff;
+	--favouriteHover: #cbab30;
+
+	--favouritedActive: #cbab30;
+	--favouritedButton: #fff;
+
+
+	--linkNormal: #fff;
+	--linkHover: #cbab30;
+
+	--a80s: #670d53;
+	--blues: #1d1b6f;
+	--smooth-and-jazz: #730206;
+	--chillout: #f66400;
+	--classic-hits: #f7ad00;
+	--chillhop: #632c6f;
+}
+
+
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+	font-family: Montserrat, sans-serif;
+}
+
+
+input[name=nav] {
+	display:none;
+}
+
+
+#wrap {
+	margin: 0 auto;
+	min-height: 100vh;
+	display: grid;
+}
+
+main {
+	position: relative;
+}
+
+
+main .ad-1 {
+	width: 300px;
+	height: 250px;
+}
+
+
+#channels li {
+	position: relative;
+}
+
+#channels p {
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#channels p:before {
+	content: attr(data-label);  /* 'Now Playing'; */
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+#channels p span {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.3em;
+}
+
+#channels [property="track"] [property="name"] {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+
+
+
+button, label[for=nav] {
+	font-family: "LiveNetworks-Icons";
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+button.favourite {
+	font-size: 48px;
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 1000px) {
+
+	header                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             {
+		height: 80px;
+		text-align: center;
+		position: fixed;
+		width: 100%;
+		z-index: 100;
+		background-color: var(--bg);
+		text-align: center;
+	}
+
+	#logo {
+		height: 100%;
+	}
+
+	input[name=nav] + label {
+		font-size: 50px;
+		position: absolute;
+		right: 10px;
+		top: 35px;
+		width: 50px;
+		color: #fff;
+	}
+
+	input[name=nav]:checked + label {
+		color: var(--bg);
+
+	}
+
+
+	input[name=nav]:checked + label:after {
+		content: 'close';
+		position: absolute;
+		color: #fff;
+		left: 0;
+
+	}
+
+	#wrap > header nav {
+		width: 100%;
+		max-height: 0;
+		transition: .5s;
+		overflow: hidden;
+		position: absolute;
+		top: 79px;
+		left: 0;
+		display: block;
+		z-index: 1000;
+		background-color: var(--bg);
+	}
+
+	input[name=nav]:checked ~  nav {
+		max-height: 100vh;
+	}
+
+	#wrap > header nav ul {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 30px;
+	}
+
+	#wrap > header nav li a {
+		display: block;
+		font-size: 20px;
+		padding: 5px 0;
+		margin: 10px 0;
+	}
+
+
+
+
+
+	#channels li {
+		margin: 30px 0;
+		overflow: visible;
+		clear: both;
+		background-color: #fff;
+		padding-bottom: 5px;
+	}
+
+	#channels li h2 {
+		overflow: visible;
+	}
+
+	#channels li h2 span {
+		display: block;
+		text-align: center;
+		line-height: 35px;
+		font-weight: bold;
+	}
+
+	#channels li img {
+		width: 100px;
+		height: 100px;
+		display: block;
+		float: left;
+
+		margin: -10px 10px;
+
+		border-width: 5px;
+		border-style: solid;
+		border-image-source: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(186,186,186,1) 100%);
+		border-image-source: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(186,186,186,1) 100%);
+		border-image-source: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(186,186,186,1) 100%);
+
+		border-image-slice: 1;
+	}
+
+	#channels li a {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	#channels li a:hover {
+		background: transparent !important;
+	}
+
+	#channels li p {
+		padding-top: 35px;
+	}
+
+	#channels li p:before {
+		background-color: var(--now-playing);
+		display: block;
+		padding-left: 120px;
+		margin-bottom: 3px;
+		line-height: 20px;
+	}
+
+	#channels li p span {
+		color: #000;
+		padding-right: 35px;
+		padding-left: 130px;
+	}
+
+}
+
+
+/*Desktop*/
+
+@media only screen and (min-width: 1000px) {
+
+	#wrap {
+		width: 1000px;
+		grid-template-rows: 140px auto 140px;
+	}
+
+	input[name=nav] + label {
+		display: none;
+	}
+
+	#wrap > header, #wrap > footer {
+		padding: 20px 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: stretch;
+		justify-content: space-between;
+	}
+
+	#logo {
+		width: 250px;
+	}
+
+	#wrap > header nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	nav {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+
+	nav ul li {
+		float: left;
+		font-size: 14px;
+	}
+
+	nav a {
+		position: relative;
+		display: block;
+		padding: 20px;
+	}
+
+
+
+	#wrap > footer {
+		margin-top: 30px;
+		padding-bottom: 60px;
+	}
+
+
+	#wrap > footer p {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#wrap > footer img {
+		width: 95px;
+	}
+
+
+
+
+	#channels {
+		display: grid;
+		grid-template-areas: 
+			'channels ad';
+		grid-gap: 40px;
+		margin-top: 40px;
+	}
+
+	#channels ul {
+		grid-area: channels;
+
+		display: grid;
+		grid-template-columns: 200px 200px 200px;
+		grid-gap: 40px;
+	}
+
+	#channels li {
+		height: 290px;
+	}
+
+	#channels a {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+	}
+
+	#channels a:hover:after {
+		font-family: "LiveNetworks-Icons";
+		content: 'play';
+		font-size: 90px;
+		line-height: 100px;
+		display: block;
+		border: 7px solid #fff;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		/* z-index: 100; */
+		position: absolute;
+		left: 50%;
+		top: 100px;
+		transform: translate(-50%, -50%);
+	}
+
+/* 
+	#channels a:hover:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	} */
+
+	#channels h2 span {
+		display: block;
+		padding: 7px 5px;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	#channels img {
+		width: 180px;
+		height: 180px;
+		margin: 10px;
+		display: block;
+	}
+
+
+
+	#channels p {
+		padding: 2px 22px 10px 22px;
+		border-bottom-right-radius: 70px;
+	}
+
+	#channels p:before {
+		font-size: 10px;
+	}
+
+	/*.favourite:hover {
+		color: var(--favouriteHover);
+	}*/
+
+
+
+	.player {
+		border-width: 4px 0;
+		border-style: solid;
+		position: relative;
+		height: 280px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.carusel li {
+		height: 280px;
+	}
+
+	#wrap .share {
+		position: absolute;
+		right: 0;
+		top: -50px;
+		line-height: 50px;
+		font-size: 42px;
+	}
+
+/*	#share:before {
+		content: 'share';
+		border-radius: 50%;
+		padding: 5px;
+		position: absolute;
+	}*/
+
+	#wrap .share:after {
+		position:absolute;
+		left:-50px;
+		top: 0;
+		content:'';
+	}
+
+	#wrap .share li {
+		float: left;
+		margin: 0 6px;
+	}
+
+
+	button.favourite {
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+
+
+	/*Ads*/
+	main .ad-1 {
+		width: 300px;
+		height: 600px;
+		grid-area: ad;
+	}
+
+}
+
+
+@media only screen and (min-width: 1140px) {
+
+	#wrap {
+		width: 1140px;
+	}
+
+	#channels ul {
+		grid-template-columns: 200px 200px 200px 200px;
+	}
+
+	/*Ads*/
+	main .ad-1 {
+		width: 160px;
+		height: 600px;
+		grid-area: ad;
+	}
+
+
+}

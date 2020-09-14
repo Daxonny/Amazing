@@ -1,0 +1,122 @@
+#player #ln-player {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 300px;
+
+	box-shadow: 0px 0px 10px #fff;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#player #ln-player header, #player #ln-player footer {
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#player #ln-player .ar-logo {
+	width: 200px;
+	margin: 0;
+	margin-top: 20px;
+}
+
+#player #ln-player h2 {
+	background-color: var(--linkHover);
+	padding: 5px 0;
+
+}
+
+#player #ln-player main {
+	background-color: #b0ddd8;
+
+	display: grid;
+	grid-template-areas: 
+		'cover share'
+		'track track'
+		'controls controls';
+	grid-template-columns: 244px auto;
+}
+
+#player #ln-player main img {
+	grid-area: cover;
+	border: 2px solid #fff;
+	box-shadow: 3px 3px 0 #555;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+}
+/* 
+#player #ln-player .share {
+	position: relative;
+	grid-area: share;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 20px;
+} */
+
+#player #ln-player p[property="track"] {
+	grid-area: track;
+	font-size: 14px;
+	line-height: 1.3em;
+	text-align: center;
+}
+
+#player #ln-player span[property="byArtist"] {
+	color: #000;
+	display: block;
+}
+
+#player #ln-player span[property="name"] {
+	color: #555;
+	display: block;
+}
+
+#player #ln-player .ln-controls {
+	grid-area: controls;
+	display: flex;
+}
+
+.ln-actions {
+	font-family: "LiveNetworks-Icons";
+}
+
+#player #ln-player .ln-actions {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 30px;
+	display: flex;
+	line-height: 10px;
+}
+
+#player #ln-player .share, #player #ln-player .share a {
+	color: #204154;
+}
+
+
+
+#player #ln-player.amazing-smooth-and-jazz header,
+#player #ln-player.amazing-smooth-and-jazz footer {
+	background-color: var(--smooth-and-jazz);
+}
+
+
+/* 
+#rde-player .rde-dropdown-menu-volume {
+	top: -95px !important;
+	transform: rotate(90deg);
+	display: block !important;
+}
+
+.microsite #rde-player .ngrs-range-slider {
+	background: none !important;
+} */
+
+#ln-player .ar-logo {
+	display: none;
+}

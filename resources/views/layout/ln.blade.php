@@ -1,0 +1,1 @@
+@extends((Request()->ajax()) ? 'layout.ajax' : 'layout.full')

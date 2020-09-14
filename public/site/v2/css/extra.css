@@ -1,0 +1,237 @@
+a {
+	color: var(--linkNormal);
+}
+
+
+nav a:hover, footer a:hover {
+	color: var(--linkHover);
+	transition: color .3s;
+}
+
+
+button.favourite {
+	color: var(--favouriteNormal);
+}
+
+li.favourited {
+	background-color: var(--favouritedActive) !important;
+}
+li.favourited button.favorurite {
+	color: var(--favouritedButton);
+}
+
+.share {
+	font-family: 'LiveNetworks-Icons';
+}
+
+#amazing-blues h2 span, #amazing-blues a:hover, .player.amazing-blues {
+	background-color: var(--blues);
+}
+#amazing-smooth-jazz h2 span, #amazing-smooth-jazz a:hover, .player.amazing-smooth-jazz {
+	background-color: var(--smooth-and-jazz);
+}
+#amazing-80s h2 span, #amazing-80s a:hover, .player.amazing-80s {
+	background-color: var(--a80s);
+}
+
+#amazing-chillout h2 span, #amazing-chillout a:hover, .player.amazing-chillout {
+	background-color: var(--chillout);
+}
+
+#amazing-chillhop h2 span, #amazing-chillhop a:hover, .player.amazing-chillhop {
+	background-color: var(--chillhop);
+}
+
+#amazing-classic-hits h2 span, #amazing-classic-hits a:hover, .player.amazing-classic-hits {
+	background-color: var(--classic-hits);
+}
+
+
+
+
+#channels li {
+	-webkit-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.3);
+
+}
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+	body {
+		background-size: cover;
+		background-position: center top;
+	}
+
+	#wrap > footer {
+		border-top: 4px solid var(--linkHover);
+		background-color: rgba(31, 65, 84, .5);
+	}
+
+
+	#channels li {
+		background-color: rgb(186,186,186);
+		transition: 0.3s ease;
+	}
+
+	#channels li:hover {
+		transform: scale(1.05);
+	}
+
+	#channels li a {
+		-webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+		box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+
+
+		-webkit-transition: background-color .5s ease-out;
+		-moz-transition: background-color .5s ease-out;
+		-o-transition: background-color .5s ease-out;
+		transition: background-color .5s ease-out;
+	}
+
+	#channels li a:hover:before {
+		font-family: "LiveNetworks-Icons";
+	}
+	#channels li a:hover:after {
+		background-color: rgba(0, 0, 0, .5);
+		color: #fff;
+	}
+	#channels {
+		color: var(--track);
+	}
+
+	#channels li p {
+		background-color: #fff;
+	}
+
+	#channels li p:before {
+		color: var(--now-playing);
+	}
+
+
+	.player {
+		border-color: var(--linkHover);
+		background-color: var(--playerBg);
+	}
+
+
+	#wrap .share {
+		background-color: var(--linkHover);
+		color: #fff;
+		font-family: 'LiveNetworks-Icons';
+	}
+
+	#wrap .share:before {
+		border: 2px solid #fff;
+		-webkit-transition: -webkit-transform .4s ease-in-out;
+		-ms-transition: -ms-transform .4s ease-in-out;
+		transition: transform .4s ease-in-out;
+
+	}
+
+
+	#wrap .share:hover:before {
+		transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-webkit-transform: rotate(90deg);
+	}
+
+
+	#wrap .share li:first-child {
+		-webkit-transition: margin .4s ease-in-out;
+		-ms-transition: margin .4s ease-in-out;
+		transition: margin .4s ease-in-out;
+	}
+
+
+	#wrap .share:after {
+		border-bottom: 50px solid var(--linkHover);
+		border-left: 50px solid transparent;
+	}
+
+
+}
+
+
+
+
+/* Fonts */
+/* fallback */
+@font-face {
+	font-family: 'LiveNetworks-Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../fonts/ln-icons/ln-icons.woff2) format('woff2');
+}
+
+.ln-icon {
+	font-family: 'LiveNetworks-Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 1;
+	letter-spacing: normal;
+	text-transform: none;
+	display: inline-block;
+	white-space: nowrap;
+	word-wrap: normal;
+	direction: ltr;
+	font-feature-settings: 'liga';
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

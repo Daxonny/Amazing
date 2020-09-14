@@ -38,8 +38,8 @@
 	<meta name="description" content="Amazing Radios is free internet radio network, providing free music in various genres" />
 	<meta name="robots" content="index,follow" />
 
-	@include('Home.View.layout.headerSnippets.fb')
-	@include('Home.View.layout.headerSnippets.icons')
+	@include('layout.headerSnippets.fb')
+	@include('layout.headerSnippets.icons')
 
 </head>
 <body id="index" vocab="http://schema.org/">
@@ -81,7 +81,7 @@
 
 		<main id="main">
 			@include('Home.View._partials.share')
-			@include('Home.View.layout.stations')
+			@yield('content')
 		</main>
 
 		<footer>
@@ -118,13 +118,9 @@
 		</footer>
 	</div>
 
-	<div id="player" ln-draggable></div>
+	{{-- <div id="player" ln-draggable></div> --}}
 
 
-	<!-- <link rel="preload" href="res/css/extra.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-	<!-- <noscript><link rel="stylesheet" href="res/css/extra.css"></noscript> -->
-	
-	<!-- <link rel="stylesheet" href="res/css/extra.css"> -->
 
 	{{-- <script async type="text/javascript" src="{{ asset('/site/v2/js/ar.js') }}"></script>
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/draggable/ln-draggable.js') }}"></script>

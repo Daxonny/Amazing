@@ -14,6 +14,7 @@ return [
     */
 
     'paths' => [
+		realpath(base_path('resources/views')),
         realpath(base_path('app/Amazing')),
     ],
 
