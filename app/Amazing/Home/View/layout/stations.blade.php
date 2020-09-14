@@ -2,10 +2,12 @@
 <section id="stations">
     <ul class="stationList">
         @foreach ($stations->stations as $i)
-            <li>
+		<a href="{{ route('player',['station'=>$i->slug]) }}">	
+			<li>
 			<img src="{{ $i->logo }}">
-                {{ $i->name }}
-            </li>
+                <span>{{ $i->name }}</span>
+			</li>
+		</a>
         @endforeach
     </ul>
 </section>

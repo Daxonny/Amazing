@@ -1,15 +1,22 @@
 h2 {
-    font-size: 50px;
+    margin: 10px;
+    font-size: 40px;
 }
 
 .stationList {
+    margin: auto;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 40px;
+}
+
+.stationList li {
+    margin: auto;
+    width: 200px;
+    height: 210px;
 }
 
 #stations img {
-    width: 100px;
-    height: 100px;
-    background-color: aliceblue;
+    width: 100%;
+    height: 90%;
 }

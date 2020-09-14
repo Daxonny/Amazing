@@ -17,5 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::group([ 'middleware' => [ 'speaks-tongue' ]], function() {
     Route::get('/', 'Home\Controller\HomeController@index');
-    Route::get('/player', 'Player\Controller\PlayerController@index');
+    Route::get('/{station}', 'Player\Controller\PlayerController@index')->name('player');
 });

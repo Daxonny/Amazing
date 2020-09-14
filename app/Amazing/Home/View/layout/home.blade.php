@@ -26,6 +26,7 @@
 
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/optimized.min.css') }}" media="screen">
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/extra.min.css') }}" media="screen">
+	
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/stations.css') }}" media="screen">
 
 
