@@ -54,25 +54,25 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#" ln-ajaxify-target="main">Home</a>
+					<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
 					</li>
 					<li>
-						<a href="#">Channels</a>
+						<a href="#">{{ __('global.channels') }}</a>
 					</li>
 					<li>
-						<a href="#">About us</a>
+						<a href="#">{{ __('global.aboutUs') }}</a>
 					</li>
 					<li>
-						<a href="#">Contact us</a>
+						<a href="#">{{ __('global.contactUs') }}</a>
 					</li>
 				</ul>
 
 				<ul id="userNav">
 					<li>
-						<a href="#">Register</a>
+						<a href="#">{{ __('global.register') }}</a>
 					</li>
 					<li>
-						<a href="#">Log in</a>
+						<a href="#">{{ __('global.login') }}</a>
 					</li>
 				</ul>
 			</nav>
@@ -82,7 +82,12 @@
 
 		<main id="main">
 			@include('Home.View._partials.share')
-			@yield('content')
+			<section id="headerLogo">
+				<img src="{{ 'logos/header/header_amazing-radios-01.jpg' }}">
+			</section>
+			<section id="content">
+				@yield('content')
+			</section>
 		</main>
 
 		<footer>
