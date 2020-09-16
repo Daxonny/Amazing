@@ -1,4 +1,4 @@
-#player #ln-player {
+/* #player #ln-player {
 	position: absolute;
 	left: 100px;
 	top: 100px;
@@ -59,7 +59,8 @@
 	margin-bottom: 20px;
 } */
 
-#player #ln-player p[property="track"] {
+
+/* #player #ln-player p[property="track"] {
 	grid-area: track;
 	font-size: 14px;
 	line-height: 1.3em;
@@ -103,7 +104,7 @@
 #player #ln-player.amazing-smooth-and-jazz header,
 #player #ln-player.amazing-smooth-and-jazz footer {
 	background-color: var(--smooth-and-jazz);
-}
+} */
 
 
 /* 
@@ -115,8 +116,25 @@
 
 .microsite #rde-player .ngrs-range-slider {
 	background: none !important;
-} */
+
 
 #ln-player .ar-logo {
 	display: none;
+} */
+
+h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+#logo {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+audio {
+    display: block;
+    margin: 10px;
+    width: 200px;
 }
