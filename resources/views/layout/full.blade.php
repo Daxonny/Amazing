@@ -11,6 +11,7 @@
 	<title>@yield('title') &raquo; Amazing Radios</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- 
 	<link rel="preload" href="site/css/reset.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -83,6 +84,7 @@
 		<main id="main">
 			@include('Home.View._partials.share')
 			<section id="headerLogo">
+				<h1>Listen AMAZING RADIOS live now</h1>
 				<img src="{{ 'logos/header/header_amazing-radios-01.jpg' }}">
 			</section>
 			<section id="content">
@@ -116,6 +118,7 @@
 
 			<p>
 				{{-- <img src="{{ lncdn(lnimg('/logos/ar-logo-white.svg')) }}" alt="Amazing Radios Logo" /> --}}
+				<img src="{{ 'logos/ar-logo-white.svg' }}" alt="Amazing Radios Logo" id="logo" />
 				<span>Copyright &copy; 2019 &middot;
 					<a href="https://amazingradios.com">AMAZINGRADIOS.com</a>
 				</span>

@@ -1,131 +1,172 @@
-
-/* h2 {
+    /* h2 {
     margin: 10px;
     font-size: 50px;
 } */
-
-#content {
-    display: grid;
-    grid-template-columns: auto 200px;
-    grid-template-rows: 700px;   
-}
-
-#stations {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-#ad {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    border: 1px solid red;
-    width: 80%;
-    margin-top: 20px;
-    height: 80%;
-}
-
-.stationList {
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: auto;
-    column-gap:30px;
-    row-gap: 40px;
-}
-.stationList li {
-    /* height: 200px; */
-    background: rgb(194,188,188);
-    background: linear-gradient(172deg, rgba(194,188,188,1) 32%, rgba(252,251,245,1) 100%);
-
-    -webkit-box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.33);
-    -moz-box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.33);
-    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.33);
-
-    transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease; 
-}
-
-#stations img{
     
-    width: 180px;
-    height: 180px;
-    display: block;
-    padding: 10px;
-    /* margin-top: 10px; */
-    /* border-width: 10px;
+    #headerLogo h1 {
+        position: absolute;
+    }
+    
+    #content {
+        display: grid;
+        grid-template-columns: auto 200px;
+        grid-template-rows: 700px;
+    }
+    
+    #stations {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    #ad {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border: 1px solid red;
+        width: 80%;
+        margin-top: 20px;
+        height: 80%;
+    }
+    
+    .stationList {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: auto;
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+    
+    .stationList h2 {
+        /* height: 200px; */
+        background: rgb(194, 188, 188);
+        background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
+        -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.33);
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.33);
+        transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
+    }
+    
+    #stations img {
+        width: 180px;
+        height: 180px;
+        display: block;
+        padding: 10px;
+        /* margin-top: 10px; */
+        /* border-width: 10px;
     border-style: solid;
-    border-image: linear-gradient(rgb(185, 181, 181), white) 1; */    
-}
-.nameRadio {
-    display: block;
-    padding: 5px;
-    text-transform: uppercase;
-    text-align: center;
-    width: auto;
+	border-image: linear-gradient(rgb(185, 181, 181), white) 1; */
+        /* -webkit-box-shadow: 8px 32px 41px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 32px 41px 1px rgba(0, 0, 0, 0.75);
+	box-shadow: 8px 32px 41px 1px rgba(0, 0, 0, 0.75);*/
+    }
     
-    -webkit-box-shadow: 8px 32px 41px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 8px 32px 41px 1px rgba(0,0,0,0.75);
-    box-shadow: 8px 32px 41px 1px rgba(0,0,0,0.75);
- 
-}
-.track{
-    text-align: center;
-    background:white;
-    display: block;
-    padding: 20px 11px 20px 11px;
-    border-radius: 0px 0px 74px 0px;
+    .nameRadio {
+        display: block;
+        padding: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        width: auto;
+    }
     
-} 
-.name{
-    color:gray;
-    font-size: 15px;
-    padding: 2px;
-}
-.byArtist{
-    color:black;
-    font-size: 15px;
-    padding: 2px;
-}
-#amazing-80s:hover{
-    background: var(--a80s);
-}
-#amazing-blues:hover{
-    background: var(--blues);
-}
-#amazing-chillout:hover{
-    background: var(--chillout);
-}
-#amazing-chillhop:hover{
-    background: var(--chillhop);
-}
-#amazing-classic-hits:hover{
-    background: var(--classic-hits);
-}
-#amazing-smooth-jazz:hover{
-    background: var(--smooth-and-jazz);
-}
-#stations p span {
-	display: block;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	line-height:100%
-}
-.favourite {
-	font-family: "material-icons";
-	background: transparent;
-	font-size: 16px;
-	position: absolute;
-	bottom: 3px;
-    right: 3px;
-    border: none;
-    margin: 0;
-    padding: 0;
-    color: var(--favouriteNormal);
-    cursor: pointer;
-}
-.favourite.active {
-	color: var(--favouriteActive);
-}
-.favourite:hover {
-	color: var(--favouriteHover);
-}
+    .nowPlay {
+        background-color: rgb(186, 186, 186);
+        position: relative;
+        /* -webkit-box-shadow: 8px 32px 41px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 32px 41px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 32px 41px 1px rgba(0, 0, 0, 0.75); */
+    }
+    
+    .track {
+        text-align: center;
+        background: white;
+        display: block;
+        padding: 20px 11px 20px 11px;
+        border-radius: 0px 0px 74px 0px;
+    }
+    
+    .name {
+        color: gray;
+        font-size: 15px;
+        padding: 2px;
+    }
+    
+    #stations li a {
+        position: relative;
+    }
+    
+    #stations li a:hover::after {
+        font-family: "Material Icons";
+        font-size: 90px;
+        content: 'play_circle_outline';
+        position: absolute;
+        left: 53px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        color: #fff;
+        line-height: 220px;
+    }
+    
+    #stations li a:hover img {
+        opacity: .3;
+    }
+    
+    .byArtist {
+        color: black;
+        font-size: 15px;
+        padding: 2px;
+    }
+    
+    #amazing-80s h2:hover {
+        background: var(--a80s);
+    }
+    
+    #amazing-blues h2:hover {
+        background: var(--blues);
+    }
+    
+    #amazing-chillout h2:hover {
+        background: var(--chillout);
+    }
+    
+    #amazing-chillhop h2:hover {
+        background: var(--chillhop);
+    }
+    
+    #amazing-classic-hits h2:hover {
+        background: var(--classic-hits);
+    }
+    
+    #amazing-smooth-jazz h2:hover {
+        background: var(--smooth-and-jazz);
+    }
+    
+    #stations p span {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 100%
+    }
+    
+    .fav {
+        font-family: "Material Icons";
+        background: transparent;
+        font-size: 20px;
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: var(--favouriteNormal);
+        cursor: pointer;
+    }
+    
+    .fav.active {
+        color: var(--favouriteActive);
+    }
+    
+    .fav:hover {
+        color: var(--favouriteHover);
+    }
