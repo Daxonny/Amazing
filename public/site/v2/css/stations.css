@@ -80,7 +80,7 @@
         text-align: center;
         background: white;
         display: block;
-        padding: 20px 11px 20px 11px;
+        padding: 10px 11px 15px 11px;
         border-radius: 0px 0px 74px 0px;
     }
     
@@ -169,4 +169,10 @@
     
     .fav:hover {
         color: var(--favouriteHover);
+    }
+    .nowPlaying{
+        color:orange;
+        font-size: 11px;
+        /* margin-bottom: 5px; */
+        text-transform: uppercase;
     }

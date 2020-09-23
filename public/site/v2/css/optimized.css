@@ -372,9 +372,9 @@ button.favourite {
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1170px) {
     #wrap {
-        width: 1140px;
+        width: 1170px;
     }
     #channels ul {
         grid-template-columns: 200px 200px 200px 200px;

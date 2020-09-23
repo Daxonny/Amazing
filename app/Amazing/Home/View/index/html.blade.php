@@ -15,6 +15,7 @@
 			</h2>
 			<section class="nowPlay">
 				<p class="track" typeof="MusicRecording" data-label="Now Playing">
+				<span class="nowPlaying">Now Playing</span>
 					<span class="byArtist">Billy Price & Fred Chapellier</span>
 					<span class="name">My Love Comes Tumbling Down</span>
 				</p>
