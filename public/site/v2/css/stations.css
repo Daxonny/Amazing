@@ -7,6 +7,17 @@
         position: absolute;
     }
     
+    #languages ul {
+        width: 12rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #languages ul li img {
+        width: 30px;
+        height: 16px;
+    }
+    
     #content {
         display: grid;
         grid-template-columns: auto 200px;
@@ -170,8 +181,9 @@
     .fav:hover {
         color: var(--favouriteHover);
     }
-    .nowPlaying{
-        color:orange;
+    
+    .nowPlaying {
+        color: orange;
         font-size: 11px;
         /* margin-bottom: 5px; */
         text-transform: uppercase;

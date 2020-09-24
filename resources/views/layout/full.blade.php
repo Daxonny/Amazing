@@ -77,8 +77,38 @@
 					</li>
 				</ul>
 			</nav>
-		
-
+			<section id="languages">
+				<ul>
+					<li>
+						<a href="{{ dialect()->current('en') }}"
+							><img 
+								src="{{ asset('flags/usa.png') }}" 
+								alt="USA Flag"
+						/></a>
+					</li>
+					<li>
+						<a href="{{ dialect()->current('fr') }}"
+							><img
+								src="{{ asset('flags/france.png') }}"
+								alt="France Flag"
+						/></a>
+					</li>
+					<li>
+						<a href="{{ dialect()->current('de') }}"
+							><img
+								src="{{ asset('flags/germany.png') }}"
+								alt="Germany Flag"
+						/></a>
+					</li>
+					<li>
+						<a href="{{ dialect()->current('mk') }}"
+							><img
+								src="{{ asset('flags/macedonia.png') }}"
+								alt="Macedonia Flag"
+						/></a>
+					</li>
+				</ul>
+			</section>
 		</header>
 
 		<main id="main">
