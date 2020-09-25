@@ -1,8 +1,13 @@
 @extends('layout.ln')
 
+@section('logoHeader')
+	<h1>Listen AMAZING RADIOS live now</h1>
+	<img src="{{ 'logos/header/header_amazing-radios-01.jpg' }}">
+@endsection
+
 @section('content')
 <section id="stations">
-	<!-- <h1>{{ $stations->name }}</h1> -->
+	{{ $stations->name }}
 	<ul class="stationList">
 		@foreach ($stations->stations as $station)
 		<li id="{{ $station->slug }}" typeof="RadioStation">
@@ -10,7 +15,6 @@
 				<a href="{{ route('player',['station'=>$station->slug]) }}">
 					<img src="{{ $station->logo }}">
 					<span class="nameRadio">{{ str_replace('Amazing', '', $station->name) }}</span>
-					{{-- <button class="playBtn">play_circle_outline</button> --}}
 				</a>
 			</h2>
 			<section class="nowPlay">

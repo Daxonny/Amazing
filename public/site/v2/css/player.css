@@ -122,6 +122,11 @@
 	display: none;
 } */
 
+#player {
+    background-color: rgba(51, 165, 180, 0.76);
+    height: 350px;
+}
+
 h1 {
     font-size: 50px;
     margin: 10px;

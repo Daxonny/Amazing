@@ -114,8 +114,7 @@
 		<main id="main">
 			@include('Home.View._partials.share')
 			<section id="headerLogo">
-				<h1>Listen AMAZING RADIOS live now</h1>
-				<img src="{{ 'logos/header/header_amazing-radios-01.jpg' }}">
+				@yield('logoHeader')
 			</section>
 			<section id="content">
 				@yield('content')
