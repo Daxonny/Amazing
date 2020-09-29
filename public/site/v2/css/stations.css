@@ -16,7 +16,7 @@
     #content {
         display: grid;
         grid-template-columns: auto 200px;
-        grid-template-rows: 700px;
+        /* grid-template-rows: 700px; */
     }
     
     #stations {

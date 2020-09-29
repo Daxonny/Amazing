@@ -156,17 +156,15 @@
 		</footer>
 	</div>
 
-	{{-- <div id="player" ln-draggable></div> --}}
+	<!-- <div id="player" ln-draggable></div> -->
 
-
-
-	{{-- <script async type="text/javascript" src="{{ asset('/site/v2/js/ar.js') }}"></script>
+	<script async type="text/javascript" src="{{ asset('/site/v2/js/ar.js') }}"></script>
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/ajaxify/ajaxify.js') }}"></script>
-	<!-- <script async type="text/javascript" src="{{ asset('/site/v2/js/player/player.js') }}"></script> -->
+	<script async type="text/javascript" src="{{ asset('/site/v2/js/player/player.js') }}"></script>
 
-	<script async src="{{ lncdn(asset('/site/v2/js/player.js')) }}"></script>
-	@yield('js') --}}
+
+	@yield('js') 
 
 </body>
 </html>
