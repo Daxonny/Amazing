@@ -25,7 +25,7 @@
 
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/reset.min.css') }}">
 
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/optimized.min.css') }}" media="screen">
+	<link rel="stylesheet" href="{{ asset('/site/v2/css/optimized.css') }}" media="screen">
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/extra.min.css') }}" media="screen">
 	
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/stations.css') }}" media="screen">
@@ -131,10 +131,10 @@
 						<a href="#">About us</a>
 					</li>
 					<li>
-						<a href="#">Privacy</a>
+						<a href="{{ route ('privacy') }}">Privacy</a>
 					</li>
 					<li>
-						<a href="#">TOC</a>
+						<a href="{{ route('tac')}}">TAC</a>
 					</li>
 					<li>
 						<a href="#">FAQ</a>
@@ -160,7 +160,6 @@
 
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/ar.js') }}"></script>
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
-	<script async type="text/javascript" src="{{ asset('/site/v2/js/ajaxify/ajaxify.js') }}"></script>
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/player/player.js') }}"></script>
 
 

@@ -22,6 +22,8 @@ body {
     background-color: var(--bg);
     color: var(--text);
     font-family: Montserrat, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5em;
 }
 
 input[name=nav] {
@@ -385,4 +387,29 @@ button.favourite {
         height: 600px;
         grid-area: ad;
     }
+}
+/* GLOBAL */
+h2 {
+    font-size: 25px;
+}
+p {
+    font-size: 17px;
+}
+ul {
+    list-style: circle;
+    margin-left: 60px;  
+}
+p {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+.stationList{
+    list-style: none;
+}
+.nameRadio{
+    font-size: 15px;
 }
