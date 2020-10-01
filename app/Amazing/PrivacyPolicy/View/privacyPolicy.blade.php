@@ -1,39 +1,39 @@
 @extends('layout.ln')
-
 @section('content')
-<h2><strong>Introduction</strong></h2>
 
-<h3>Welcome to the Live Network privacy policy.</h3>
+<p><strong>Introduction</strong></p>
+
+<p>Welcome to the Live Network privacy policy.</p>
 
 <p>Live Network respects your privacy and is committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.</p>
 
 <p>This privacy policy is provided in a layered format so you can click through to the specific areas set out below. Please also use the Glossary to understand the meaning of some of the terms used in this privacy notice.</p>
 
-<p><strong>1. <em>IMPORTANT INFORMATION AND WHO WE ARE </em><em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>1. IMPORTANT INFORMATION AND WHO WE ARE&nbsp;</p>
 
-<p><strong>2. <em>THE DATA WE COLLECT ABOUT YOU </em><em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>2. THE DATA WE COLLECT ABOUT YOU&nbsp;</p>
 
-<p><strong>3. <em>HOW IS YOUR PERSONAL DATA COLLECTED</em> <em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>3. HOW IS YOUR PERSONAL DATA COLLECTED</p>
 
-<p><strong>4. <em>HOW WE USE YOUR PERSONAL DATA </em><em>[Please insert as hyperlink to the respective section below]</em></strong>&nbsp;</p>
+<p>4. HOW WE USE YOUR PERSONAL DATA&nbsp;</p>
 
-<p><strong>5. <em>DISCLOSURES OF YOUR PERSONAL DATA </em><em>[Please insert as hyperlink to the respective section below]</em> </strong></p>
+<p>5. DISCLOSURES OF YOUR PERSONAL DATA&nbsp;</p>
 
-<p><strong>6. <em>INTERNATIONAL TRANSFERS </em><em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>6. INTERNATIONAL TRANSFERS&nbsp;</p>
 
-<p>&nbsp;<strong>7. <em>DATA SECURITY </em><em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>7. DATA SECURITY&nbsp;</p>
 
-<p>&nbsp;<strong>8. <em>DATA RETENTION </em><em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>8. DATA RETENTION&nbsp;</p>
 
-<p>&nbsp;<strong>9. <em>YOUR LEGAL RIGHTS</em> <em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>9. YOUR LEGAL RIGHTS</p>
 
-<p><strong>10. INFORMATION ABOUT OUR USE OF COOKIES <em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>10. INFORMATION ABOUT OUR USE OF COOKIES&nbsp;</p>
 
-<p>&nbsp;<strong>11. <em>GLOSSARY </em><em>[Please insert as hyperlink to the respective section below]</em></strong></p>
+<p>11. GLOSSARY&nbsp;</p>
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>Important information and who we are</strong></p>
+	<h2>Important information and who we are</h2>
 	</li>
 </ol>
 
@@ -43,45 +43,45 @@
 
 <p>This website is not intended for children and we do not knowingly collect data relating to children.</p>
 
-<p>&nbsp;<strong>Controller</strong></p>
+<p><strong>Controller</strong></p>
 
-<p>&nbsp;Live Network is the controller and responsible for your personal data (collectively referred to as &quot;we&quot;, &quot;us&quot; or &quot;our&quot; in this privacy policy).</p>
+<p>Live Network is the controller and responsible for your personal data (collectively referred to as &quot;we&quot;, &quot;us&quot; or &quot;our&quot; in this privacy policy).</p>
 
 <p>We have appointed a data protection officer (&ldquo;DPO&rdquo;) who is responsible for overseeing questions in relation to this privacy notice. If you have any questions about this privacy notice, including any requests to exercise, please contact the DPO using the details set out below.</p>
 
-<p>&nbsp;<strong>Contact details</strong></p>
+<p><strong>Contact details</strong></p>
 
-<p>&nbsp;Our full details are:</p>
+<p>Our full details are:</p>
 
-<p>&nbsp;Full name of legal entity: Live Network</p>
+<p>Full name of legal entity: Live Network</p>
 
-<p>&nbsp;Email:</p>
+<p>Email:</p>
 
 <p><strong>[Please insert support email details]</strong></p>
 
 <p>Address:</p>
 
-<p>&nbsp;<strong>[Please insert the address]</strong></p>
+<p><strong>[Please insert the address]</strong></p>
 
 <p>You have the right to make a complaint at any time to the Directorate for Personal Data Protection (DPDP), the Macedonia supervisory authority for data protection issues (https://www.dzlp.mk). We would, however, appreciate the chance to deal with your concerns before you approach the DPDP so please contact us in the first instance.</p>
 
-<p>&nbsp;<strong>Your duty to inform us of changes</strong></p>
+<p><strong>Your duty to inform us of changes</strong></p>
 
-<p>&nbsp;It is important that the personal data we hold about you is accurate and current. Please keep us informed if your personal data changes during your relationship with us.</p>
+<p>It is important that the personal data we hold about you is accurate and current. Please keep us informed if your personal data changes during your relationship with us.</p>
 
-<p>&nbsp;<strong>Third-party links</strong></p>
+<p><strong>Third-party links</strong></p>
 
-<p>&nbsp;This website may include links to third-party websites, plug-ins and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. When you leave our website, we encourage you to read the privacy notice of every website you visit.</p>
+<p>This website may include links to third-party websites, plug-ins and applications. Clicking on those links or enabling those connections may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements. When you leave our website, we encourage you to read the privacy notice of every website you visit.</p>
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>The data we collect about you</strong></p>
+	<h2>&nbsp;The data we collect about you</h2>
 	</li>
 </ol>
 
-<p>&nbsp;Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data).</p>
+<p>Personal data, or personal information, means any information about an individual from which that person can be identified. It does not include data where the identity has been removed (anonymous data).</p>
 
-<p>&nbsp;We may collect, use, store and transfer different kinds of personal data about you which we have grouped together follows:</p>
+<p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together follows:</p>
 
 <ul>
 	<li>
@@ -108,17 +108,17 @@
 
 <p>We do not collect any <strong>Special Categories of Personal Data</strong> about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data). Nor do we collect any information about criminal convictions and offences.</p>
 
-<p>&nbsp;<strong>If you fail to provide personal data</strong></p>
+<p><strong>If you fail to provide personal data</strong></p>
 
 <p>Where we need to collect personal data by law, or under the terms of a contract we have with you and you fail to provide that data when requested, we may not be able to perform the contract we have or are trying to enter into with you (for example, to provide you with goods or services). In this case, we may have to cancel a product or service you have with us but we will notify you if this is the case at the time.</p>
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>How is your personal data collected?</strong></p>
+	<h2>How is your personal data collected?</h2>
 	</li>
 </ol>
 
-<p>&nbsp;We use different methods to collect data from and about you including through:</p>
+<p>We use different methods to collect data from and about you including through:</p>
 
 <ul>
 	<li>
@@ -166,13 +166,13 @@
 	<li>
 	<ol>
 		<li>
-		<p>&nbsp;analytics providers such as Google based inside or outside the EU;</p>
+		<p>analytics providers such as Google based inside or outside the EU;</p>
 		</li>
 		<li>
-		<p>&nbsp;advertising networks based inside or outside the EU; and</p>
+		<p>advertising networks based inside or outside the EU; and</p>
 		</li>
 		<li>
-		<p>&nbsp;search information providers based inside or outside the EU.</p>
+		<p>search information providers based inside or outside the EU.</p>
 		</li>
 	</ol>
 	</li>
@@ -186,11 +186,11 @@
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>How we use your personal data</strong></p>
+	<h2>How we use your personal data</h2>
 	</li>
 </ol>
 
-<p>&nbsp;We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
+<p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
 
 <ul>
 	<li>
@@ -204,13 +204,13 @@
 	</li>
 </ul>
 
-<p>&nbsp;Generally we do not rely on consent as a legal basis for processing your personal data other than in relation to sending third party direct marketing communications to you via email or text message. You have the right to withdraw consent to marketing at any time by contacting us<strong> </strong><em><strong>[Please insert as hyperlink to contact us section]</strong></em>.</p>
+<p>Generally we do not rely on consent as a legal basis for processing your personal data other than in relation to sending third party direct marketing communications to you via email or text message. You have the right to withdraw consent to marketing at any time by contacting us<strong> </strong><em><strong>[Please insert as hyperlink to contact us section]</strong></em>.</p>
 
-<p>&nbsp;<strong>Purposes for which we will use your personal data</strong></p>
+<p><strong>Purposes for which we will use your personal data</strong></p>
 
-<p>&nbsp;We have set out below, in a table format, a description of all the ways we plan to use your personal data, and which of the legal bases we rely on to do so. We have also identified what our legitimate interests are where appropriate.</p>
+<p>We have set out below, in a table format, a description of all the ways we plan to use your personal data, and which of the legal bases we rely on to do so. We have also identified what our legitimate interests are where appropriate.</p>
 
-<p>&nbsp;Note that we may process your personal data for more than one lawful ground depending on the specific purpose for which we are using your data. Please <a href="#a599551">contact us</a> <em><strong>[Please insert as hyperlink to the respective section below]</strong></em><em> </em>if you need details about the specific legal ground we are relying on to process your personal data where more than one ground has been set out in the table below.</p>
+<p>Note that we may process your personal data for more than one lawful ground depending on the specific purpose for which we are using your data. Please <a href="#a599551">contact us</a> <em><strong>[Please insert as hyperlink to the respective section below]</strong></em><em> </em>if you need details about the specific legal ground we are relying on to process your personal data where more than one ground has been set out in the table below.</p>
 
 <table border="1" style="width:713px">
 	<tbody>
@@ -357,39 +357,39 @@
 	</tbody>
 </table>
 
-<p>&nbsp;<strong>Marketing </strong></p>
+<p><strong>Marketing </strong></p>
 
-<p>&nbsp;We strive to provide you with choices regarding certain personal data uses, particularly around marketing and advertising.</p>
+<p>We strive to provide you with choices regarding certain personal data uses, particularly around marketing and advertising.</p>
 
-<p>&nbsp;<strong>Promotional offers from us </strong></p>
+<p><strong>Promotional offers from us </strong></p>
 
-<p>&nbsp;We may use your Identity, Contact, Technical, Usage and Profile Data to form a view on what we think you may want or need, or what may be of interest to you. This is how we decide which products, services and offers may be relevant for you (we call this marketing).</p>
+<p>We may use your Identity, Contact, Technical, Usage and Profile Data to form a view on what we think you may want or need, or what may be of interest to you. This is how we decide which products, services and offers may be relevant for you (we call this marketing).</p>
 
-<p>&nbsp;You will receive marketing communications from us if you have requested information from us or purchased goods or services from us or if you provided us with your details when you entered a competition or registered for a promotion and, in each case, you have not opted out of receiving that marketing.</p>
+<p>You will receive marketing communications from us if you have requested information from us or purchased goods or services from us or if you provided us with your details when you entered a competition or registered for a promotion and, in each case, you have not opted out of receiving that marketing.</p>
 
-<p>&nbsp;<strong>Third-party marketing </strong></p>
+<p><strong>Third-party marketing </strong></p>
 
-<p>&nbsp;We will get your express opt-in consent before we share your personal data with any company outside Live Network for marketing purposes.</p>
+<p>We will get your express opt-in consent before we share your personal data with any company outside Live Network for marketing purposes.</p>
 
-<p>&nbsp;<strong>Opting out</strong></p>
+<p><strong>Opting out</strong></p>
 
-<p>&nbsp;You can ask us or third parties to stop sending you marketing messages at any time by contacting us at any time <em><strong>[Please insert as hyperlink to the respective section below]</strong></em>. Where you opt out of receiving these marketing messages, this will not apply to personal data provided to us as a result of a product/service purchase, warranty registration, product/service experience or other transactions.</p>
+<p>You can ask us or third parties to stop sending you marketing messages at any time by contacting us at any time <em><strong>[Please insert as hyperlink to the respective section below]</strong></em>. Where you opt out of receiving these marketing messages, this will not apply to personal data provided to us as a result of a product/service purchase, warranty registration, product/service experience or other transactions.</p>
 
-<p>&nbsp;<strong>Cookies</strong></p>
+<p><strong>Cookies</strong></p>
 
-<p>&nbsp;You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly. For more information about the cookies we use, please see the respective section below <em><strong>[Please insert as hyperlink to the respective section below]</strong></em>.</p>
+<p>You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly. For more information about the cookies we use, please see the respective section below <em><strong>[Please insert as hyperlink to the respective section below]</strong></em>.</p>
 
-<p>&nbsp;<strong>Change of purpose </strong></p>
+<p><strong>Change of purpose </strong></p>
 
-<p>&nbsp;We will only use your personal data for the purposes for which we collected it, unless we reasonably consider that we need to use it for another reason and that reason is compatible with the original purpose. If you wish to get an explanation as to how the processing for the new purpose is compatible with the original purpose, please contact us <em><strong>[Please insert as hyperlink to the respective section below]</strong></em>.</p>
+<p>We will only use your personal data for the purposes for which we collected it, unless we reasonably consider that we need to use it for another reason and that reason is compatible with the original purpose. If you wish to get an explanation as to how the processing for the new purpose is compatible with the original purpose, please contact us <em><strong>[Please insert as hyperlink to the respective section below]</strong></em>.</p>
 
-<p>&nbsp;If we need to use your personal data for an unrelated purpose, we will notify you and we will explain the legal basis which allows us to do so.</p>
+<p>If we need to use your personal data for an unrelated purpose, we will notify you and we will explain the legal basis which allows us to do so.</p>
 
 <p>Please note that we may process your personal data without your knowledge or consent, in compliance with the above rules, where this is required or permitted by law.</p>
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>Disclosures of your personal data</strong></p>
+	<h2>Disclosures of your personal data</h2>
 	</li>
 </ol>
 
@@ -407,125 +407,104 @@
 	</li>
 </ul>
 
-<p>&nbsp;We require all third parties to respect the security of your personal data and to treat it in accordance with the law. We do not allow our third-party service providers to use your personal data for their own purposes and only permit them to process your personal data for specified purposes and in accordance with our instructions.</p>
+<p>We require all third parties to respect the security of your personal data and to treat it in accordance with the law. We do not allow our third-party service providers to use your personal data for their own purposes and only permit them to process your personal data for specified purposes and in accordance with our instructions.</p>
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>International transfers</strong></p>
+	<h2>International transfers</h2>
 	</li>
 </ol>
 
-<p>&nbsp;Whenever we transfer your personal data out of the EEA, we ensure a similar degree of protection is afforded to it by ensuring at least one of the following safeguards is implemented:</p>
+<p>Whenever we transfer your personal data out of the EEA, we ensure a similar degree of protection is afforded to it by ensuring at least one of the following safeguards is implemented:</p>
 
 <ul>
 	<li>
 	<p>Where we use certain service providers, we may use specific contracts approved by the European Commission which give personal data the same protection it has in Europe. For further details, see European Commission: Model contracts for the transfer of personal data to third countries.</p>
 	</li>
 	<li>
-	<p>&nbsp;Where we use providers based in the US, we may transfer data to them if they are part of the Privacy Shield which requires them to provide similar protection to personal data shared between the Europe and the US. For further details, see European Commission: EU-US Privacy Shield.</p>
+	<p>Where we use providers based in the US, we may transfer data to them if they are part of the Privacy Shield which requires them to provide similar protection to personal data shared between the Europe and the US. For further details, see European Commission: EU-US Privacy Shield.</p>
 	</li>
 </ul>
-
-<p><br />
-&nbsp;</p>
-
-<p><br />
-&nbsp;</p>
-
-<p><br />
-&nbsp;</p>
-
-<p><br />
-&nbsp;</p>
-
-<p><br />
-&nbsp;</p>
-
-<p><br />
-&nbsp;</p>
-
-<p><br />
-&nbsp;</p>
 
 <p>Please <a href="#a599551">contact us</a> <em><strong>[Please insert as hyperlink to contact us section]</strong></em> if you want further information on the specific mechanism used by us when transferring your personal data out of the EEA.</p>
 
 <ol>
 	<li>
-	<p><strong>Data security</strong></p>
+	<h2>Data security</h2>
 	</li>
 </ol>
 
 <p>We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorised way, altered or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know. They will only process your personal data on our instructions and they are subject to a duty of confidentiality.</p>
 
-<p>&nbsp;We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so.</p>
+<p>We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so.</p>
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>Data retention</strong></p>
+	<h2>Data retention</h2>
 	</li>
 </ol>
 
-<p>&nbsp;<strong>How long will you use my personal data for?</strong></p>
+<p><strong>How long will you use my personal data for?</strong></p>
 
-<p>&nbsp;We will only retain your personal data for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
+<p>We will only retain your personal data for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
 
-<p>&nbsp;To determine the appropriate retention period for personal data, we consider the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorised use or disclosure of your personal data, the purposes for which we process your personal data and whether we can achieve those purposes through other means, and the applicable legal requirements.</p>
+<p>To determine the appropriate retention period for personal data, we consider the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorised use or disclosure of your personal data, the purposes for which we process your personal data and whether we can achieve those purposes through other means, and the applicable legal requirements.</p>
 
-<p>&nbsp;By law we have to keep basic information about our customers (including Contact, Identity, and Transaction Data) for six years after they cease being customers for tax purposes.</p>
+<p>By law we have to keep basic information about our customers (including Contact, Identity, and Transaction Data) for six years after they cease being customers for tax purposes.</p>
 
-<p>&nbsp;In some circumstances you can ask us to delete your data: see <em>Request erasure </em><em><strong>[Please insert as hyperlink to the respective section below]</strong></em> below for further information.</p>
+<p>In some circumstances you can ask us to delete your data: see <em>Request erasure </em><em><strong>[Please insert as hyperlink to the respective section below]</strong></em> below for further information.</p>
 
-<p>&nbsp;In some circumstances we may anonymise your personal data (so that it can no longer be associated with you) for research or statistical purposes in which case we may use this information indefinitely without further notice to you.</p>
+<p>In some circumstances we may anonymise your personal data (so that it can no longer be associated with you) for research or statistical purposes in which case we may use this information indefinitely without further notice to you.</p>
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>Your legal rights</strong></p>
+	<h2>Your legal rights</h2>
 	</li>
 </ol>
 
-<p>&nbsp;Under certain circumstances, you have rights under data protection laws in relation to your personal data. Please click on the links below to find out more about these rights:</p>
+<p>Under certain circumstances, you have rights under data protection laws in relation to your personal data. Please click on the links below to find out more about these rights:</p>
 
 <ul>
 	<li>
-	<p><em>Request access to your personal data</em>. <em><strong>[Please insert as hyperlink to the respective section below]</strong></em></p>
+	<p>Request access to your personal data.&nbsp;</p>
 	</li>
 	<li>
-	<p><em>Request correction of your personal data</em>. <em><strong>[Please insert as hyperlink to the respective section below]</strong></em></p>
+	<p>Request correction of your personal data.&nbsp;</p>
 	</li>
 	<li>
-	<p><em>Request erasure of your personal data</em>. <em><strong>[Please insert as hyperlink to the respective section below]</strong></em></p>
+	<p>Request erasure of your personal data.&nbsp;</p>
 	</li>
 	<li>
-	<p><em>Object to processing of your personal data</em>. <em><strong>[Please insert as hyperlink to the respective section below]</strong></em></p>
+	<p>Object to processing of your personal data.</p>
 	</li>
 	<li>
-	<p><em>Request restriction of processing your personal data</em>. <em><strong>[Please insert as hyperlink to the respective section below]</strong></em></p>
+	<p>Request restriction of processing your personal data.</p>
 	</li>
 	<li>
-	<p><em>Request transfer of your personal data</em>. <em><strong>[Please insert as hyperlink to the respective section below]</strong></em></p>
+	<p>Request transfer of your personal data.&nbsp;</p>
 	</li>
 	<li>
-	<p><em>Right to withdraw consent</em>. <em><strong>[Please insert as hyperlink to the respective section below]</strong></em></p>
+	<p>Right to withdraw consent.&nbsp;</p>
 	</li>
 </ul>
 
-<p>&nbsp;If you wish to exercise any of the rights set out above, please contact us. <em><strong>[Please insert as hyperlink to contact us section]</strong></em></p>
+<p>If you wish to exercise any of the rights set out above, please contact us. <em><strong>[Please insert as hyperlink to contact us section]</strong></em></p>
 
-<p>&nbsp;<strong>No fee usually required</strong></p>
+<p><strong>No fee usually required</strong></p>
 
-<p>&nbsp;You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
+<p>You will not have to pay a fee to access your personal data (or to exercise any of the other rights). However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive. Alternatively, we may refuse to comply with your request in these circumstances.</p>
 
-<p>&nbsp;<strong>What we may need from you</strong></p>
+<p><strong>What we may need from you</strong></p>
 
-<p>&nbsp;We may need to request specific information from you to help us confirm your identity and ensure your right to access your personal data (or to exercise any of your other rights). This is a security measure to ensure that personal data is not disclosed to any person who has no right to receive it. We may also contact you to ask you for further information in relation to your request to speed up our response.</p>
+<p>We may need to request specific information from you to help us confirm your identity and ensure your right to access your personal data (or to exercise any of your other rights). This is a security measure to ensure that personal data is not disclosed to any person who has no right to receive it. We may also contact you to ask you for further information in relation to your request to speed up our response.</p>
 
-<p>&nbsp;<strong>Time limit to respond</strong></p>
+<p><strong>Time limit to respond</strong></p>
 
-<p>&nbsp;We try to respond to all legitimate requests within one month. Occasionally it may take us longer than a month if your request is particularly complex or you have made a number of requests. In this case, we will notify you and keep you updated.</p>
+<p>We try to respond to all legitimate requests within one month. Occasionally it may take us longer than a month if your request is particularly complex or you have made a number of requests. In this case, we will notify you and keep you updated.</p>
 
 <ol>
 	<li>
-	<p><strong>Information about our use of cookies</strong></p>
+	<h2>Information about our use of cookies</h2>
 	</li>
 </ol>
 
@@ -549,25 +528,25 @@
 
 <ol>
 	<li>
-	<p>&nbsp;<strong>Glossary</strong></p>
+	<h2>Glossary</h2>
 	</li>
 </ol>
 
-<p>&nbsp;<strong>LAWFUL BASIS</strong></p>
+<p><strong>LAWFUL BASIS</strong></p>
 
-<p>&nbsp;<strong>Legitimate Interest</strong> means the interest of our business in conducting and managing our business to enable us to give you the best service/product and the best and most secure experience. We make sure we consider and balance any potential impact on you (both positive and negative) and your rights before we process your personal data for our legitimate interests. We do not use your personal data for activities where our interests are overridden by the impact on you (unless we have your consent or are otherwise required or permitted to by law). You can obtain further information about how we assess our legitimate interests against any potential impact on you in respect of specific activities by <a href="#a599551">contacting us</a>. <em><strong>[Please insert as hyperlink to contact us section]</strong></em></p>
+<p><strong>Legitimate Interest</strong> means the interest of our business in conducting and managing our business to enable us to give you the best service/product and the best and most secure experience. We make sure we consider and balance any potential impact on you (both positive and negative) and your rights before we process your personal data for our legitimate interests. We do not use your personal data for activities where our interests are overridden by the impact on you (unless we have your consent or are otherwise required or permitted to by law). You can obtain further information about how we assess our legitimate interests against any potential impact on you in respect of specific activities by <a href="#a599551">contacting us</a>. <em><strong>[Please insert as hyperlink to contact us section]</strong></em></p>
 
-<p>&nbsp;<strong>Performance of Contract</strong> means processing your data where it is necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract.</p>
+<p><strong>Performance of Contract</strong> means processing your data where it is necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract.</p>
 
-<p>&nbsp;<strong>Comply with a legal or regulatory obligation</strong> means processing your personal data where it is necessary for compliance with a legal or regulatory obligation that we are subject to.</p>
+<p><strong>Comply with a legal or regulatory obligation</strong> means processing your personal data where it is necessary for compliance with a legal or regulatory obligation that we are subject to.</p>
 
-<p>&nbsp;<strong>THIRD PARTIES</strong></p>
+<p><strong>THIRD PARTIES</strong></p>
 
-<p>&nbsp;<strong>Internal Third Parties</strong></p>
+<p><strong>Internal Third Parties</strong></p>
 
-<p>&nbsp;Other companies in Live Network group of companies acting as joint controllers or processors and provide IT and system administration services and undertake leadership reporting.<strong> </strong></p>
+<p>Other companies in Live Network group of companies acting as joint controllers or processors and provide IT and system administration services and undertake leadership reporting.<strong> </strong></p>
 
-<p>&nbsp;<strong>External Third Parties</strong></p>
+<p><strong>External Third Parties</strong></p>
 
 <ul>
 	<li>
@@ -577,28 +556,26 @@
 	<p>Professional advisers including lawyers, bankers, auditors and insurers who provide consultancy, banking, legal, insurance and accounting services.</p>
 	</li>
 	<li>
-	<p>&nbsp;Tax authorities, regulators and other authorities who require reporting of processing activities in certain circumstances.</p>
+	<p>Tax authorities, regulators and other authorities who require reporting of processing activities in certain circumstances.</p>
 	</li>
 </ul>
 
-<p>&nbsp;<strong>YOUR LEGAL RIGHTS</strong></p>
+<p><strong>YOUR LEGAL RIGHTS</strong></p>
 
 <p>You have the right to:</p>
 
-<p>&nbsp;<strong>Request access </strong>to your personal data (commonly known as a &quot;data subject access request&quot;). This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
+<p><strong>Request access </strong>to your personal data (commonly known as a &quot;data subject access request&quot;). This enables you to receive a copy of the personal data we hold about you and to check that we are lawfully processing it.</p>
 
-<p>&nbsp;<strong>Request correction </strong>of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
+<p><strong>Request correction </strong>of the personal data that we hold about you. This enables you to have any incomplete or inaccurate data we hold about you corrected, though we may need to verify the accuracy of the new data you provide to us.</p>
 
-<p>&nbsp;<strong>Request erasure </strong>of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
+<p><strong>Request erasure </strong>of your personal data. This enables you to ask us to delete or remove personal data where there is no good reason for us continuing to process it. You also have the right to ask us to delete or remove your personal data where you have successfully exercised your right to object to processing (see below), where we may have processed your information unlawfully or where we are required to erase your personal data to comply with local law. Note, however, that we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.</p>
 
-<p>&nbsp;<strong>Object to processing </strong>of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
+<p><strong>Object to processing </strong>of your personal data where we are relying on a legitimate interest (or those of a third party) and there is something about your particular situation which makes you want to object to processing on this ground as you feel it impacts on your fundamental rights and freedoms. You also have the right to object where we are processing your personal data for direct marketing purposes. In some cases, we may demonstrate that we have compelling legitimate grounds to process your information which override your rights and freedoms.</p>
 
-<p>&nbsp;<strong>Request restriction of processing </strong>of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data&#39;s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
+<p><strong>Request restriction of processing </strong>of your personal data. This enables you to ask us to suspend the processing of your personal data in the following scenarios: (a) if you want us to establish the data&#39;s accuracy; (b) where our use of the data is unlawful but you do not want us to erase it; (c) where you need us to hold the data even if we no longer require it as you need it to establish, exercise or defend legal claims; or (d) you have objected to our use of your data but we need to verify whether we have overriding legitimate grounds to use it.</p>
 
-<p>&nbsp;<strong>Request the transfer </strong>of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
+<p><strong>Request the transfer </strong>of your personal data to you or to a third party. We will provide to you, or a third party you have chosen, your personal data in a structured, commonly used, machine-readable format. Note that this right only applies to automated information which you initially provided consent for us to use or where we used the information to perform a contract with you.</p>
 
-<p>&nbsp;<strong>Withdraw consent at any time </strong>where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
+<p><strong>Withdraw consent at any time </strong>where we are relying on consent to process your personal data. However, this will not affect the lawfulness of any processing carried out before you withdraw your consent. If you withdraw your consent, we may not be able to provide certain products or services to you. We will advise you if this is the case at the time you withdraw your consent.</p>
 
-<p><br />
-&nbsp;</p>
 @endsection
