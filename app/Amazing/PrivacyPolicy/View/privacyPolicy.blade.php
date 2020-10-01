@@ -9,27 +9,27 @@
 
 	<p>This privacy policy is provided in a layered format so you can click through to the specific areas set out below. Please also use the Glossary to understand the meaning of some of the terms used in this privacy notice.</p>
 
-	<p>1. IMPORTANT INFORMATION AND WHO WE ARE&nbsp;</p>
+	<p>1. IMPORTANT INFORMATION AND WHO WE ARE</p>
 
-	<p>2. THE DATA WE COLLECT ABOUT YOU&nbsp;</p>
+	<p>2. THE DATA WE COLLECT ABOUT YOU</p>
 
 	<p>3. HOW IS YOUR PERSONAL DATA COLLECTED</p>
 
-	<p>4. HOW WE USE YOUR PERSONAL DATA&nbsp;</p>
+	<p>4. HOW WE USE YOUR PERSONAL DATA</p>
 
-	<p>5. DISCLOSURES OF YOUR PERSONAL DATA&nbsp;</p>
+	<p>5. DISCLOSURES OF YOUR PERSONAL DATA</p>
 
-	<p>6. INTERNATIONAL TRANSFERS&nbsp;</p>
+	<p>6. INTERNATIONAL TRANSFERS</p>
 
-	<p>7. DATA SECURITY&nbsp;</p>
+	<p>7. DATA SECURITY</p>
 
-	<p>8. DATA RETENTION&nbsp;</p>
+	<p>8. DATA RETENTION</p>
 
 	<p>9. YOUR LEGAL RIGHTS</p>
 
-	<p>10. INFORMATION ABOUT OUR USE OF COOKIES&nbsp;</p>
+	<p>10. INFORMATION ABOUT OUR USE OF COOKIES</p>
 
-	<p>11. GLOSSARY&nbsp;</p>
+	<p>11. GLOSSARY</p>
 
 	<ol>
 		<li>
@@ -47,7 +47,7 @@
 
 	<p>Live Network is the controller and responsible for your personal data (collectively referred to as &quot;we&quot;, &quot;us&quot; or &quot;our&quot; in this privacy policy).</p>
 
-	<p>We have appointed a data protection officer (&ldquo;DPO&rdquo;) who is responsible for overseeing questions in relation to this privacy notice. If you have any questions about this privacy notice, including any requests to exercise, please contact the DPO using the details set out below.</p>
+	<p>We have appointed a data protection officer (DPO) who is responsible for overseeing questions in relation to this privacy notice. If you have any questions about this privacy notice, including any requests to exercise, please contact the DPO using the details set out below.</p>
 
 	<p><strong>Contact details</strong></p>
 
@@ -75,7 +75,7 @@
 
 	<ol>
 		<li>
-		<h2>&nbsp;The data we collect about you</h2>
+		<h2>The data we collect about you</h2>
 		</li>
 	</ol>
 
@@ -466,13 +466,13 @@
 
 	<ul>
 		<li>
-		<p>Request access to your personal data.&nbsp;</p>
+		<p>Request access to your personal data.</p>
 		</li>
 		<li>
-		<p>Request correction of your personal data.&nbsp;</p>
+		<p>Request correction of your personal data.</p>
 		</li>
 		<li>
-		<p>Request erasure of your personal data.&nbsp;</p>
+		<p>Request erasure of your personal data.</p>
 		</li>
 		<li>
 		<p>Object to processing of your personal data.</p>
@@ -481,10 +481,10 @@
 		<p>Request restriction of processing your personal data.</p>
 		</li>
 		<li>
-		<p>Request transfer of your personal data.&nbsp;</p>
+		<p>Request transfer of your personal data.</p>
 		</li>
 		<li>
-		<p>Right to withdraw consent.&nbsp;</p>
+		<p>Right to withdraw consent.</p>
 		</li>
 	</ul>
 
