@@ -388,28 +388,44 @@ button.favourite {
         grid-area: ad;
     }
 }
+
+.share,
+.stationList {
+    list-style: none;
+    margin: 0;
+}
+
+#content-tac,
+#content-privacy {
+    background-color: rgba(31, 65, 84, .7);
+}
+
+
 /* GLOBAL */
+
 h2 {
     font-size: 25px;
 }
+
 p {
     font-size: 17px;
+    margin: 10px 0;
 }
+
 ul {
     list-style: circle;
-    margin-left: 60px;  
-}
-p {
-    margin: 10px 0;
+    margin-left: 60px;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
 }
-.stationList{
+
+.stationList {
     list-style: none;
 }
-.nameRadio{
+
+.nameRadio {
     font-size: 15px;
 }
