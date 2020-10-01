@@ -3,7 +3,10 @@
 @section('content')
 <section id="player" data-station="live" ln-player>
 	<h1>{{ $station->name }}</h1>
-	<img id="stationLogo" src="{{ $station->logo }}">
+	<picture title="{{$station->name}}">
+		<source srcset="{{$station->logo}}.webp, {{$station->logo2x}}.webp 2x" type="image/webp">
+		<img src="{{ $station->logo }}.png" srcset="{{$station->logo}}.png ,{{$station->logo2x}}.png 2x" alt="{{$station->name}}">
+	</picture>
 	<div id="volumeControl">
 		<button ln-player-action="mute" type="button">volume_up</button>
 		<input name="range" type="range" min="0" max="100" ln-player-volume="50">

@@ -6,6 +6,7 @@
         width: 12rem;
         display: flex;
         justify-content: space-between;
+        list-style: none;
     }
     
     #languages ul li img {
@@ -19,9 +20,12 @@
         /* grid-template-rows: 700px; */
     }
     
-    #stations {
-        grid-column-start: 1;
-        grid-column-end: 2;
+    #stations li{
+        background-color: rgb(186,186,186);
+        position: relative;
+        -webkit-box-shadow: 9px 16px 34px -3px rgba(0,0,0,0.55);
+        -moz-box-shadow: 9px 16px 34px -3px rgba(0,0,0,0.55);
+        box-shadow: 9px 16px 34px -3px rgba(0,0,0,0.55);
     }
     
     #ad {
@@ -44,6 +48,7 @@
     
     .stationList h2 {
         background: rgb(194, 188, 188);
+        
         background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
         transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
     }
@@ -55,32 +60,37 @@
         padding: 10px;
     }
     
-    .nameRadio {
+    [typeof="RadioStation"] [property="name"] {
         display: block;
-        padding: 5px;
+        padding: 3px;
         text-transform: uppercase;
         text-align: center;
         width: auto;
+        font-size:15px;
+
+        -webkit-box-shadow: -1px 17px 34px -3px rgba(0,0,0,0.52);
+        -moz-box-shadow: -1px 17px 34px -3px rgba(0,0,0,0.52);
+        box-shadow: -1px 17px 34px -3px rgba(0,0,0,0.52);
     }
     
-    .nowPlay {
-        background-color: rgb(186, 186, 186);
+    .nowPlaying{
+        background-color: white;
         position: relative;
-    }
-    
-    .track {
+        border-bottom-right-radius: 70px;
+        font-size: 15px;
+        padding: 2px 22px 10px 22px;
         text-align: center;
-        background: white;
-        display: block;
-        padding: 10px 11px 15px 11px;
-        border-radius: 0px 0px 74px 0px;
+        font-weight: 400;
     }
     
-    .name {
-        color: gray;
+ 
+    [typeof="MusicRecords"] [property="name"] {
+        background-color: white;
         font-size: 15px;
         padding: 2px;
-    }
+        text-transform: none;
+        
+    } 
     
     #stations li a {
         position: relative;
@@ -103,10 +113,25 @@
         opacity: .3;
     }
     
-    .byArtist {
+    [property="byArtist"] {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 1.3em;
+        font-size: 16px;
         color: black;
-        font-size: 15px;
-        padding: 2px;
+        
+    }
+
+    [property="track"]{
+        font-weight: 300;
+        font-size: 14px;
+        
+    }
+    
+    #stations{
+        color: var(--track);
     }
     
     #amazing-80s h2:hover {
@@ -138,7 +163,7 @@
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        line-height: 100%
+        line-height: 1.3em;
     }
     
     .fav {
@@ -163,8 +188,12 @@
         color: var(--favouriteHover);
     }
     
-    .nowPlaying {
-        color: var(--now-playing);
-        font-size: 11px;
+    .Playing {
         text-transform: uppercase;
+        color: var(--now-playing);
+        font-size: 12px;
+        text-align: center; 
+    }
+    .nowPlaying [property="name"]{
+        color:rgb(49, 46, 46);
     }

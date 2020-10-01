@@ -1,7 +1,6 @@
 @extends('layout.ln')
 
 @section('content')
-<section id="tac">
 <h2>PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS SITE</h2>
 
 <p><strong>What's in these terms?</strong></p>
@@ -10,9 +9,9 @@
 
 <p>Click on the links below to go straight to more information on each area:</p>
 
-<ul class="termList">
+<ul class>
 	<li>
-	<p>Who we are and how to contact us .</p>
+	<p><a href="#section1"> Who we are and how to contact us .</a></p>
 	</li>
 	<li>
 	<p>By using our site you accept these terms&nbsp;</p>
@@ -70,7 +69,7 @@
 	</li>
 </ul>
 
-<h2>Who we are and how to contact us</h2>
+<h2 id="section1"> Who we are and how to contact us</h2>
 
 <p>http://amazingradios.com/ is a site operated by Live Networks (&quot;We&quot;). We are registered in Macedonia.</p>
 
@@ -244,5 +243,5 @@
 <h2>Our trade marks are registered</h2>
 
 <p>Amazing Radios are trade marks of Live Networks. You are not permitted to use them without our approval, unless they are part of material you are using as permitted under <em>How you may use material on our site</em> <strong>[Please insert as a link]</strong>.</p>
-</section>
+
 @endsection

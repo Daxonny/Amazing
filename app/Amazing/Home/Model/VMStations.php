@@ -15,7 +15,12 @@ class VMStations implements IVM {
 		return $stations;
 	}
 	private static function _prepareStation($station, $logoPath) {
-		$station->logo = $logoPath . $station->slug . ".webp";
+		$logo = $logoPath . $station->slug;
+		$station->logo = $logo . '-w180';
+		$station->logo2x = $logo . '-w360';
+
+		$station->name = str_replace('Amazing', '', $station->name);
+
 		return $station;
 	}
 
