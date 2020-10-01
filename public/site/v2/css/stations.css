@@ -14,31 +14,28 @@
         height: 16px;
     }
     
-    #content {
+    #content-station {
         display: grid;
         grid-template-columns: auto 200px;
-        /* grid-template-rows: 700px; */
+        margin-top: 10px;
     }
     
-    #stations li{
-        background-color: rgb(186,186,186);
+    #stations li {
+        background-color: rgb(186, 186, 186);
         position: relative;
-        -webkit-box-shadow: 9px 16px 34px -3px rgba(0,0,0,0.55);
-        -moz-box-shadow: 9px 16px 34px -3px rgba(0,0,0,0.55);
-        box-shadow: 9px 16px 34px -3px rgba(0,0,0,0.55);
+        -webkit-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+        box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
     }
     
     #ad {
         grid-column-start: 2;
         grid-column-end: 3;
         border: 1px solid red;
-        width: 80%;
-        margin-top: 20px;
         height: 80%;
     }
     
     .stationList {
-        margin: 20px;
         display: grid;
         grid-template-columns: 200px 200px 200px 200px;
         grid-template-rows: auto;
@@ -48,7 +45,6 @@
     
     .stationList h2 {
         background: rgb(194, 188, 188);
-        
         background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
         transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
     }
@@ -66,14 +62,13 @@
         text-transform: uppercase;
         text-align: center;
         width: auto;
-        font-size:15px;
-
-        -webkit-box-shadow: -1px 17px 34px -3px rgba(0,0,0,0.52);
-        -moz-box-shadow: -1px 17px 34px -3px rgba(0,0,0,0.52);
-        box-shadow: -1px 17px 34px -3px rgba(0,0,0,0.52);
+        font-size: 15px;
+        -webkit-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+        -moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+        box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
     }
     
-    .nowPlaying{
+    .nowPlaying {
         background-color: white;
         position: relative;
         border-bottom-right-radius: 70px;
@@ -83,14 +78,12 @@
         font-weight: 400;
     }
     
- 
     [typeof="MusicRecords"] [property="name"] {
         background-color: white;
         font-size: 15px;
         padding: 2px;
         text-transform: none;
-        
-    } 
+    }
     
     #stations li a {
         position: relative;
@@ -121,16 +114,14 @@
         line-height: 1.3em;
         font-size: 16px;
         color: black;
-        
-    }
-
-    [property="track"]{
-        font-weight: 300;
-        font-size: 14px;
-        
     }
     
-    #stations{
+    [property="track"] {
+        font-weight: 300;
+        font-size: 14px;
+    }
+    
+    #stations {
         color: var(--track);
     }
     
@@ -192,8 +183,9 @@
         text-transform: uppercase;
         color: var(--now-playing);
         font-size: 12px;
-        text-align: center; 
+        text-align: center;
     }
-    .nowPlaying [property="name"]{
-        color:rgb(49, 46, 46);
+    
+    .nowPlaying [property="name"] {
+        color: rgb(49, 46, 46);
     }

@@ -121,57 +121,62 @@
 #ln-player .ar-logo {
 	display: none;
 } */
+
+
+/* 
  #content {
 	display: grid;
 	grid-template-columns: auto;
+} */
 
-}
 #player {
-
     background-color: var(--linkHover);
-	height: 350px;	
-	overflow: hidden;
-	
-	-webkit-box-shadow: 14px 10px 20px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 14px 10px 20px 0px rgba(0,0,0,0.75);
-	box-shadow: 14px 10px 20px 0px rgba(0,0,0,0.75);
+    height: 350px;
+    overflow: hidden;
+    -webkit-box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
-h1{
+h1 {
     font-size: 30px;
     margin: 10px;
 }
 
-.stationList h2{
-	font-size: 20px;
+.stationList h2 {
+    font-size: 20px;
 }
-.stationList p{
-	margin: 0px;
+
+.stationList p {
+    margin: 0px;
 }
+
 #stationLogo {
     padding: 30px;
     width: 200px;
-	height: 200px;
+    height: 200px;
 }
 
 audio {
     margin: 10px;
     width: 200px;
 }
-#player #volumeControl{
-	text-align: center;
-	top:-100px;
-	
+
+#player #volumeControl {
+    text-align: center;
+    top: -100px;
 }
-#player #playControl{
-	margin: 0;
-	padding: 0;
-	text-align: center;
+
+#player #playControl {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-#player #stopControl{
-	position: relative;
-	display: block;
-	margin: 0;
-	padding: 0px;
-	text-align: center;
+
+#player #stopControl {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
 }

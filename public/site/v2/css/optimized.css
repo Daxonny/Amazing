@@ -345,6 +345,7 @@ button.favourite {
         top: -50px;
         line-height: 50px;
         font-size: 42px;
+        list-style: none;
     }
     /*	#share:before {
 		content: 'share';
@@ -388,18 +389,16 @@ button.favourite {
         grid-area: ad;
     }
 }
+
+
 /* GLOBAL */
+
 h2 {
     font-size: 25px;
 }
+
 p {
     font-size: 17px;
-}
-ul {
-    list-style: circle;
-    margin-left: 60px;  
-}
-p {
     margin: 10px 0;
 }
 
@@ -407,9 +406,11 @@ nav ul {
     list-style: none;
     margin: 0;
 }
-.stationList{
+
+.stationList {
     list-style: none;
 }
-.nameRadio{
+
+.nameRadio {
     font-size: 15px;
 }
