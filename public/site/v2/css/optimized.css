@@ -29,6 +29,27 @@ body {
 input[name=nav] {
     display: none;
 }
+h2 {
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.17em ;
+    font-weight: bold;
+}
+p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: circle;
+    margin-left: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
 
 #wrap {
     margin: 0 auto;
@@ -394,38 +415,46 @@ button.favourite {
     list-style: none;
     margin: 0;
 }
-
 #content-tac,
 #content-privacy {
-    background-color: rgba(31, 65, 84, .7);
+    background-color: rgba(31, 65, 84, .9);
+    padding: 50px;
+    line-height: 1.5em;
 }
-
-
-/* GLOBAL */
-
-h2 {
-    font-size: 25px;
+#content-privacy ol {
+    list-style: decimal;
 }
-
-p {
-    font-size: 17px;
-    margin: 10px 0;
+#content-privacy .section3 {
+    list-style: lower-alpha;
+      padding: 0px;
+      margin: 0px;
 }
-
-ul {
-    list-style: circle;
-    margin-left: 60px;
+#content-privacy .sections {
+    margin-left: 80px; 
 }
-
-nav ul {
-    list-style: none;
-    margin: 0;
+#content-privacy tr {
+    background-color: rgba(255, 255, 255, .2);
 }
-
+#content-privacy tr ol {
+    list-style: lower-alpha;
+}
+#content-privacy tr:nth-child(even){
+    background-color: rgba(255, 255, 255, .3);
+}
+#content-privacy td {
+    padding: 20px;
+    border:1px solid rgb(167, 167, 167);
+}
+#content-privacy .sectionPrivacy {
+    padding: 0px;
+    margin-left: 0px;
+}
+#content-tac #header {
+    text-align: center;
+}
 .stationList {
     list-style: none;
 }
-
 .nameRadio {
     font-size: 15px;
 }

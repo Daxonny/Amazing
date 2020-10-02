@@ -161,6 +161,7 @@
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/ar.js') }}"></script>
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
 	<script async type="text/javascript" src="{{ asset('/site/v2/js/player/player.js') }}"></script>
+	<script async type="text/javascript" src="{{ asset('/site/v2/js/obfuscator/ln-obfuscator.js') }}"></script>
 
 
 	@yield('js') 

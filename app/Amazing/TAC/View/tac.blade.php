@@ -2,7 +2,7 @@
 
 @section('content')
 <section id="content-tac">
-	<h2>PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS SITE</h2>
+	<h2 id="header">PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS SITE</h2>
 
 	<p><strong>What's in these terms?</strong></p>
 
@@ -12,61 +12,61 @@
 
 	<ul class>
 		<li>
-		<p><a href="#section1">Who we are and how to contact us .</a></p>
+			<p><a href="#section1">Who we are and how to contact us .</a></p>
 		</li>
 		<li>
-		<p><a href="#section2">By using our site you accept these terms</a></p>
+			<p><a href="#section2">By using our site you accept these terms</a></p>
 		</li>
 		<li>
-		<p><a href="#section3">There are other terms that may apply to you . </a></p>
+			<p><a href="#section3">There are other terms that may apply to you . </a></p>
 		</li>
 		<li>
-		<p><a href="#section4">We may make changes to these terms .</a></p>
+			<p><a href="#section4">We may make changes to these terms .</a></p>
 		</li>
 		<li>
-		<p><a href="#section5">We may make changes to our site </a></p>
+			<p><a href="#section5">We may make changes to our site </a></p>
 		</li>
 		<li>
-		<p><a href="#section6">We may suspend or withdraw our site .</a></p>
+			<p><a href="#section6">We may suspend or withdraw our site .</a></p>
 		</li>
 		<li>
-		<p><a href="#section7">We may transfer this agreement to someone else . </a></p>
+			<p><a href="#section7">We may transfer this agreement to someone else . </a></p>
 		</li>
 		<li>
-		<p><a href="#section8">You must keep your account details safe </a></p>
+			<p><a href="#section8">You must keep your account details safe </a></p>
 		</li>
 		<li>
-		<p><a href="#section9">How you may use material on our site . </a></p>
+			<p><a href="#section9">How you may use material on our site . </a></p>
 		</li>
 		<li>
-		<p><a href="#section10">Do not rely on information on our site </a></p>
+			<p><a href="#section10">Do not rely on information on our site </a></p>
 		</li>
 		<li>
-		<p><a href="#section11">We are not responsible for websites we link to . </a></p>
+			<p><a href="#section11">We are not responsible for websites we link to . </a></p>
 		</li>
 		<li>
-		<p><a href="#section12">User-generated content is not approved by us . </a></p>
+			<p><a href="#section12">User-generated content is not approved by us . </a></p>
 		</li>
 		<li>
-		<p><a href="#section13">How to complain about content uploaded by other users . </a></p>
+			<p><a href="#section13">How to complain about content uploaded by other users . </a></p>
 		</li>
 		<li>
-		<p><a href="#section14">Our responsibility for loss or damage suffered by you . </a></p>
+			<p><a href="#section14">Our responsibility for loss or damage suffered by you . </a></p>
 		</li>
 		<li>
-		<p><a href="#section15">How we may use your personal information </a></p>
+			<p><a href="#section15">How we may use your personal information </a></p>
 		</li>
 		<li>
-		<p><a href="#section16">We are not responsible for viruses and you must not introduce them </a></p>
+			<p><a href="#section16">We are not responsible for viruses and you must not introduce them </a></p>
 		</li>
 		<li>
-		<p><a href="#section17">Rules about linking to our site </a></p>
+			<p><a href="#section17">Rules about linking to our site </a></p>
 		</li>
 		<li>
-		<p><a href="#section18">Which country's laws apply to any disputes? </a></p>
+			<p><a href="#section18">Which country's laws apply to any disputes? </a></p>
 		</li>
 		<li>
-		<p><a href="#section1">Our trade marks </a></p>
+			<p><a href="#section1">Our trade marks </a></p>
 		</li>
 	</ul>
 
@@ -76,7 +76,9 @@
 
 	<p>We are a content streaming service.</p>
 
-	<p>To contact us, please email [<strong>Please insert your support email details]</strong>.</p>
+	<p>To contact us, please email: <span ln-obfuscator="10">
+			<k rbop="wksvdy:sxpy@kwkjsxqbknsyc.myw">sxpy@kwkjsxqbknsyc.myw</k>
+		</span></p>
 
 	<h2 id="section2">By using our site you accept these terms</h2>
 
@@ -88,7 +90,7 @@
 
 	<h2 id="section3">There are other terms that may apply to you</h2>
 
-	<p>These terms of use refer to our Privacy Policy <strong>[Please insert as a link to site&rsquo;s privacy policy]</strong>, which also apply to your use of our site.</p>
+	<p>These terms of use refer to our Privacy Policy <strong>[Please insert as a link to site's privacy policy]</strong>, which also apply to your use of our site.</p>
 
 	<h2 id="section4">We may make changes to these terms</h2>
 
@@ -96,7 +98,7 @@
 
 	<h2 id="section5">We may make changes to our site</h2>
 
-	<p>We may update and change our site from time to time to reflect changes to our products, our users&#39; needs and our business priorities.</p>
+	<p>We may update and change our site from time to time to reflect changes to our products, our users' needs and our business priorities.</p>
 
 	<h2 id="section6">We may suspend or withdraw our site</h2>
 
@@ -116,7 +118,9 @@
 
 	<p>We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our reasonable opinion you have failed to comply with any of the provisions of these terms of use.</p>
 
-	<p>If you know or suspect that anyone other than you knows your user identification code or password, you must promptly notify us at [<strong>Please insert your support email details]</strong>.</p>
+	<p>If you know or suspect that anyone other than you knows your user identification code or password, you must promptly notify us at <span ln-obfuscator="10">
+			<k rbop="wksvdy:sxpy@kwkjsxqbknsyc.myw">sxpy@kwkjsxqbknsyc.myw .</k>
+		</span></p>
 
 	<h2 id="section9">How you may use material on our site</h2>
 
@@ -158,54 +162,54 @@
 
 	<ul>
 		<li>
-		<p>We exclude all implied conditions, warranties, representations or other terms that may apply to our site or any content on it.</p>
+			<p>We exclude all implied conditions, warranties, representations or other terms that may apply to our site or any content on it.</p>
 		</li>
 		<li>
-		<p>We will not be liable to you for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable, arising under or in connection with:</p>
+			<p>We will not be liable to you for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable, arising under or in connection with:</p>
 		</li>
 
 
+		<ul>
+			<li>
+				<p>use of, or inability to use, our site; or</p>
+			</li>
+			<li>
+				<p>use of or reliance on any content displayed on our site.</p>
+			</li>
+		</ul>
+	</ul>
 	<ul>
 		<li>
-		<p>use of, or inability to use, our site; or</p>
-		</li>
-		<li>
-		<p>use of or reliance on any content displayed on our site.</p>
-		</li>
-	</ul>
-	</ul>
-	<ul>
-		<li>
-		<p>In particular, we will not be liable for:</p>
+			<p>In particular, we will not be liable for:</p>
 		</li>
 
 
-	<ul>
-		<li>
-		<p>loss of profits, sales, business, or revenue;</p>
-		</li>
-		<li>
-		<p>business interruption;</p>
-		</li>
-		<li>
-		<p>loss of anticipated savings;</p>
-		</li>
-		<li>
-		<p>loss of business opportunity, goodwill or reputation; or</p>
-		</li>
-		<li>
-		<p>any indirect or consequential loss or damage.</p>
-		</li>
-	</ul>
+		<ul>
+			<li>
+				<p>loss of profits, sales, business, or revenue;</p>
+			</li>
+			<li>
+				<p>business interruption;</p>
+			</li>
+			<li>
+				<p>loss of anticipated savings;</p>
+			</li>
+			<li>
+				<p>loss of business opportunity, goodwill or reputation; or</p>
+			</li>
+			<li>
+				<p>any indirect or consequential loss or damage.</p>
+			</li>
+		</ul>
 	</ul>
 	<p><strong>If you are a consumer user</strong>:</p>
 
 	<ul>
 		<li>
-		<p>Please note that we only provide our site for domestic and private use. You agree not to use our site for any commercial or business purposes, and we have no liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity.</p>
+			<p>Please note that we only provide our site for domestic and private use. You agree not to use our site for any commercial or business purposes, and we have no liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity.</p>
 		</li>
 		<li>
-		<p>We will not be liable for damage that you could have avoided by following our advice to apply an update offered to you free of charge or for damage that was caused by you failing to correctly follow installation instructions or to have in place the minimum system requirements advised by us.</p>
+			<p>We will not be liable for damage that you could have avoided by following our advice to apply an update offered to you free of charge or for damage that was caused by you failing to correctly follow installation instructions or to have in place the minimum system requirements advised by us.</p>
 		</li>
 	</ul>
 
@@ -233,7 +237,9 @@
 
 	<p>We reserve the right to withdraw linking permission without notice.</p>
 
-	<p>If you wish to link to or make any use of content on our site other than that set out above, please contact [<strong>Please insert your support email details]</strong>.</p>
+	<p>If you wish to link to or make any use of content on our site other than that set out above, please contact <span ln-obfuscator="10">
+			<k rbop="wksvdy:sxpy@kwkjsxqbknsyc.myw">sxpy@kwkjsxqbknsyc.myw .</k>
+		</span></p>
 
 	<h2 id="section18">Which country's laws apply to any disputes?</h2>
 
@@ -243,6 +249,6 @@
 
 	<h2>Our trade marks are registered</h2>
 
-	<p>Amazing Radios are trade marks of Live Networks. You are not permitted to use them without our approval, unless they are part of material you are using as permitted under <em>How you may use material on our site</em> <strong>[Please insert as a link]</strong>.</p>
+	<p>Amazing Radios are trade marks of Live Networks. You are not permitted to use them without our approval, unless they are part of material you are using as permitted under How you may use material on our site.</p>
 </section>
 @endsection
