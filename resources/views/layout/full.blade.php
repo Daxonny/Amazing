@@ -68,14 +68,14 @@
 					</li>
 				</ul>
 
-				<ul id="userNav">
+				{{-- <ul id="userNav">
 					<li>
 						<a href="#">{{ __('global.register') }}</a>
 					</li>
 					<li>
 						<a href="#">{{ __('global.login') }}</a>
 					</li>
-				</ul>
+				</ul> --}}
 			</nav>
 			<section id="languages">
 				<ul>
@@ -125,7 +125,7 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#">Home</a>
+						<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
 					</li>
 					<li>
 						<a href="#">About us</a>
