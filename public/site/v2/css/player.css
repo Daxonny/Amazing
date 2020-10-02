@@ -130,17 +130,91 @@
 } */
 
 #player {
-    background-color: var(--linkHover);
-    height: 350px;
+    background: linear-gradient(180deg, rgba(203, 171, 48, 1) 5%, rgba(255, 255, 255, 0.9164799708946079) 49%, rgba(255, 255, 255, 0.4094771697741597) 100%);
+    padding: 20px;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 250px 70px 300px auto;
+    grid-template-rows: auto auto auto;
     -webkit-box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
-h1 {
-    font-size: 30px;
-    margin: 10px;
+#player picture {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#player img {
+    border: 5px solid white;
+    width: 200px;
+    height: 200px;
+}
+
+#player button {
+    color: white;
+    background-color: darkred;
+}
+
+#player button:hover {
+    cursor: pointer;
+}
+
+#playControl,
+#stopControl {
+    height: 70px;
+    width: 70px;
+    font-size: 50px;
+    border-radius: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: auto;
+}
+
+#playControl {
+    visibility: hidden;
+}
+
+#volumeControl {
+    width: 199px;
+    padding: 5px;
+    background-color: darkred;
+    display: flex;
+    line-height: 30px;
+    margin-top: -6px;
+    border-radius: 0px 0px 15px 15px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#volumeControl input[type="range"]:focus {
+    border: none;
+    outline: none;
+}
+
+.nowPlaying {
+    background: none;
+    margin: auto;
+    border-radius: 0;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.Playing {
+    color: darkred;
+}
+
+#player h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: darkred;
+    line-height: 45px;
+    width: 209px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .stationList h2 {
@@ -160,23 +234,4 @@ h1 {
 audio {
     margin: 10px;
     width: 200px;
-}
-
-#player #volumeControl {
-    text-align: center;
-    top: -100px;
-}
-
-#player #playControl {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#player #stopControl {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0px;
-    text-align: center;
 }

@@ -1,105 +1,84 @@
 {
-	"name": "Amazing Radios",
-	"slogan": "",
-	"logoPath": "https://dcdn.amazingradios.com/logos/",
-	
-	"stations":
-	  [
-		{
-		  "name": "Amazing 80's",
-		  "slug": "amazing-80s",
-		  "slogan": "",
-		  "description": "",
-		  "streams": [
-				{
-				  "bitrate": 128,
-				  "url": "http://mainstream.amazingradios.com:8000/80s128?utm_source=website&utm_medium=none&utm_campaign=none"
-				},
-				{
-				  "bitrate": 64,
-				  "url": "http://mainstream.amazingradios.com:8000/80s64?utm_source=website&utm_medium=none&utm_campaign=none"
-				}
-			]
-		},
-		{
-		  "name": "Amazing Blues",
-		  "slug": "amazing-blues",
-		  "slogan": "",
-		  "description": "",
-		  "streams": [
-				{
-				  "bitrate": 128,
-				  "url": "http://mainstream.amazingradios.com:8000/blues128?utm_source=website&utm_medium=none&utm_campaign=none"
-				},
-				{
-				  "bitrate": 64,
-				  "url": "http://mainstream.amazingradios.com:8000/blues64?utm_source=website&utm_medium=none&utm_campaign=none"
-				}
-			]
-		},
-		{
-		  "name": "Amazing Chillout",
-		  "slug": "amazing-chillout",
-		  "slogan": "",
-		  "description": "",
-		  "streams": [
-				{
-				  "bitrate": 128,
-				  "url": "http://mainstream.amazingradios.com:8000/chillout128?utm_source=website&utm_medium=none&utm_campaign=none"
-				},
-				{
-				  "bitrate": 64,
-				  "url": "http://mainstream.amazingradios.com:8000/chillout64?utm_source=website&utm_medium=none&utm_campaign=none"
-				}
-			]
-		},
-		{
-		  "name": "Amazing Chillhop",
-		  "slug": "amazing-chillhop",
-		  "slogan": "",
-		  "description": "",
-		  "streams": [
-				{
-				  "bitrate": 128,
-				  "url": "http://mainstream.amazingradios.com:8000/_____?utm_source=website&utm_medium=none&utm_campaign=none"
-				},
-				{
-				  "bitrate": 64,
-				  "url": "http://mainstream.amazingradios.com:8000/_____?utm_source=website&utm_medium=none&utm_campaign=none"
-				}
-			]
-		},
-		{
-		  "name": "Amazing Classic Hits",
-		  "slug": "amazing-classic-hits",
-		  "slogan": "",
-		  "description": "",
-		  "streams": [
-				{
-				  "bitrate": 128,
-				  "url": "http://mainstream.amazingradios.com:8000/1995_128?utm_source=website&utm_medium=none&utm_campaign=none"
-				},
-				{
-				  "bitrate": 64,
-				  "url": "http://mainstream.amazingradios.com:8000/1995_64?utm_source=website&utm_medium=none&utm_campaign=none"
-				}
-			]
-		},
-		{
-		  "name": "Amazing Smooth and Jazz",
-		  "slug": "amazing-smooth-jazz",
-		  "slogan": "",
-		  "description": "",
-		  "streams": [
-				{
-				  "bitrate": 128,
-				  "url": "http://mainstream.amazingradios.com:8000/jazz128?utm_source=website&utm_medium=none&utm_campaign=none"
-				},
-				{
-				  "bitrate": 64,
-				  "url": "http://mainstream.amazingradios.com:8000/jazz64?utm_source=website&utm_medium=none&utm_campaign=none"
-				}
-			]
-		}
-	]
+    "name": "Amazing Radios",
+    "slogan": "",
+    "logoPath": "https://dcdn.amazingradios.com/logos/",
+
+    "stations": [{
+            "name": "Amazing 80's",
+            "slug": "amazing-80s",
+            "slogan": "",
+            "description": "",
+            "tritonStationId": 123288,
+            "streams": [{
+                "bitrate": 128,
+                "url": "https://stream.amazingradios.com/api/livestream-redirect/AMAZING_80S_S01.mp3"
+            }]
+        },
+        {
+            "name": "Amazing Blues",
+            "slug": "amazing-blues",
+            "slogan": "",
+            "description": "",
+            "tritonStationId": 123332,
+            "streams": [{
+                "bitrate": 128,
+                "url": "https://stream.amazingradios.com/api/livestream-redirect/AMAZING_BLUES_S01.mp3"
+            }]
+        },
+        {
+            "name": "Amazing Chillout",
+            "slug": "amazing-chillout",
+            "slogan": "",
+            "description": "",
+            "tritonStationId": 123323,
+            "streams": [{
+                "bitrate": 128,
+                "url": "https://stream.amazingradios.com/api/livestream-redirect/AMAZING_CHILLOUT_S01.mp3"
+            }]
+        },
+        {
+            "name": "Amazing Chillhop",
+            "slug": "amazing-chillhop",
+            "slogan": "",
+            "description": "",
+            "tritonStationId": 123290,
+            "streams": [{
+                "bitrate": 128,
+                "url": "https://stream.amazingradios.com/api/livestream-redirect/AMAZING_CHILLOP_S01.mp3"
+            }]
+        },
+        {
+            "name": "Amazing Classic Hits",
+            "slug": "amazing-classic-hits",
+            "slogan": "",
+            "description": "",
+            "tritonStationId": 123292,
+            "streams": [{
+                "bitrate": 128,
+                "url": "https://stream.amazingradios.com/api/livestream-redirect/AMAZING_CLASSIC_HITS_S01.mp3"
+            }]
+        },
+        {
+            "name": "Amazing Smooth and Jazz",
+            "slug": "amazing-smooth-jazz",
+            "slogan": "",
+            "description": "",
+            "tritonStationId": 123321,
+            "streams": [{
+                "bitrate": 128,
+                "url": "https://stream.amazingradios.com/api/livestream-redirect/AMAZING_SMOOTH_AND_JAZZ_S01.mp3"
+            }]
+        },
+        {
+            "name": "Amazing Vocals",
+            "slug": "amazing-vocals",
+            "slogan": "",
+            "description": "",
+            "tritonStationId": 123293,
+            "streams": [{
+                "bitrate": 128,
+                "url": "https://stream.amazingradios.com/api/livestream-redirect/AMAZING_VOCALS_S01.mp3"
+            }]
+        }
+    ]
 }
