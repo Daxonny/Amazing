@@ -16,6 +16,7 @@
     --chillout: #f66400;
     --classic-hits: #f7ad00;
     --chillhop: #632c6f;
+    --vocals:#4c9ce0;
 }
 
 body {
@@ -37,6 +38,7 @@ h2 {
 h3 {
     font-size: 1.17em;
     font-weight: bold;
+    margin-top: 30px;
 }
 
 p {
@@ -173,6 +175,7 @@ button.favourite {
         font-size: 20px;
         padding: 5px 0;
         margin: 10px 0;
+        color: white;
     }
     #channels li {
         margin: 30px 0;
@@ -430,18 +433,10 @@ button.favourite {
     line-height: 1.5em;
 }
 
-#content-privacy ol {
-    list-style: decimal;
-}
-
-#content-privacy .section3 {
-    list-style: lower-alpha;
-    padding: 0px;
-    margin: 0px;
-}
-
 #content-privacy .sections {
     margin-left: 80px;
+    color: yellow;
+    list-style: decimal;
 }
 
 #content-privacy tr {
@@ -460,7 +455,9 @@ button.favourite {
     padding: 20px;
     border: 1px solid rgb(167, 167, 167);
 }
-
+td ul{
+    margin-left: 15px;
+}
 #content-privacy .sectionPrivacy {
     padding: 0px;
     margin-left: 0px;
@@ -476,4 +473,15 @@ button.favourite {
 
 .nameRadio {
     font-size: 15px;
+}
+#privacy-content h2{
+    margin-top: 30px;
+}
+#content-privacy a,
+#content-tac a {
+    color: yellow;
+}
+#content-privacy a:hover,
+#content-tac a:hover{
+    color: var(--linkHover);
 }

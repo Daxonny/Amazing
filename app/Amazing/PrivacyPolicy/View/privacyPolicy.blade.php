@@ -161,7 +161,7 @@
 		</ul>
 		<ul>
 			<li>
-				<p>Automated technologies or interactions. As you interact with our website, we may automatically collect Technical Data about your equipment, browsing actions and patterns. We collect this personal data by using cookies, server logs and other similar technologies. We may also receive Technical Data about you if you visit other websites employing our cookies. <a href="#section12">Please see our information about how we use cookies for further details.</a></p>
+				<p>Automated technologies or interactions. As you interact with our website, we may automatically collect Technical Data about your equipment, browsing actions and patterns. We collect this personal data by using cookies, server logs and other similar technologies. We may also receive Technical Data about you if you visit other websites employing our cookies. Please see our information about how we use <a href="#section12">cookies</a> for further details.</p>
 			</li>
 			<li>
 				<p>Third parties or publicly available sources. We may receive personal data about you from various third parties and public sources as set out below:</p>
@@ -172,20 +172,20 @@
 				<li>
 					<p>Technical Data from the following parties:</p>
 				</li>
-				<ol>
-					<ol class="section3">
-						<li>
-							<p>analytics providers such as Google based inside or outside the EU;</p>
-						</li>
-						<li>
-							<p>advertising networks based inside or outside the EU;</p>
-						</li>
-						<li>
-							<p>search information providers based inside or outside the EU.</p>
-						</li>
-					</ol>
-				</ol>
+
+				<ul>
+					<li>
+						<p>analytics providers such as Google based inside or outside the EU;</p>
+					</li>
+					<li>
+						<p>advertising networks based inside or outside the EU;</p>
+					</li>
+					<li>
+						<p>search information providers based inside or outside the EU.</p>
+					</li>
+				</ul>
 			</ul>
+
 		</ul>
 
 		<ul>
@@ -214,13 +214,13 @@
 			</li>
 		</ul>
 
-		<p>Generally we do not rely on consent as a legal basis for processing your personal data other than in relation to sending third party direct marketing communications to you via email or text message. You have the right to withdraw consent to marketing at any time by contacting us <em>[Please insert as hyperlink to contact us section]</em>.</p>
+		<p>Generally we do not rely on consent as a legal basis for processing your personal data other than in relation to sending third party direct marketing communications to you via email or text message. You have the right to withdraw consent to marketing at any time by <a href="{{ route('contactUs') }}">contacting us </a>.</p>
 
 		<p>Purposes for which we will use your personal data</p>
 
 		<p>We have set out below, in a table format, a description of all the ways we plan to use your personal data, and which of the legal bases we rely on to do so. We have also identified what our legitimate interests are where appropriate.</p>
 
-		<p>Note that we may process your personal data for more than one lawful ground depending on the specific purpose for which we are using your data. Please <a href="#a599551">contact us</a> <em>[Please insert as hyperlink to the respective section below]</em><em> </em>if you need details about the specific legal ground we are relying on to process your personal data where more than one ground has been set out in the table below.</p>
+		<p>Note that we may process your personal data for more than one lawful ground depending on the specific purpose for which we are using your data. Please <a href="{{ route('contactUs') }}">contact us</a> if you need details about the specific legal ground we are relying on to process your personal data where more than one ground has been set out in the table below.</p>
 
 		<table>
 			<tbody>
@@ -240,14 +240,14 @@
 						<p>To register you as a new customer</p>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Identity</p>
 							</li>
 							<li>
 								<p>Contact</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
 						<p>Performance of a contract with you</p>
@@ -256,17 +256,17 @@
 				<tr>
 					<td>
 						<p>To manage our relationship with you which will include:</p>
-						<ol>
+						<ul>
 							<li>
 								<p>Notifying you about changes to our terms or privacy policy</p>
 							</li>
 							<li>
 								<p>Asking you to leave a review or take a survey</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Identity</p>
 							</li>
@@ -279,10 +279,10 @@
 							<li>
 								<p>Marketing and Communications</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Performance of a contract with you</p>
 							</li>
@@ -292,7 +292,7 @@
 							<li>
 								<p>Necessary for our legitimate interests (to keep our records updated and to study how customers use our products/services)</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 				</tr>
 				<tr>
@@ -300,7 +300,7 @@
 						<p>To enable you to partake in a prize draw, competition or complete a survey</p>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Identity</p>
 							</li>
@@ -316,17 +316,17 @@
 							<li>
 								<p>Marketing and Communications</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Performance of a contract with you</p>
 							</li>
 							<li>
 								<p>Necessary for our legitimate interests (to study how customers use our products/services, to develop them and grow our business)</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 				</tr>
 				<tr>
@@ -334,7 +334,7 @@
 						<p>To administer and protect our business and this website (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data)</p>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Identity</p>
 							</li>
@@ -344,17 +344,17 @@
 							<li>
 								<p>Technical</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Necessary for our legitimate interests (for running our business, provision of administration and IT services, network security, to prevent fraud and in the context of a business reorganisation or group restructuring exercise)</p>
 							</li>
 							<li>
 								<p>Necessary to comply with a legal obligation</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 				</tr>
 				<tr>
@@ -362,7 +362,7 @@
 						<p>To deliver relevant website content and advertisements to you and measure or understand the effectiveness of the advertising we serve to you</p>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Identity</p>
 							</li>
@@ -381,7 +381,7 @@
 							<li>
 								<p>Technical</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
 						<p>Necessary for our legitimate interests (to study how customers use our products/services, to develop them, to grow our business and to inform our marketing strategy)</p>
@@ -392,14 +392,14 @@
 						<p>To use data analytics to improve our website, products/services, marketing, customer relationships and experiences</p>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Technical</p>
 							</li>
 							<li>
 								<p>Usage</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
 						<p>Necessary for our legitimate interests (to define types of customers for our products and services, to keep our website updated and relevant, to develop our business and to inform our marketing strategy)</p>
@@ -410,7 +410,7 @@
 						<p>To make suggestions and recommendations to you about goods or services that may be of interest to you</p>
 					</td>
 					<td>
-						<ol>
+						<ul>
 							<li>
 								<p>Identity</p>
 							</li>
@@ -426,7 +426,7 @@
 							<li>
 								<p>Profile</p>
 							</li>
-						</ol>
+						</ul>
 					</td>
 					<td>
 						<p>Necessary for our legitimate interests (to develop our products/services and grow our business)</p>
@@ -451,11 +451,11 @@
 
 		<h3>Opting out</h3>
 
-		<p>You can ask us or third parties to stop sending you marketing messages at any time by contacting us at any time <em>[Please insert as hyperlink to the respective section below]</em>. Where you opt out of receiving these marketing messages, this will not apply to personal data provided to us as a result of a product/service purchase, warranty registration, product/service experience or other transactions.</p>
+		<p>You can ask us or third parties to stop sending you marketing messages at any time by <a href="{{ route('contactUs') }}">contacting us </a> at any time. Where you opt out of receiving these marketing messages, this will not apply to personal data provided to us as a result of a product/service purchase, warranty registration, product/service experience or other transactions.</p>
 
 		<h3 id="section12">Cookies</h3>
 
-		<p>You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly. <a href="#section10"> For more information about the cookies we use, please see the respective section below</a> </p>
+		<p>You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly. For more information about the<a href="#section10"> cookies </a> we use, please see the respective section below</p>
 
 		<h3>Change of purpose </h3>
 
@@ -475,10 +475,10 @@
 
 		<ul>
 			<li>
-				<p> <a href="#section13">Internal Third Parties as set out in the following section </a></p>
+				<p> <a href="#section13">Internal Third Parties </a> as set out in the following section</p>
 			</li>
 			<li>
-				<p> <a href="#section14">External Third Parties as set out in the following section</a></p>
+				<p> <a href="#section14">External Third Parties </a> as set out in the following section</p>
 			</li>
 			<li>
 				<p>Third parties to whom we may choose to sell, transfer, or merge parts of our business or our assets. Alternatively, we may seek to acquire other businesses or merge with them. If a change happens to our business, then the new owners may use your personal data in the same way as set out in this privacy notice.</p>
@@ -504,7 +504,7 @@
 			</li>
 		</ul>
 
-		<p>Please <a href="#a599551">contact us</a> <em>[Please insert as hyperlink to contact us section]</em> if you want further information on the specific mechanism used by us when transferring your personal data out of the EEA.</p>
+		<p>Please <a href="{{ route('contactUs') }}">contact us </a>if you want further information on the specific mechanism used by us when transferring your personal data out of the EEA.</p>
 
 
 		<li>
@@ -530,7 +530,7 @@
 
 		<p>By law we have to keep basic information about our customers (including Contact, Identity, and Transaction Data) for six years after they cease being customers for tax purposes.</p>
 
-		<p>In some circumstances you can ask us to delete your data: <a href="#section15"> see Request erasure below for further information.</a></p>
+		<p>In some circumstances you can ask us to delete your data: see <a href="#section15">Request erasure </a>below for further information.</p>
 
 		<p>In some circumstances we may anonymise your personal data (so that it can no longer be associated with you) for research or statistical purposes in which case we may use this information indefinitely without further notice to you.</p>
 
@@ -566,7 +566,7 @@
 			</li>
 		</ul>
 
-		<p>If you wish to exercise any of the rights set out above, please contact us. <em>[Please insert as hyperlink to contact us section]</em></p>
+		<p>If you wish to exercise any of the rights set out above, please <a href="{{ route('contactUs') }}">contact us .</a></p>
 
 		<h3>No fee usually required</h3>
 
@@ -612,7 +612,7 @@
 
 	<p>LAWFUL BASIS</p>
 
-	<p>Legitimate Interest means the interest of our business in conducting and managing our business to enable us to give you the best service/product and the best and most secure experience. We make sure we consider and balance any potential impact on you (both positive and negative) and your rights before we process your personal data for our legitimate interests. We do not use your personal data for activities where our interests are overridden by the impact on you (unless we have your consent or are otherwise required or permitted to by law). You can obtain further information about how we assess our legitimate interests against any potential impact on you in respect of specific activities by <a href="#a599551">contacting us</a>. <em>[Please insert as hyperlink to contact us section]</em></p>
+	<p>Legitimate Interest means the interest of our business in conducting and managing our business to enable us to give you the best service/product and the best and most secure experience. We make sure we consider and balance any potential impact on you (both positive and negative) and your rights before we process your personal data for our legitimate interests. We do not use your personal data for activities where our interests are overridden by the impact on you (unless we have your consent or are otherwise required or permitted to by law). You can obtain further information about how we assess our legitimate interests against any potential impact on you in respect of specific activities by <a href="{{ route('contactUs') }}">contacting us</a>.</p>
 
 	<p>Performance of Contract means processing your data where it is necessary for the performance of a contract to which you are a party or to take steps at your request before entering into such a contract.</p>
 

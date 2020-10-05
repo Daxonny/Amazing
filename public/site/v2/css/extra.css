@@ -45,7 +45,9 @@ li.favourited button.favorurite {
 #amazing-classic-hits h2 span, #amazing-classic-hits a:hover, .player.amazing-classic-hits {
 	background-color: var(--classic-hits);
 }
-
+#amazing-vocals h2 span, #amazing-vocals a:hover, .player.amazing-vocals{
+	background-color: var(--vocals);
+}
 
 
 

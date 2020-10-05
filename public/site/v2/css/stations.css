@@ -149,6 +149,9 @@
     #amazing-smooth-jazz h2:hover {
         background: var(--smooth-and-jazz);
     }
+    #amazing-vocals h2:hover {
+        background: var(--vocals);
+    }
     
     #stations p span {
         display: block;
