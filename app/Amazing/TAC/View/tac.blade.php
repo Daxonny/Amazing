@@ -90,7 +90,7 @@
 
 	<h2 id="section3">There are other terms that may apply to you</h2>
 
-	<p>These terms of use refer to our Privacy Policy <strong>[Please insert as a link to site's privacy policy]</strong>, which also apply to your use of our site.</p>
+	<p>These terms of use refer to our <a href="{{ route('privacy') }}">Privacy Policy</a>, which also apply to your use of our site.</p>
 
 	<h2 id="section4">We may make changes to these terms</h2>
 
@@ -154,7 +154,7 @@
 
 	<h2 id="section13">How to complain about content uploaded by other users</h2>
 
-	<p>If you wish to complain about content uploaded by other users, please contact us on <strong>[Please insert a hyperlink to contact us section]</strong>.</p>
+	<p>If you wish to complain about content uploaded by other users, please contact us <a href="{{ route('contactUs') }}">here</a>.</p>
 
 	<h2 id="section14">Our responsibility for loss or damage suffered by you</h2>
 
@@ -215,7 +215,7 @@
 
 	<h2 id="section15">How we may use your personal information</h2>
 
-	<p>We will only use your personal information as set out in our Privacy Policy <strong>[Please insert a link to privacy policy]</strong>.</p>
+	<p>We will only use your personal information as set out in our <a href="{{ route('privacy') }}">Privacy Policy</a>.</p>
 
 	<h2 id="section16">We are not responsible for viruses and you must not introduce them</h2>
 

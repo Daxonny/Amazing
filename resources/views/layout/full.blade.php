@@ -64,7 +64,7 @@
 						<a href="#">{{ __('global.aboutUs') }}</a>
 					</li>
 					<li>
-						<a href="#">{{ __('global.contactUs') }}</a>
+						<a href="{{ route('contactUs') }}">{{ __('global.contactUs') }}</a>
 					</li>
 				</ul>
 
@@ -134,13 +134,13 @@
 						<a href="{{ route ('privacy') }}">Privacy</a>
 					</li>
 					<li>
-						<a href="{{ route('tac')}}">TAC</a>
+						<a href="{{ route('tac') }}">TAC</a>
 					</li>
 					<li>
 						<a href="#">FAQ</a>
 					</li>
 					<li>
-						<a href="#">Contact</a>
+						<a href="{{ route('contactUs') }}">Contact</a>
 					</li>
 				</ul>
 			</nav>

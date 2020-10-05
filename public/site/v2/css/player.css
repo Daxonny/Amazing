@@ -188,7 +188,7 @@
     grid-row: 3/4;
 }
 
-#volumeControl input[type="range"]:focus {
+#volumeControl input[type="range"] {
     border: none;
     outline: none;
 }
