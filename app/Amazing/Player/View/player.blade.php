@@ -7,11 +7,11 @@
 		<source srcset="{{$station->logo}}.webp, {{$station->logo2x}}.webp 2x" type="image/webp">
 		<img src="{{ $station->logo }}.png" srcset="{{$station->logo}}.png ,{{$station->logo2x}}.png 2x" alt="{{$station->name}}">
 	</picture>
-	<section class="nowPlaying">
+	<section id="nowPlaying">
 		<p property="track" typeof="MusicRecording" data-label="Now Playing">
 			<span class="Playing">Now Playing</span>
-			<span property="byArtist">Billy Price & Fred Chapellier</span>
-			<span property="name">My Love Comes Tumbling Down</span>
+			<span property="byArtist"></span>
+			<span property="name"></span>
 		</p>
 	</section>
 	<button id="playControl" ln-player-action="play" type="button">play</button>
@@ -23,9 +23,39 @@
 	<audio autoplay>
 		<source src="{{ $station->streams[0]->url }}" />
 	</audio>
+	
 </section>
 @endsection
 
 @section('js')
 <script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $station->tritonStationId }}"></script>
+{{-- <script src="//widgets.listenlive.co/1.0/tdwidgets.min.js"></script> --}}
+
+
+
+<script>
+
+	nowPlaying = document.getElementById('nowPlaying');
+	artist = nowPlaying.querySelectorAll('[property="byArtist"]')[0];
+	track = nowPlaying.querySelectorAll('[property="name"]')[0];
+
+	var xhr = new XMLHttpRequest();
+
+	cacheNow = new Date();
+	xhr.open('GET', "http://np.tritondigital.com/public/nowplaying?mountName=AMAZING_CLASSIC_HITS_S01&numberToFetch=1&eventType=track&request.preventCache=1601906085842");
+
+	xhr.onload = function () {
+		if (xhr.status >= 200 && xhr.status < 300) {
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(xhr.responseText,"text/xml");
+			console.log(xmlDoc.querySelectorAll("[name='cue_title']")[0].childNodes[0].nodeValue);
+			artist.innerText = xmlDoc.querySelectorAll("[name='track_artist_name']")[0].childNodes[0].nodeValue;
+			track.innerText = xmlDoc.querySelectorAll("[name='cue_title']")[0].childNodes[0].nodeValue;
+
+		} else {
+		}
+	};
+	xhr.send();
+</script>
+
 @endsection

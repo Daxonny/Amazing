@@ -193,7 +193,7 @@
     outline: none;
 }
 
-#player .nowPlaying {
+#player #nowPlaying {
     background: none;
     margin: auto;
     border-radius: 0;
