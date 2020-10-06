@@ -16,7 +16,7 @@
     --chillout: #f66400;
     --classic-hits: #f7ad00;
     --chillhop: #632c6f;
-    --vocals:#4c9ce0;
+    --vocals: #4c9ce0;
 }
 
 body {
@@ -385,7 +385,7 @@ button.favourite {
 	}*/
     #wrap .share:after {
         position: absolute;
-        left: -50px;
+        left: -49px;
         top: 0;
         content: '';
     }
@@ -455,9 +455,11 @@ button.favourite {
     padding: 20px;
     border: 1px solid rgb(167, 167, 167);
 }
-td ul{
+
+td ul {
     margin-left: 15px;
 }
+
 #content-privacy .sectionPrivacy {
     padding: 0px;
     margin-left: 0px;
@@ -474,14 +476,17 @@ td ul{
 .nameRadio {
     font-size: 15px;
 }
-#privacy-content h2{
+
+#privacy-content h2 {
     margin-top: 30px;
 }
+
 #content-privacy a,
 #content-tac a {
     color: yellow;
 }
+
 #content-privacy a:hover,
-#content-tac a:hover{
+#content-tac a:hover {
     color: var(--linkHover);
 }

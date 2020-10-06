@@ -1,0 +1,21 @@
+{
+    "name": "Amazing Blues",
+    "description": {
+        "en": {
+            "description": "lorem ipsum na angliski",
+            "slogan": "Slusajte"
+        },
+        "de": {
+            "description": "lorem ipsum na germanski",
+            "slogan": "Slusajte"
+        },
+        "fr": {
+            "description": "lorem ipsum na francuski",
+            "slogan": "Slusajte"
+        },
+        "mk": {
+            "description": "lorem ipsum na makedonski",
+            "slogan": "Slusajte"
+        }
+    }
+}

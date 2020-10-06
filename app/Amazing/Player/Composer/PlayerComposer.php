@@ -3,10 +3,10 @@
 namespace App\Amazing\Player\Composer;
 
 use Illuminate\View\View;
-use App\Amazing\Player\Interactor\PlayerInteractor;
+use App\Amazing\Player\Model\VMPlayer;
 
 class PlayerComposer {
 	public function compose(View $view) {
-		$view->with('station', PlayerInteractor::execute());
+		$view->with('station', VMPlayer::execute());
 	}
 }

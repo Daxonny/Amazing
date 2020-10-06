@@ -57,9 +57,9 @@
 					<li>
 					<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
 					</li>
-					<li>
+					{{-- <li>
 						<a href="#">{{ __('global.channels') }}</a>
-					</li>
+					</li> --}}
 					<li>
 						<a href="#">{{ __('global.aboutUs') }}</a>
 					</li>
@@ -128,19 +128,16 @@
 						<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
 					</li>
 					<li>
-						<a href="#">About us</a>
+						<a href="#">{{ __('global.aboutUs') }}</a>
 					</li>
 					<li>
-						<a href="{{ route ('privacy') }}">Privacy</a>
+						<a href="{{ route ('privacy') }}">{{ __('global.privacy') }}</a>
 					</li>
 					<li>
-						<a href="{{ route('tac') }}">TAC</a>
+						<a href="{{ route('tac') }}">{{ __('global.tac') }}</a>
 					</li>
 					<li>
-						<a href="#">FAQ</a>
-					</li>
-					<li>
-						<a href="{{ route('contactUs') }}">Contact</a>
+						<a href="{{ route('contactUs') }}">{{ __('global.contact') }}</a>
 					</li>
 				</ul>
 			</nav>
