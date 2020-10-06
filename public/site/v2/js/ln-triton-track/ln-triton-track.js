@@ -61,9 +61,9 @@
         this.cacheNow = new Date();
         let thiz = this;
         this.xhr.onload = function() {
-            console.log(thiz.xhr);
+            //console.log(thiz.xhr);
             if (thiz.xhr.status >= 200 && thiz.xhr.status < 300) {
-                console.log("Zdravo");
+                //console.log("Zdravo");
                 parser = new DOMParser();
                 xmlDoc = parser.parseFromString(thiz.xhr.responseText, "text/xml");
                 //console.log(xmlDoc.querySelectorAll("[name='cue_title']")[0].childNodes[0].nodeValue);
@@ -77,18 +77,17 @@
         _tritonTrack.call(this);
     }
 
-    // Retrieves the ROT number
     function _handleParam() {
         this.mountName = this.dom.getAttribute(DOM_SELECTOR);
         this.interval = +this.dom.getAttribute(DOM_SELECTOR + "-interval") * 1000;
     }
-    // Obfuscate algorithm
+
     function _tritonTrack() {
         this.xhr.open('GET', "https://np.tritondigital.com/public/nowplaying?mountName=" + this.mountName + "&numberToFetch=1&eventType=track");
         this.xhr.send();
     }
 
-    // make lnObfuscate globaly avaliable
+    // make globaly avaliable
     window[DOM_ATTRIBUTE] = constructor;
     // Ads an obfuscate method to lnObfuscate
     // window[DOM_ATTRIBUTE].tritonTrack = tritonTrack;

@@ -7,7 +7,8 @@
 		<source srcset="{{$station->logo}}.webp, {{$station->logo2x}}.webp 2x" type="image/webp">
 		<img src="{{ $station->logo }}.png" srcset="{{$station->logo}}.png ,{{$station->logo2x}}.png 2x" alt="{{$station->name}}">
 	</picture>
-<section id="nowPlaying" ln-triton-track="{{ $station->mountName }}" ln-triton-track-interval="10">
+	
+	<section id="nowPlaying" ln-triton-track="{{ $station->mountName }}" ln-triton-track-interval="10">
 		<p property="track" typeof="MusicRecording" data-label="Now Playing">
 			<span class="Playing">Now Playing</span>
 			<span property="byArtist"></span>
@@ -23,39 +24,15 @@
 	<audio autoplay>
 		<source src="{{ $station->streams[0]->url }}" />
 	</audio>
-	
+</section>
+<section id="description">
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
 </section>
 @endsection
 
 @section('js')
 <script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $station->tritonStationId }}"></script>
-{{-- <script src="//widgets.listenlive.co/1.0/tdwidgets.min.js"></script> --}}
 <script async type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}"></script>
-
-
-{{-- <script>
-
-	nowPlaying = document.getElementById('nowPlaying');
-	artist = nowPlaying.querySelectorAll('[property="byArtist"]')[0];
-	track = nowPlaying.querySelectorAll('[property="name"]')[0];
-
-	var xhr = new XMLHttpRequest();
-
-	cacheNow = new Date();
-	xhr.open('GET', "http://np.tritondigital.com/public/nowplaying?mountName={{ $station->mountName }}&numberToFetch=1&eventType=track&request.preventCache=1601906085842");
-
-	xhr.onload = function () {
-		if (xhr.status >= 200 && xhr.status < 300) {
-			parser = new DOMParser();
-			xmlDoc = parser.parseFromString(xhr.responseText,"text/xml");
-			console.log(xmlDoc.querySelectorAll("[name='cue_title']")[0].childNodes[0].nodeValue);
-			artist.innerText = xmlDoc.querySelectorAll("[name='track_artist_name']")[0].childNodes[0].nodeValue;
-			track.innerText = xmlDoc.querySelectorAll("[name='cue_title']")[0].childNodes[0].nodeValue;
-
-		} else {
-		}
-	};
-	xhr.send();
-</script> --}}
-
 @endsection

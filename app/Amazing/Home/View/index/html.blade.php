@@ -21,7 +21,7 @@
 						<span property="name">{{ $station->name }}</span>
 					</a>
 				</h2>
-				<section class="nowPlaying">
+				<section class="nowPlaying" ln-triton-track="{{ $station->mountName }}" ln-triton-track-interval="10">
 					<p property="track" typeof="MusicRecording" data-label="Now Playing">
 						<span class="Playing">Now Playing</span>
 						<span property="byArtist">Billy Price & Fred Chapellier</span>
@@ -39,4 +39,9 @@
 	</section>
 
 </section>
+@endsection
+
+@section('js')
+<script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $station->tritonStationId }}"></script>
+<script async type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}"></script>
 @endsection
