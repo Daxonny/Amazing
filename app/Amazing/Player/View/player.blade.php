@@ -7,7 +7,7 @@
 		<source srcset="{{$station->logo}}.webp, {{$station->logo2x}}.webp 2x" type="image/webp">
 		<img src="{{ $station->logo }}.png" srcset="{{$station->logo}}.png ,{{$station->logo2x}}.png 2x" alt="{{$station->name}}">
 	</picture>
-	<section id="nowPlaying">
+<section id="nowPlaying" ln-triton-track="{{ $station->mountName }}" ln-triton-track-interval="10">
 		<p property="track" typeof="MusicRecording" data-label="Now Playing">
 			<span class="Playing">Now Playing</span>
 			<span property="byArtist"></span>
@@ -30,10 +30,10 @@
 @section('js')
 <script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $station->tritonStationId }}"></script>
 {{-- <script src="//widgets.listenlive.co/1.0/tdwidgets.min.js"></script> --}}
+<script async type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}"></script>
 
 
-
-<script>
+{{-- <script>
 
 	nowPlaying = document.getElementById('nowPlaying');
 	artist = nowPlaying.querySelectorAll('[property="byArtist"]')[0];
@@ -42,7 +42,7 @@
 	var xhr = new XMLHttpRequest();
 
 	cacheNow = new Date();
-	xhr.open('GET', "http://np.tritondigital.com/public/nowplaying?mountName=AMAZING_CLASSIC_HITS_S01&numberToFetch=1&eventType=track&request.preventCache=1601906085842");
+	xhr.open('GET', "http://np.tritondigital.com/public/nowplaying?mountName={{ $station->mountName }}&numberToFetch=1&eventType=track&request.preventCache=1601906085842");
 
 	xhr.onload = function () {
 		if (xhr.status >= 200 && xhr.status < 300) {
@@ -56,6 +56,6 @@
 		}
 	};
 	xhr.send();
-</script>
+</script> --}}
 
 @endsection
