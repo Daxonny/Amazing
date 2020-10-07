@@ -1,0 +1,31 @@
+#contactUs input[type=text],
+#contactUs select,
+#contactUs textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#contactUs input[type=submit] {
+    background-color: var(--bg);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contactUs input[type=submit]:hover {
+    color: var(--linkHover);
+}
+
+#contactUs {
+    background-color: var(--linkHover);
+    padding: 20px;
+    font-size: 20px;
+}
