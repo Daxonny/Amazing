@@ -36,6 +36,7 @@
 	<!-- Implement Accept image/webp -->
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/webp.min.css') }}" media="screen">
 
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 
 
 	<meta name="description" content="Amazing Radios is free internet radio network, providing free music in various genres" />
@@ -44,6 +45,11 @@
 	@include('layout.headerSnippets.fb')
 	@include('layout.headerSnippets.icons')
 
+	<script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
 </head>
 <body id="index" vocab="http://schema.org/">
 	<div id="wrap">

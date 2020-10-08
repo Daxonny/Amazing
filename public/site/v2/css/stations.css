@@ -1,6 +1,27 @@
 @media only screen and (min-width: 1000px) {
     #headerLogo h1 {
         position: absolute;
+        margin-top: 41px;
+        position: absolute;
+        width: 100%;
+        margin-left: 713px;
+        font-size: 30px;
+        color:black;
+        text-transform: uppercase;
+        font-weight: bold; 
+    }
+    #headerLogo p{
+        position: absolute;
+        margin-top: 77px;
+        position: absolute;
+        width: 100%;
+        margin-left: 712px;
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+    }
+    #headerLogo{
+        width: 100%;
     }
     #languages ul {
         width: 12rem;

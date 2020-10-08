@@ -1,7 +1,8 @@
 @extends('layout.ln')
 
 @section('logoHeader')
-<h1>Listen AMAZING RADIOS live now</h1>
+<h1>AMAZING RADIOS </h1>
+<p>Listen live now</p>
 <img src="{{ 'logos/header/header_amazing-radios-01.jpg' }}" alt="Amazing Radios Logo" class="ar-logo">
 @endsection
 
