@@ -1,25 +1,22 @@
+@media only screen and (min-width: 1000px) {
     #headerLogo h1 {
         position: absolute;
     }
-    
     #languages ul {
         width: 12rem;
         display: flex;
         justify-content: space-between;
         list-style: none;
     }
-    
     #languages ul li img {
         width: 30px;
         height: 16px;
     }
-    
     #content-station {
         display: grid;
         grid-template-columns: auto auto;
         margin-top: 10px;
     }
-    
     #stations li {
         background-color: rgb(186, 186, 186);
         position: relative;
@@ -27,7 +24,6 @@
         -moz-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
         box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
     }
-    
     #ad {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -35,7 +31,6 @@
         width: 300px;
         height: 600px;
     }
-    
     .stationList {
         display: grid;
         grid-template-columns: 200px 200px 200px 200px;
@@ -43,20 +38,17 @@
         column-gap: 17px;
         row-gap: 40px;
     }
-    
     .stationList h2 {
         background: rgb(194, 188, 188);
         background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
         transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
     }
-    
     #stations img {
         width: 180px;
         height: 180px;
         display: block;
         padding: 10px;
     }
-    
     [typeof="RadioStation"] [property="name"] {
         display: block;
         padding: 3px;
@@ -68,7 +60,6 @@
         -moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
         box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
     }
-    
     .nowPlaying {
         background-color: white;
         position: relative;
@@ -78,18 +69,15 @@
         text-align: center;
         font-weight: 400;
     }
-    
     [typeof="MusicRecords"] [property="name"] {
         background-color: white;
         font-size: 15px;
         padding: 2px;
         text-transform: none;
     }
-    
     #stations li a {
         position: relative;
     }
-    
     #stations li a:hover::after {
         font-family: "Material Icons";
         font-size: 90px;
@@ -102,11 +90,9 @@
         color: #fff;
         line-height: 220px;
     }
-    
     #stations li a:hover img {
         opacity: .3;
     }
-    
     [property="byArtist"] {
         display: block;
         text-overflow: ellipsis;
@@ -116,43 +102,34 @@
         font-size: 16px;
         color: black;
     }
-    
     [property="track"] {
         font-weight: 300;
         font-size: 14px;
     }
-    
     #stations {
         color: var(--track);
     }
-    
     #amazing-80s h2:hover {
         background: var(--a80s);
     }
-    
     #amazing-blues h2:hover {
         background: var(--blues);
     }
-    
     #amazing-chillout h2:hover {
         background: var(--chillout);
     }
-    
     #amazing-chillhop h2:hover {
         background: var(--chillhop);
     }
-    
     #amazing-classic-hits h2:hover {
         background: var(--classic-hits);
     }
-    
     #amazing-smooth-jazz h2:hover {
         background: var(--smooth-and-jazz);
     }
     #amazing-vocals h2:hover {
         background: var(--vocals);
     }
-    
     #stations p span {
         display: block;
         text-overflow: ellipsis;
@@ -160,7 +137,6 @@
         white-space: nowrap;
         line-height: 1.3em;
     }
-    
     .fav {
         font-family: "Material Icons";
         background: transparent;
@@ -174,22 +150,19 @@
         color: var(--favouriteNormal);
         cursor: pointer;
     }
-    
     .fav.active {
         color: var(--favouriteActive);
     }
-    
     .fav:hover {
         color: var(--favouriteHover);
     }
-    
     .Playing {
         text-transform: uppercase;
         color: var(--now-playing);
         font-size: 12px;
         text-align: center;
     }
-    
     .nowPlaying [property="name"] {
         color: rgb(49, 46, 46);
     }
+}

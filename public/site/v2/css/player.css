@@ -129,107 +129,181 @@
 	grid-template-columns: auto;
 } */
 
-#player {
-    background: linear-gradient(180deg, rgba(203, 171, 48, 1) 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
-    padding: 20px;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 250px 70px 300px auto;
-    grid-template-rows: auto auto auto;
-    box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
+@media only screen and (min-width: 1000px) {
+    /* #wrap {
+        margin: auto;
+    } */
+    #player {
+        background: linear-gradient(180deg, rgba(203, 171, 48, 1) 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
+        padding: 20px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 250px 70px 300px auto;
+        grid-template-rows: auto auto auto;
+        box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+    #player picture {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #player img {
+        border: 5px solid white;
+        width: 200px;
+        height: 200px;
+    }
+    #player button {
+        color: white;
+        background-color: darkred;
+    }
+    #player button:hover {
+        cursor: pointer;
+    }
+    #playControl,
+    #stopControl {
+        height: 70px;
+        width: 70px;
+        font-size: 50px;
+        border-radius: 100%;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: auto;
+    }
+    #playControl {
+        visibility: hidden;
+    }
+    #volumeControl {
+        width: 200px;
+        padding: 5px;
+        background-color: darkred;
+        display: flex;
+        line-height: 30px;
+        margin-top: -6px;
+        border-radius: 0px 0px 15px 15px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #volumeControl input[type="range"] {
+        border: none;
+        outline: none;
+    }
+    #player #nowPlaying {
+        background: none;
+        margin: auto 15px;
+        border-radius: 0;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #player .Playing {
+        color: darkred;
+    }
+    #player h1 {
+        font-size: 20px;
+        text-align: center;
+        margin: 0px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: darkred;
+        line-height: 45px;
+        width: 210px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .stationList h2 {
+        font-size: 20px;
+    }
+    .stationList p {
+        margin: 0px;
+    }
+    #stationLogo {
+        padding: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    audio {
+        margin: 10px;
+        width: 200px;
+    }
 }
 
-#player picture {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-#player img {
-    border: 5px solid white;
-    width: 200px;
-    height: 200px;
-}
-
-#player button {
-    color: white;
-    background-color: darkred;
-}
-
-#player button:hover {
-    cursor: pointer;
-}
-
-#playControl,
-#stopControl {
-    height: 70px;
-    width: 70px;
-    font-size: 50px;
-    border-radius: 100%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin: auto;
-}
-
-#playControl {
-    visibility: hidden;
-}
-
-#volumeControl {
-    width: 200px;
-    padding: 5px;
-    background-color: darkred;
-    display: flex;
-    line-height: 30px;
-    margin-top: -6px;
-    border-radius: 0px 0px 15px 15px;
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-#volumeControl input[type="range"] {
-    border: none;
-    outline: none;
-}
-
-#player #nowPlaying {
-    background: none;
-    margin: auto 15px;
-    border-radius: 0;
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-#player .Playing {
-    color: darkred;
-}
-
-#player h1 {
-    font-size: 20px;
-    text-align: center;
-    margin: 0px;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    background-color: darkred;
-    line-height: 45px;
-    width: 210px;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.stationList h2 {
-    font-size: 20px;
-}
-
-.stationList p {
-    margin: 0px;
-}
-
-#stationLogo {
-    padding: 30px;
-    width: 200px;
-    height: 200px;
-}
-
-audio {
-    margin: 10px;
-    width: 200px;
+@media only screen and (max-width: 999px) {
+    #player {
+        width: 80%;
+        margin: auto;
+        height: 450px;
+        text-align: center;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(203, 171, 48, 1) 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
+        padding: 20px;
+        overflow: hidden;
+        box-shadow: 14px 10px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+    #player img {
+        border: 5px solid white;
+        width: 200px;
+        height: 200px;
+    }
+    #player button {
+        color: white;
+        background-color: darkred;
+    }
+    #player button:hover {
+        cursor: pointer;
+    }
+    #playControl,
+    #stopControl {
+        height: 70px;
+        width: 70px;
+        font-size: 50px;
+        border-radius: 100%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        margin: 40px auto;
+    }
+    #playControl {
+        visibility: hidden;
+    }
+    #volumeControl {
+        width: 200px;
+        padding: 5px;
+        background-color: darkred;
+        line-height: 30px;
+        margin: -129px auto auto auto;
+        border-radius: 0px 0px 15px 15px;
+    }
+    #volumeControl input[type="range"] {
+        border: none;
+        outline: none;
+    }
+    #player #nowPlaying {
+        background: none;
+        margin: auto 15px;
+        border-radius: 0;
+        margin: 50px auto auto auto;
+    }
+    #player .Playing {
+        color: darkred;
+    }
+    #player h1 {
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        background-color: darkred;
+        line-height: 45px;
+        width: 210px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .stationList h2 {
+        font-size: 20px;
+    }
+    .stationList p {
+        margin: 0px;
+    }
+    #stationLogo {
+        padding: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    audio {
+        margin: 10px;
+        width: 200px;
+    }
 }

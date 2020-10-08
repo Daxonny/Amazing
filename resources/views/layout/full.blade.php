@@ -62,7 +62,7 @@
 						<a href="#">{{ __('global.channels') }}</a>
 					</li> --}}
 					<li>
-						<a href="#">{{ __('global.aboutUs') }}</a>
+						<a href="{{ route('aboutUs') }}">{{ __('global.aboutUs') }}</a>
 					</li>
 					<li>
 						<a href="{{ route('contactUs') }}">{{ __('global.contactUs') }}</a>
@@ -129,7 +129,7 @@
 						<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
 					</li>
 					<li>
-						<a href="#">{{ __('global.aboutUs') }}</a>
+						<a href="{{ route('aboutUs') }}">{{ __('global.aboutUs') }}</a>
 					</li>
 					<li>
 						<a href="{{ route ('privacy') }}">{{ __('global.privacy') }}</a>

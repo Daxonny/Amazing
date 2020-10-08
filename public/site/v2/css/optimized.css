@@ -121,8 +121,223 @@ button.favourite {
 
 /*Mobile*/
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
+    h3 {
+        margin: 0px;
+    }
     header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        text-align: center;
+    }
+    header #logo {
+        width: 100px;
+        height: 100%;
+    }
+    #languages ul li img {
+        width: 30px;
+        height: 16px;
+    }
+    #languages ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+    #languages li {
+        list-style: none;
+        position: relative;
+        display: block;
+        padding: 5px;
+    }
+    #wrap .share {
+        position: absolute;
+        right: 0;
+        top: -40px;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    #wrap .share:after {
+        position: absolute;
+        left: -49px;
+        top: 0;
+        content: '';
+    }
+    #wrap .share li {
+        float: left;
+        margin: 0 6px;
+    }
+    .share,
+    .stationList {
+        list-style: none;
+    }
+    #headerLogo img {
+        width: 100%;
+    }
+    #headerLogo h1 {
+        position: absolute;
+        margin-top: 25px;
+        width: 100px;
+        font-size: 10px;
+        margin-left: 55%;
+        color: black;
+        line-height: 15px;
+    }
+    #content-station {
+        display: flex;
+        margin-top: 10px;
+    }
+    #stations li {
+        background-color: rgb(186, 186, 186);
+        position: relative;
+        -webkit-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+        box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+    }
+    #stations {
+        margin: auto;
+    }
+    .stationList {
+        margin: auto;
+        width: 200px;
+    }
+    .stationList li {
+        margin-bottom: 25px;
+        margin: auto auto 25px auto;
+    }
+    .stationList h2 {
+        background: rgb(194, 188, 188);
+        background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
+        transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
+    }
+    #stations img {
+        width: 180px;
+        height: 180px;
+        padding: 10px;
+    }
+    [typeof="RadioStation"] [property="name"] {
+        display: block;
+        padding: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        width: auto;
+        font-size: 15px;
+        -webkit-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+        -moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+        box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+    }
+    .nowPlaying {
+        background-color: white;
+        position: relative;
+        border-bottom-right-radius: 70px;
+        font-size: 15px;
+        padding: 2px 22px 10px 22px;
+        text-align: center;
+        font-weight: 400;
+    }
+    [typeof="MusicRecords"] [property="name"] {
+        background-color: white;
+        font-size: 15px;
+        padding: 2px;
+        text-transform: none;
+    }
+    #stations li a {
+        position: relative;
+    }
+    [property="byArtist"] {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 1.3em;
+        font-size: 16px;
+        color: black;
+    }
+    [property="track"] {
+        font-weight: 300;
+        font-size: 14px;
+    }
+    #stations {
+        color: var(--track);
+    }
+    #stations p span {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 1.3em;
+    }
+    .fav {
+        font-family: "Material Icons";
+        background: transparent;
+        font-size: 20px;
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: var(--favouriteNormal);
+        cursor: pointer;
+    }
+    .fav.active {
+        color: var(--favouriteActive);
+    }
+    .fav:active {
+        color: var(--favouriteHover);
+    }
+    .Playing {
+        text-transform: uppercase;
+        color: var(--now-playing);
+        font-size: 12px;
+        text-align: center;
+    }
+    .nowPlaying [property="name"] {
+        color: rgb(49, 46, 46);
+    }
+    footer {
+        border-top: 4px solid var(--linkHover);
+        background-color: rgba(31, 65, 84, .5);
+    }
+    footer nav {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+    footer ul {
+        display: grid;
+    }
+    footer li {
+        margin: 5px 5px;
+    }
+    footer img {
+        width: 100%;
+        height: 80px;
+    }
+    #contactUs {
+        margin-bottom: 30px;
+    }
+    #content-tac #header {
+        text-align: center;
+    }
+    #content-privacy a,
+    #content-tac a {
+        color: yellow;
+    }
+    #content-privacy a:active,
+    #content-tac a:active {
+        color: var(--linkHover);
+    }
+    #content-privacy table {
+        display: none;
+    }
+    #content-tac,
+    #content-privacy {
+        padding: 20px;
+        background-color: rgba(31, 65, 84, .9);
+        line-height: 1.5em;
+    }
+    /* header {
         height: 80px;
         text-align: center;
         position: fixed;
@@ -230,6 +445,227 @@ button.favourite {
         color: #000;
         padding-right: 35px;
         padding-left: 130px;
+    } */
+}
+
+
+/*Tablet*/
+
+@media only screen and (max-width: 999px) {
+    h3 {
+        margin: 0px;
+    }
+    header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        text-align: center;
+    }
+    header #logo {
+        width: 100px;
+        height: 100%;
+    }
+    #languages ul li img {
+        width: 30px;
+        height: 16px;
+    }
+    #languages ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+    #languages li {
+        list-style: none;
+        position: relative;
+        display: block;
+        padding: 5px;
+    }
+    #wrap .share {
+        position: absolute;
+        right: 0;
+        top: -40px;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    #wrap .share:after {
+        position: absolute;
+        left: -49px;
+        top: 0;
+        content: '';
+    }
+    #wrap .share li {
+        float: left;
+        margin: 0 6px;
+    }
+    .share,
+    .stationList {
+        list-style: none;
+    }
+    #headerLogo img {
+        width: 100%;
+    }
+    #headerLogo h1 {
+        position: absolute;
+        margin-top: 25px;
+        width: 100px;
+        font-size: 10px;
+        margin-left: 55%;
+        color: black;
+        line-height: 15px;
+    }
+    #content-station {
+        display: flex;
+        margin-top: 10px;
+    }
+    #stations li {
+        background-color: rgb(186, 186, 186);
+        position: relative;
+        -webkit-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+        box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+    }
+    #stations {
+        margin: auto;
+    }
+    .stationList {
+        margin: auto;
+        width: 200px;
+    }
+    .stationList li {
+        margin-bottom: 25px;
+        margin: auto auto 25px auto;
+    }
+    .stationList h2 {
+        background: rgb(194, 188, 188);
+        background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
+        transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
+    }
+    #stations img {
+        width: 180px;
+        height: 180px;
+        padding: 10px;
+    }
+    [typeof="RadioStation"] [property="name"] {
+        display: block;
+        padding: 3px;
+        text-transform: uppercase;
+        text-align: center;
+        width: auto;
+        font-size: 15px;
+        -webkit-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+        -moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+        box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+    }
+    .nowPlaying {
+        background-color: white;
+        position: relative;
+        border-bottom-right-radius: 70px;
+        font-size: 15px;
+        padding: 2px 22px 10px 22px;
+        text-align: center;
+        font-weight: 400;
+    }
+    [typeof="MusicRecords"] [property="name"] {
+        background-color: white;
+        font-size: 15px;
+        padding: 2px;
+        text-transform: none;
+    }
+    #stations li a {
+        position: relative;
+    }
+    [property="byArtist"] {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 1.3em;
+        font-size: 16px;
+        color: black;
+    }
+    [property="track"] {
+        font-weight: 300;
+        font-size: 14px;
+    }
+    #stations {
+        color: var(--track);
+    }
+    #stations p span {
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 1.3em;
+    }
+    .fav {
+        font-family: "Material Icons";
+        background: transparent;
+        font-size: 20px;
+        position: absolute;
+        bottom: 3px;
+        right: 3px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: var(--favouriteNormal);
+        cursor: pointer;
+    }
+    .fav.active {
+        color: var(--favouriteActive);
+    }
+    .fav:active {
+        color: var(--favouriteHover);
+    }
+    .Playing {
+        text-transform: uppercase;
+        color: var(--now-playing);
+        font-size: 12px;
+        text-align: center;
+    }
+    .nowPlaying [property="name"] {
+        color: rgb(49, 46, 46);
+    }
+    footer {
+        border-top: 4px solid var(--linkHover);
+        background-color: rgba(31, 65, 84, .5);
+    }
+    footer nav {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+    }
+    footer ul {
+        display: grid;
+    }
+    footer li {
+        margin: 5px 5px;
+    }
+    footer img {
+        width: 100%;
+        height: 80px;
+    }
+    #contactUs {
+        margin-bottom: 30px;
+    }
+    #content-tac #header {
+        text-align: center;
+    }
+    #content-privacy a,
+    #content-tac a {
+        color: yellow;
+    }
+    #content-privacy a:active,
+    #content-tac a:active {
+        color: var(--linkHover);
+    }
+    #content-privacy table {
+        display: none;
+    }
+    #content-tac,
+    #content-privacy {
+        padding: 20px;
+        background-color: rgba(31, 65, 84, .9);
+        line-height: 1.5em;
     }
 }
 
@@ -237,10 +673,11 @@ button.favourite {
 /*Desktop*/
 
 @media only screen and (min-width: 1000px) {
-    #wrap {
+    /* #wrap {
         width: 1000px;
         grid-template-rows: 140px auto 140px;
-    }
+        margin: 0px;
+    } */
     input[name=nav]+label {
         display: none;
     }
@@ -403,11 +840,71 @@ button.favourite {
         height: 600px;
         grid-area: ad;
     }
+    .share,
+    .stationList {
+        list-style: none;
+        margin: 0;
+    }
+    #content-tac,
+    #content-privacy {
+        background-color: rgba(31, 65, 84, .9);
+        padding: 50px;
+        line-height: 1.5em;
+    }
+    #content-privacy .sections {
+        margin-left: 80px;
+        color: yellow;
+        list-style: decimal;
+    }
+    #content-privacy tr {
+        background-color: rgba(255, 255, 255, .2);
+    }
+    #content-privacy tr ol {
+        list-style: lower-alpha;
+    }
+    #content-privacy tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, .3);
+    }
+    #content-privacy td {
+        padding: 20px;
+        border: 1px solid rgb(167, 167, 167);
+    }
+    td ul {
+        margin-left: 15px;
+    }
+    #content-privacy .sectionPrivacy {
+        padding: 0px;
+        margin-left: 0px;
+    }
+    #content-tac #header {
+        text-align: center;
+    }
+    .stationList {
+        list-style: none;
+    }
+    .nameRadio {
+        font-size: 15px;
+    }
+    #privacy-content h2 {
+        margin-top: 30px;
+    }
+    #content-privacy a,
+    #content-tac a {
+        color: yellow;
+    }
+    #content-privacy a:hover,
+    #content-tac a:hover {
+        color: var(--linkHover);
+    }
 }
 
 @media only screen and (min-width: 1170px) {
     #wrap {
         width: 1170px;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: grid;
+       
     }
     #channels ul {
         grid-template-columns: 200px 200px 200px 200px;
@@ -418,75 +915,4 @@ button.favourite {
         height: 600px;
         grid-area: ad;
     }
-}
-
-.share,
-.stationList {
-    list-style: none;
-    margin: 0;
-}
-
-#content-tac,
-#content-privacy {
-    background-color: rgba(31, 65, 84, .9);
-    padding: 50px;
-    line-height: 1.5em;
-}
-
-#content-privacy .sections {
-    margin-left: 80px;
-    color: yellow;
-    list-style: decimal;
-}
-
-#content-privacy tr {
-    background-color: rgba(255, 255, 255, .2);
-}
-
-#content-privacy tr ol {
-    list-style: lower-alpha;
-}
-
-#content-privacy tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-#content-privacy td {
-    padding: 20px;
-    border: 1px solid rgb(167, 167, 167);
-}
-
-td ul {
-    margin-left: 15px;
-}
-
-#content-privacy .sectionPrivacy {
-    padding: 0px;
-    margin-left: 0px;
-}
-
-#content-tac #header {
-    text-align: center;
-}
-
-.stationList {
-    list-style: none;
-}
-
-.nameRadio {
-    font-size: 15px;
-}
-
-#privacy-content h2 {
-    margin-top: 30px;
-}
-
-#content-privacy a,
-#content-tac a {
-    color: yellow;
-}
-
-#content-privacy a:hover,
-#content-tac a:hover {
-    color: var(--linkHover);
 }
