@@ -130,9 +130,6 @@
 } */
 
 @media only screen and (min-width: 1000px) {
-    /* #wrap {
-        margin: auto;
-    } */
     #player {
         background: linear-gradient(180deg, rgba(203, 171, 48, 1) 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
         padding: 20px;

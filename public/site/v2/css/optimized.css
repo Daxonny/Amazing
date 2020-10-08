@@ -673,11 +673,6 @@ button.favourite {
 /*Desktop*/
 
 @media only screen and (min-width: 1000px) {
-    /* #wrap {
-        width: 1000px;
-        grid-template-rows: 140px auto 140px;
-        margin: 0px;
-    } */
     input[name=nav]+label {
         display: none;
     }
@@ -810,7 +805,7 @@ button.favourite {
     #wrap .share {
         position: absolute;
         right: 0;
-        top: -50px;
+        top: -49px;
         line-height: 50px;
         font-size: 42px;
     }
