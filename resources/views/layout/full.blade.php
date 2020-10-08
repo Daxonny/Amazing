@@ -45,11 +45,6 @@
 	@include('layout.headerSnippets.fb')
 	@include('layout.headerSnippets.icons')
 
-	<script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
 </head>
 <body id="index" vocab="http://schema.org/">
 	<div id="wrap">
