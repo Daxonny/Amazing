@@ -580,7 +580,7 @@ button.favourite {
     .stationList {
         margin: auto;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         column-gap: 15px;
     }
     .Playing span{
