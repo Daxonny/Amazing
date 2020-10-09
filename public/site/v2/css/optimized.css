@@ -451,7 +451,7 @@ button.favourite {
 
 /*Tablet*/
 
-@media only screen and (max-width: 999px) {
+@media only screen and (min-width: 701px) {
     h3 {
         margin: 0px;
     }
@@ -526,10 +526,16 @@ button.favourite {
     }
     #stations {
         margin: auto;
+        color: var(--track);
     }
     .stationList {
         margin: auto;
-        width: 200px;
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 15px;
+    }
+    .Playing span{
+        width: 150px;
     }
     .stationList li {
         margin-bottom: 25px;
@@ -587,15 +593,15 @@ button.favourite {
         font-weight: 300;
         font-size: 14px;
     }
-    #stations {
-        color: var(--track);
-    }
     #stations p span {
         display: block;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
         line-height: 1.3em;
+    }
+    #stations .nowPlaying span {
+        width: 150px;
     }
     .fav {
         font-family: "Material Icons";
@@ -709,6 +715,9 @@ button.favourite {
     a {
         border: none;
         outline: none;
+    }
+    #headerLogo img {
+        width: 100%;
     }
     #wrap>footer {
         margin-top: 30px;
@@ -890,6 +899,9 @@ button.favourite {
     #content-privacy a:hover,
     #content-tac a:hover {
         color: var(--linkHover);
+    }
+    .nowPlaying span {
+        width: 150px;
     }
 }
 

@@ -221,9 +221,8 @@
     }
 }
 
-@media only screen and (max-width: 999px) {
+@media only screen and (max-width: 1000px) {
     #player {
-        width: 80%;
         margin: auto;
         height: 450px;
         text-align: center;
@@ -235,7 +234,8 @@
     }
     #player img {
         border: 5px solid white;
-        width: 200px;
+        width: 86%;
+        margin: auto;
         height: 200px;
     }
     #player button {
@@ -259,7 +259,7 @@
         visibility: hidden;
     }
     #volumeControl {
-        width: 200px;
+        width: 86%;
         padding: 5px;
         background-color: darkred;
         line-height: 30px;
@@ -285,7 +285,7 @@
         margin: auto;
         background-color: darkred;
         line-height: 45px;
-        width: 210px;
+        width: 90%;
         border-radius: 15px 15px 0px 0px;
     }
     .stationList h2 {
