@@ -227,11 +227,14 @@ button.favourite {
     }
     .stationList {
         margin: auto;
-        width: 200px;
+        display:grid;
+        grid-template-columns: auto auto ;
+        column-gap: 5px;
     }
     .stationList li {
         margin-bottom: 25px;
         margin: auto auto 25px auto;
+        width:150px;
     }
     .stationList h2 {
         background: rgb(194, 188, 188);
@@ -239,8 +242,8 @@ button.favourite {
         transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
     }
     #stations img {
-        width: 180px;
-        height: 180px;
+        width: 130px;
+        height: 130px;
         padding: 10px;
     }
     [typeof="RadioStation"] [property="name"] {
@@ -249,7 +252,7 @@ button.favourite {
         text-transform: uppercase;
         text-align: center;
         width: auto;
-        font-size: 15px;
+        font-size: 13px;
         -webkit-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
         -moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
         box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
@@ -322,6 +325,9 @@ button.favourite {
     }
     .nowPlaying [property="name"] {
         color: rgb(49, 46, 46);
+    }
+    .nowPlaying span{
+        width:100px;
     }
     footer {
         border-top: 4px solid var(--linkHover);
@@ -576,6 +582,9 @@ button.favourite {
     }
     .Playing span{
         width: 150px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     .stationList li {
         margin-bottom: 25px;
