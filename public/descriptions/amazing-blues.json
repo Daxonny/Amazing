@@ -2,20 +2,25 @@
     "name": "Amazing Blues",
     "description": {
         "en": {
-            "description": "Amazing Blues is a solid blues radio station, the perfect company for a blues soul like you! If listening to blues music is what drives your day, well, you can't miss this fantastic blues radio station, with much more soul than other blues radio stations online, so if you are in NYC or in Mississipi, TUNE IN NOW, and spend a fantastic afternoon with the blues music of your heart!",
-            "slogan": "Tune in now, and blues your day"
+            "description": [
+                "<p><strong>Amazing Blues</strong> is a solid blues radio station, the <strong>perfect company for a blues soul like you</strong>! If listening to blues music is what drives your day, well, you can't miss this fantastic blues radio station, with&nbsp;<strong>much more soul than other blues radio stations online</strong>, so if you are in The <abbr title=\"New York City\">NYC</abbr> or in Mississipi, TUNE IN NOW, and spend a fantastic afternoon with the blues music of your heart!</p>",
+                "<p><strong>Eric Clapton, Amy Whinehouse, Tina Turner</strong>, are only three of the great artists that color our wonderful <strong>Amazing Blues Station</strong>.</p>",
+                "<p>Many studies found out that blues music has a deep and positive impact on our stress levels, and listening to blues on radios has the advantage that you don&rsquo;t have to choose, we will always think of the songs best suitable for you!</p>",
+                "<p>We bet you came across a whole list of <strong>blues radio stations</strong> on the internet, but for us the music is all that matters, and as blues music fans, we choose only the best blues music, primarily for you but also for us!</p>"
+            ],
+            "slogan": "<p>Tune in now, and blues your day!</p>"
         },
         "de": {
-            "description": "lorem ipsum na germanski",
-            "slogan": "Slusajte"
+            "description": "",
+            "slogan": ""
         },
         "fr": {
-            "description": "lorem ipsum na francuski",
-            "slogan": "Slusajte"
+            "description": "",
+            "slogan": ""
         },
         "mk": {
-            "description": "lorem ipsum na makedonski",
-            "slogan": "Slusajte"
+            "description": "",
+            "slogan": ""
         }
     }
 }

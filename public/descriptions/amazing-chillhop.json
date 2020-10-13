@@ -2,8 +2,14 @@
     "name": "Amazing Chillhop",
     "description": {
         "en": {
-            "description": "Amazing Chillhop is a radio station perfect for relaxing while studying or working out! Hip hop merges with electronic music, and the beat merges with the synths, in our fantastic radio, which will accompany your days faithfully.",
-            "slogan": "Work hard, Chillhop harder!"
+            "description": [
+                "<p><strong>Amazing Chillhop</strong> is a radio station <strong>perfect for relaxing while studying or working out</strong>! <strong>Hip hop</strong> merges with <strong>electronic music</strong>, and the beat merges with the <strong>synths</strong>, in our fantastic radio, which will accompany your days faithfully.</p>",
+                "<p>Working won&rsquo;t be so stressful anymore, even in worst days, and when the sun gets down and you are free to go, it will welcome you to an evening of <strong>trip hop, jazzy and lofi hip hop beats</strong>.</p>",
+                "<p>Perfect for students, for workers, and also for total relax days. Help your brain work better, listen to chillhop music on fantastic <strong>Chillhop Radio Station</strong>.</p>",
+                "<p>In the last years, this genre has become viral, and many young people started to use Chillhop to study better, relying on indipendent chillhop radio stations. But many of them aren&rsquo;t versatile, focusing on working or studying activities.</p>",
+                "<p>On <strong>Amazing Chillhop</strong>, on the contrary, you can find the right beats for everything you need, from working to studying to relaxing and working out!</p>"
+            ],
+            "slogan": "<p>Work hard, Chillhop harder!</p>"
         },
         "de": {
             "description": "lorem ipsum na germanski",
