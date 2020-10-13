@@ -8,7 +8,7 @@ use App\Amazing\IVM;
 class VMPlayer implements IVM {
 	public static function execute(){
 		$stationSlug = request()->path();
-		$descriptions = json_decode(file_get_contents('descriptions/'.$stationSlug.'.json'));
+		$descriptions = PlayerInteractor::execute();
 		$description = self::_getDescription($descriptions);
 		$stations = VMStations::execute()->stations;
 		foreach($stations as $station) {
