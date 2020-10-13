@@ -3,6 +3,7 @@
 namespace App\Amazing\Player\Model;
 
 use App\Amazing\Home\Model\VMStations;
+use App\Amazing\Player\Interactor\PlayerInteractor;
 use App\Amazing\IVM;
 
 class VMPlayer implements IVM {
