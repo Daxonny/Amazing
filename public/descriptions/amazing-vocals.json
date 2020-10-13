@@ -2,8 +2,15 @@
     "name": "Amazing Vocals",
     "description": {
         "en": {
-            "description": "Amazing Vocals is a terrific radio station created for untamable souls. Feel the strenght of GREAT VOCALS, listen to heartbreaking falsettos, and bring in all the angelic acutes you can think of!",
-            "slogan": "Give voice to your heart, listen to Amazing Vocals!"
+            "description": [
+                "<p><strong>Amazing Vocals</strong>&nbsp;is a terrific radio station created for untamable souls. Feel the strenght of <strong>GREAT VOCALS</strong>, listen to <strong>heartbreaking falsettos</strong>, and bring in all the <strong>angelic acutes</strong> you can think of!</p>",
+                "<p><strong>Beyonce, Whitney Houston, Freddy Mercury and Celine Dion</strong> are only some of the artists you will listen to on our radio, but you can always count on our choice of heart.</p>",
+                "<p>Do you already know all the <strong>best voices of America, Europe, and of the whole world</strong>? If the answer is no, you can develope your knowledge and your heart by listening to our <strong>Amazing Vocals</strong> stations, where best voices ever find their natural place!</p>",
+                "<p>Ariana Grande&rsquo;s acutes make your heart beat faster? Pink&rsquo;s ruspy voice makes your brain explode?</p>",
+                "<p>Choose <strong>Amazing Vocals</strong>, and <strong>fill your days with strong vocals, amazing singers, and pieces of real music</strong>!</p>",
+                "<p>&ldquo;My heart will go on&ldquo; by Celine Dion, Pink&rsquo;s&nbsp;&ldquo;So what&ldquo;, and &ldquo;Crying&rdquo; by the Aerosmith are some of the songs you will hear, but we are also exploring new songs, so you will never know what great song you will listen to!</p>"
+            ],
+            "slogan": "<p>Give voice to your heart, listen to Amazing Vocals!</p>"
         },
         "de": {
             "description": "lorem ipsum na germanski",

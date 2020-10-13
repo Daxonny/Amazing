@@ -2,8 +2,13 @@
     "name": "Amazing 80's",
     "description": {
         "en": {
-            "description": "Amazing 80’s is a radio suspended between then and now, between the strange modernity of the 80’s and the sound of the past becomes new everyday.",
-            "slogan": "Feel the 80’s vibe, feel your vibe."
+            "description": [
+                "<p><strong>Amazing 80&rsquo;s</strong> is a radio suspended between then and now, between the strange <strong>modernity of the 80&rsquo;s</strong> and the sound of the past becomes new everyday.</p>",
+                "<p><strong>Spandau Ballet, Aerosmith, Bee Gees, Blondie</strong>, are among the great artists that we like, and we claim our right to be 80&rsquo;s inside, so if you listen to our 80 music station, you will feel the<strong>&nbsp;</strong><strong>beats and the rhythms of the 80&rsquo;s</strong>.</p>",
+                "<p>If you are looking for an <strong>80&rsquo;s radio station</strong> that never disappoints, with the best 80&rsquo;s bands and solo artists, you have come to the right place. Start listening now, and wake up your never lost memory, and feel the urge to express, so typical of those years.</p>",
+                "<p><strong>Prince, Michael Jackson, but also Ozzy Osbourne and Guns and Roses</strong>, we are not limited to a single genre, but is our pride to spread the <strong>80&rsquo;s music</strong>, so wheter you like online or analogic 80&rsquo;s radio, you should listen to <strong>Amazing 80&rsquo;s</strong>, it may not be the nearest 80&rsquo;s music station near you, but it definitely will be the closest <strong>80&rsquo;s station to your heart</strong>.</p>"
+            ],
+            "slogan": "<p>Feel the 80's vibe, feel your vibe.</p>"
         },
         "de": {
             "description": "lorem ipsum na germanski",

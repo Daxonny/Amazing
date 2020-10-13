@@ -27,9 +27,7 @@
 </section>
 <section id="description">
 	<h2>{{ $station->desc->slogan}}</h2>
-	<p>
-		{{ $station->desc->description}}
-	</p>
+	{{{ $station->description}}}
 </section>
 @endsection
 

@@ -2,8 +2,14 @@
     "name": "Amazing Smooth and Jazz",
     "description": {
         "en": {
-            "description": "Amazing Smooth and Jazz is the queen of REAL JAZZ, and only gives space to real Jazz Artists, like Ella Fitzgerald, Miles Davis and Duke Ellington, but also to new artists which are smashing the jazz scene right now",
-            "slogan": "Feel the warmth, feel the plac"
+            "description": [
+                "<p><strong>Amazing Smooth and Jazz</strong> is the <strong>queen of REAL JAZZ</strong>, and only gives space to real Jazz Artists, like <strong>Ella Fitzgerald, Miles Davis and Duke Ellington</strong>, but also to new artists which are smashing the jazz scene right now.</p>",
+                "<p>Dive in the magical melodies that jazz music can create, stop listening to fake jazz radio stations, immerse yourself into this groovy music, from Portland to <abbr title=\"New York City\">NYC</abbr> , from London to Rome, anyone can appreciate <strong>Amazing Smooth and Jazz</strong>, but only if you are a <strong>true JAZZ LOVER</strong>.</p>",
+                "<p>If you are looking for jazz radios online, or a jazz radio station near you, choosing <strong>Amazing Smooth and Jazz</strong> will make your day better, relying on familiar and evergreen jazz melodies, which can&#39;t be questioned by anyone who has Jazz in his art.</p>",
+                "<p><strong>Relax and Jazz, embrace the feeling.</strong></p>",
+                "<p>Listen right now to <strong>Amazing Smooth and Jazz</strong>, the easy and reliable way to listen to your music, and be part of a big family, as no other jazz radio station, from Portland to <abbr title=\"New York City\">NYC</abbr> , can provide.</p>"
+            ],
+            "slogan": "<p>Feel the warmth, feel the place.</p>"
         },
         "de": {
             "description": "lorem ipsum na germanski",

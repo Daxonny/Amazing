@@ -2,8 +2,13 @@
     "name": "Amazing Classic Hits",
     "description": {
         "en": {
-            "description": "Amazing Classic Hits is a classic radio station that will steal your heart from the first listening! You miss listening to songs like “With or without you” by U2, or “Fast car” by Tracy Chapman? You found the right place",
-            "slogan": "Go back to the days, live a Classic Day!"
+            "description": [
+                "<p><strong>Amazing Classic Hits</strong> is a classic radio station that will steal your heart from the first listening! You miss listening to songs like <strong>&ldquo;With or without you&rdquo; by U2</strong>, or <strong>&ldquo;</strong><strong>Fast car&rdquo; by Tracy Chapman</strong>? You found the right place!</p>",
+                "<p>With <strong>Amazing Classic Hits</strong>, you can reconnect with the music which used to make you smile, or remember the vibe you felt when listening to your classic pop and rock songs in your car! Drive in the wind with our beats, never feel lonely even in the longest solo trip!</p>",
+                "<p>Whether you are at home or going around, you can tune in this classic radio station, with <abbr title=\"New York City\">NYC</abbr> and international vibes, and songs that you can&rsquo;t find on most of classic radio stations!</p>",
+                "<p>Today Spotify sets the market for new songs, but we still remember when playing songs was something more intimate, and only the classic songs of our heart really rocked. If you like both <strong>&ldquo;</strong><strong>Bohemian Rhapsody&rdquo; by Queen</strong>&nbsp;and by <strong>Beyonce&rsquo;s </strong><strong>&ldquo;Crazy in love&rdquo;</strong>, tune with us, and live a different day everyday!</p>"
+            ],
+            "slogan": "<p>Go back to the days, live a Classic Day!</p>"
         },
         "de": {
             "description": "lorem ipsum na germanski",

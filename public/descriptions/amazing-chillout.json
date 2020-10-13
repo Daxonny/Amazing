@@ -2,8 +2,13 @@
     "name": "Amazing Chillout",
     "description": {
         "en": {
-            "description": "Amazing Chillout only plays good, fun and relaxing music, perfect for releasing bad thoughts. With Amazing Chillout, you can always count on music to spend your favourite time of the day",
-            "slogan": "Only the best, to expell stress!"
+            "description": [
+                "<p>You have just arrived to your house, and you are tired of all those nasty noises. You want a <strong>great chillout song to relax</strong>, but you are disappointed by classic chillout radios, because they never play the song you want.</p>",
+                "<p><strong>Amazing Chillout</strong>&nbsp;only plays good, fun and relaxing music, perfect for releasing bad thoughts. With&nbsp; Amazing Chillout, you can always count on music to spend your favourite time of the day.</p>",
+                "<p>In the shower, on your sofa, or in your car while going on a trip, <strong>Amazing Chillout</strong> will make you <strong>feel the warmth of real music</strong>. If you are looking for a <strong>chill ambient radio</strong>, or a chill radio online, try <strong>Amazing Chillout</strong>, and you will never get lost in awful music.</p>",
+                "<p>Advised to listen with a drink in your hand, or at least a good thought in your heart! Feel like you are in a lounge bar, or in a park full of sun, with <strong>Amazing Chillout</strong>!</p>"    
+            ],
+            "slogan": "<p>Only the best, to expell stress!</p>"
         },
         "de": {
             "description": "lorem ipsum na germanski",
