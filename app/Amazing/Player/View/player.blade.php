@@ -2,13 +2,13 @@
 
 @section('content')
 <section id="player" data-station="live" ln-player>
-	<h1>{{ $station->name }}</h1>
-	<picture title="{{$station->name}}">
-		<source srcset="{{$station->logo}}.webp, {{$station->logo2x}}.webp 2x" type="image/webp">
-		<img src="{{ $station->logo }}.png" srcset="{{$station->logo}}.png ,{{$station->logo2x}}.png 2x" alt="{{$station->name}}">
+	<h1>{{ $vm->name }}</h1>
+	<picture title="{{$vm->name}}">
+		<source srcset="{{$vm->logo}}.webp, {{$vm->logo2x}}.webp 2x" type="image/webp">
+		<img src="{{ $vm->logo }}.png" srcset="{{$vm->logo}}.png ,{{$vm->logo2x}}.png 2x" alt="{{$vm->name}}">
 	</picture>
 	
-	<section id="nowPlaying" ln-triton-track="{{ $station->mountName }}" ln-triton-track-interval="10">
+	<section id="nowPlaying" ln-triton-track="{{ $vm->mountName }}" ln-triton-track-interval="10">
 		<p property="track" typeof="MusicRecording" data-label="Now Playing">
 			<span class="Playing">Now Playing</span>
 			<span property="byArtist"></span>
@@ -22,16 +22,16 @@
 		<input name="range" type="range" min="0" max="100" ln-player-volume="50">
 	</div>
 	<audio autoplay>
-		<source src="{{ $station->streams[0]->url }}" />
+		<source src="{{ $vm->url }}" />
 	</audio>
 </section>
 <section id="description">
-	<h2>{{ $station->desc->slogan}}</h2>
-	{{{ $station->description}}}
+	<h2>{!! $vm->slogan !!}</h2>
+	{!! $vm->description !!}
 </section>
 @endsection
 
 @section('js')
-<script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $station->tritonStationId }}"></script>
+<script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $vm->tritonStationId }}"></script>
 <script async type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}"></script>
 @endsection

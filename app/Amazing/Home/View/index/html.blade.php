@@ -9,9 +9,8 @@
 @section('content')
 <section id="content-station">
 	<section id="stations">
-		<!-- {{ $stations->name }} -->
 		<ul class="stationList">
-			@foreach ($stations->stations as $station)
+			@foreach ($vm->stations as $station)
 			<li id="{{ $station->slug }}">
 				<h2 typeof="RadioStation">
 					<a href="{{ route('player',['station'=>$station->slug]) }}">

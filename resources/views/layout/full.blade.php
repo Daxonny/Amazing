@@ -49,7 +49,7 @@
 <body id="index" vocab="http://schema.org/">
 	<div id="wrap">
 		<header>
-			<img src="{{ 'logos/ar-logo.svg' }}" alt="Amazing Radios Logo" id="logo" />
+			<img src="{{ asset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" />
 
 			<input type="checkbox" name="nav" id="nav">
 			<label for="nav">menu</label>

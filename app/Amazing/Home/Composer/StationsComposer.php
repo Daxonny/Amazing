@@ -6,7 +6,8 @@ use App\Amazing\Home\Model\VMStations;
 
 class StationsComposer {
 	public function compose(View $view) {
-		$view->with('stations', VMStations::execute());
+		$vm=new VMStations();
+		$view->with('vm', $vm);
 	}
 }
 

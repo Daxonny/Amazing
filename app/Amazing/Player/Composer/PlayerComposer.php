@@ -7,6 +7,8 @@ use App\Amazing\Player\Model\VMPlayer;
 
 class PlayerComposer {
 	public function compose(View $view) {
-		$view->with('station', VMPlayer::execute());
+		$vm = new VMPlayer();
+		// dd($vm);
+		$view->with('vm', $vm);
 	}
 }
