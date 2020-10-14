@@ -1,6 +1,6 @@
 @extends('layout.ln')
 @section('content')
-	<section id="contactUs">
+	<section class="content">
 		<form method="POST" action="{{ url('contactus/send') }}" id="contactForm">
 			@csrf
 			<div id="feName">
