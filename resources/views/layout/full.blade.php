@@ -5,6 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+	<link rel="dns-prefetch" href="https//dcdn.amazingradios.com">
+	<link rel="dns-prefetch" href="https//np.tritondigital.com">
+	<link rel="dns-prefetch" href="https//playerservices.live.streamtheworld.com">
+
+	<link rel="preconnect" href="https//dcdn.amazingradios.com">
+	<link rel="preconnect" href="https//np.tritondigital.com">
+	<link rel="preconnect" href="https//playerservices.live.streamtheworld.com">
+
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -35,8 +43,6 @@
 
 	<!-- Implement Accept image/webp -->
 	<link rel="stylesheet" href="{{ asset('/site/v2/css/webp.min.css') }}" media="screen">
-
-	<script src="https://www.google.com/recaptcha/api.js"></script>
 
 
 	<meta name="description" content="Amazing Radios is free internet radio network, providing free music in various genres" />
