@@ -21,6 +21,7 @@ class InteractorStations extends AInteractor{
 		$station->logo = $logo . '-w180';
 		$station->logo2x = $logo . '-w360';
 
+		$station->fullName = $station->name;
 		$station->name = str_replace('Amazing', '', $station->name);
 
 		return $station;

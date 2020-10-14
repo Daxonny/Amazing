@@ -8,6 +8,7 @@ use App\Amazing\AVM;
 
 class VMPlayer extends AVM {
 
+	public $fullName;
 	public $name;
 	public $logo;
 	public $logo2x;
@@ -19,6 +20,7 @@ class VMPlayer extends AVM {
 
 	protected function _execute(){
 		$station = (new PlayerInteractor())->execute();
+		$this->fullName 		= $station->fullName;
 		$this->name 			= $station->name;
 		$this->logo 			= $station->logo;
 		$this->logo2x 			= $station->logo2x;

@@ -49,7 +49,7 @@
     #ad {
         grid-column-start: 2;
         grid-column-end: 3;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 300px;
         height: 600px;
         margin-left: 10px;
@@ -242,7 +242,7 @@
     #ad {
         grid-row-start: 1;
         grid-row-end: 2;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 728px;
         height: 90px;
         margin: auto auto 20px auto;
@@ -416,7 +416,7 @@
     #ad {
         grid-row-start: 1;
         grid-row-end: 2;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 728px;
         height: 90px;
         margin: auto auto 20px auto;
@@ -431,7 +431,7 @@
     #ad {
         grid-row-start: 1;
         grid-row-end: 2;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 300px;
         height: 50px;
         margin: auto auto 20px auto;

@@ -1,6 +1,6 @@
 @extends('layout.ln')
+@section('contentClass', 'content')
+@section('title', 'About Us')
 @section('content')
-	<section id="aboutUs">
-		Za nas
-	</section>
+	<p>Coming soon</p>
 @endsection

@@ -11,6 +11,10 @@
     resize: vertical;
 }
 
+#contactUs textarea {
+    height: 100px;
+}
+
 #contactUs input[type=submit] {
     background-color: var(--bg);
     color: white;

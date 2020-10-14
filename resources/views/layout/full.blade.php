@@ -79,7 +79,7 @@
 					</li>
 				</ul> --}}
 			</nav>
-			<section id="languages">
+			<!-- <section id="languages">
 				<ul>
 					<li>
 						<a href="{{ dialect()->current('en') }}"
@@ -110,7 +110,7 @@
 						/></a>
 					</li>
 				</ul>
-			</section>
+			</section> -->
 		</header>
 
 		<main id="main">
@@ -118,7 +118,7 @@
 			<section id="headerLogo">
 				@yield('logoHeader')
 			</section>
-			<section id="content">
+			<section id="content" class="@yield('contentClass')">
 				@yield('content')
 			</section>
 		</main>

@@ -1,7 +1,7 @@
 @extends('layout.ln')
 
 @section('content')
-<section id="content-tac">
+<section class="content">
 	<h2 id="header">PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS SITE</h2>
 
 	<p><strong>What's in these terms?</strong></p>
@@ -250,5 +250,5 @@
 	<h2>Our trade marks are registered</h2>
 
 	<p>Amazing Radios are trade marks of Live Networks. You are not permitted to use them without our approval, unless they are part of material you are using as permitted under How you may use material on our site.</p>
-</section>
+	</section>
 @endsection

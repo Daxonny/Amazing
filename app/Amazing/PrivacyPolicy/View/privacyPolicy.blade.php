@@ -1,6 +1,6 @@
 @extends('layout.ln')
 @section('content')
-<section id="content-privacy">
+<section class="content">
 	<h3>Introduction</h3>
 
 	<p>Welcome to the Live Network privacy policy.</p>

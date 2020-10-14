@@ -25,11 +25,10 @@ class PlayerInteractor extends AInteractor{
 		return $stations->stations->filter(function($station) {
 			return $station->slug == $this->_stationSlug;
 		});
-
 	}
 
 	private function _getDescription() {
-		$stationDetails = json_decode(file_get_contents('descriptions/'.$this->_stationSlug.'.json'));		
+		$stationDetails = json_decode(file_get_contents('descriptions/'.$this->_stationSlug.'.json'));
 		$this->_station->description = implode('', $stationDetails->description->{$this->_lang}->description);
 		$this->_station->slogan = $stationDetails->description->{$this->_lang}->slogan;
 	}

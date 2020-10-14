@@ -1,5 +1,7 @@
 @extends('layout.ln')
 
+@section('title', $vm->fullName)
+
 @section('content')
 <section id="player" data-station="live" ln-player>
 	<h1>{{ $vm->name }}</h1>
@@ -25,7 +27,7 @@
 		<source src="{{ $vm->url }}" />
 	</audio>
 </section>
-<section id="description">
+<section id="description" class="content">
 	<h2>{!! $vm->slogan !!}</h2>
 	{!! $vm->description !!}
 </section>
