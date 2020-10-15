@@ -1,4 +1,5 @@
 @extends('layout.ln')
+@section('title', 'Contact Us')
 @section('content')
 	<section class="content">
 		<form method="POST" action="{{ url('contactus/send') }}" id="contactForm">

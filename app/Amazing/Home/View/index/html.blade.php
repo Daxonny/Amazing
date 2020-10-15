@@ -1,4 +1,5 @@
 @extends('layout.ln')
+@section('title', 'Free Internet Radion Network')
 
 @section('logoHeader')
 <h1>AMAZING RADIOS </h1>
