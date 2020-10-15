@@ -1,0 +1,233 @@
+
+@media only screen and (max-width: 701px) {
+	h3 {
+		margin: 0px;
+	}
+	header {
+		width: 100%;
+		height: 80px;
+		display: flex;
+		text-align: center;
+		position: sticky;
+		top: 0;
+		background-color: var(--bg);
+		z-index: 100;
+	}
+	header #logo {
+		width: 100px;
+		height: 100%;
+	}
+	#headerLogo h1 {
+		position: absolute;
+		margin-top: 41px;
+		position: absolute;
+		width: 30%;
+		margin-left: 55%;
+		font-size: 13px;
+		color:black;
+		text-transform: uppercase;
+		font-weight: bold; 
+	}
+	#headerLogo p{
+		position: absolute;
+		margin-top: 35px;
+		position: absolute;
+		width: 30%;
+		margin-left: 55%;
+		font-size: 13px;
+		color: black;
+		font-weight: bold;
+	}
+	#languages ul li img {
+		width: 30px;
+		height: 16px;
+	}
+	#languages ul {
+		display: flex;
+		position: absolute;
+		right: 0;
+	}
+	#languages li {
+		list-style: none;
+		position: relative;
+		display: block;
+		padding: 5px;
+	}
+	#wrap .share {
+		position: absolute;
+		right: 0;
+		top: -40px;
+		line-height: 50px;
+		font-size: 25px;
+		z-index: 100;
+	}
+	#wrap .share:after {
+		position: absolute;
+		left: -49px;
+		top: 0;
+		content: '';
+	}
+	#wrap .share li {
+		float: left;
+		margin: 0 6px;
+	}
+	.share,
+	.stationList {
+		list-style: none;
+	}
+	#headerLogo img {
+		width: 100%;
+	}
+	#headerLogo h1 {
+		position: absolute;
+		margin-top: 25px;
+		width: 100px;
+		font-size: 10px;
+		margin-left: 55%;
+		color: black;
+		line-height: 15px;
+	}
+	#content-station {
+		display: flex;
+		margin-top: 10px;
+	}
+	#stations li {
+		background-color: rgb(186, 186, 186);
+		position: relative;
+		-webkit-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+		-moz-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+		box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
+	}
+	#stations {
+		margin: auto;
+	}
+	.stationList {
+		margin: auto;
+		display:grid;
+		grid-template-columns: auto auto ;
+		column-gap: 5px;
+	}
+	.stationList li {
+		margin-bottom: 25px;
+		margin: auto auto 25px auto;
+		width:150px;
+	}
+	.stationList h2 {
+		background: rgb(194, 188, 188);
+		background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
+		transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
+	}
+	#stations img {
+		width: 130px;
+		height: 130px;
+		padding: 10px;
+	}
+	[typeof="RadioStation"] [property="name"] {
+		display: block;
+		padding: 3px;
+		text-transform: uppercase;
+		text-align: center;
+		width: auto;
+		font-size: 13px;
+		-webkit-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+		-moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+		box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+	}
+	.nowPlaying {
+		background-color: white;
+		position: relative;
+		border-bottom-right-radius: 70px;
+		font-size: 15px;
+		padding: 2px 22px 10px 22px;
+		text-align: center;
+		font-weight: 400;
+	}
+	[typeof="MusicRecords"] [property="name"] {
+		background-color: white;
+		font-size: 15px;
+		padding: 2px;
+		text-transform: none;
+	}
+	#stations li a {
+		position: relative;
+	}
+	[property="byArtist"] {
+		display: block;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		line-height: 1.3em;
+		font-size: 16px;
+		color: black;
+	}
+	[property="track"] {
+		font-weight: 300;
+		font-size: 14px;
+	}
+	#stations {
+		color: var(--track);
+	}
+	#stations p span {
+		display: block;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		line-height: 1.3em;
+	}
+	.fav {
+		font-family: "LiveNetworks-Icons";
+		background: transparent;
+		font-size: 20px;
+		position: absolute;
+		bottom: 3px;
+		right: 3px;
+		border: none;
+		margin: 0;
+		padding: 0;
+		color: var(--favouriteNormal);
+		cursor: pointer;
+	}
+	.fav.active {
+		color: var(--favouriteActive);
+	}
+	.fav:active {
+		color: var(--favouriteHover);
+	}
+	.Playing {
+		text-transform: uppercase;
+		color: var(--now-playing);
+		font-size: 12px;
+		text-align: center;
+	}
+	.nowPlaying [property="name"] {
+		color: rgb(49, 46, 46);
+	}
+	.nowPlaying span{
+		width:100px;
+	}
+	#stations li a:hover{
+		background-color: transparent;
+	}
+	footer {
+		border-top: 4px solid var(--linkHover);
+		background-color: rgba(31, 65, 84, .5);
+	}
+	footer nav {
+		margin: auto;
+		width: 50%;
+		text-align: center;
+	}
+	footer ul {
+		display: grid;
+	}
+	footer li {
+		margin: 5px 5px;
+	}
+	footer img {
+		width: 100%;
+		height: 80px;
+    }
+    #contactForm {
+		display: inline;
+	}
+}

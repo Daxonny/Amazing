@@ -1,0 +1,63 @@
+:root {
+	--bg: #113041;
+	--text: #fff;
+	--track: #000;
+	--now-playing: #cbab30;
+	--playerBg: #b1ded7;
+	--favouriteNormal: #fff;
+	--favouriteHover: #cbab30;
+	--favouritedActive: #cbab30;
+	--favouritedButton: #fff;
+	--linkNormal: #fff;
+	--linkHover: #cbab30;
+	--a80s: #670d53;
+	--blues: #1d1b6f;
+	--smooth-and-jazz: #730206;
+	--chillout: #f66400;
+	--classic-hits: #f7ad00;
+	--chillhop: #632c6f;
+	--vocals: #4c9ce0;
+
+	--contentBg: 31,65,84,.8;
+	--linkColor: rgb(224, 224, 166);
+}
+
+
+#stations {
+	color: var(--track);
+}
+#amazing-80s h2:hover {
+	background: var(--a80s);
+}
+#amazing-blues h2:hover {
+	background: var(--blues);
+}
+#amazing-chillout h2:hover {
+	background: var(--chillout);
+}
+#amazing-chillhop h2:hover {
+	background: var(--chillhop);
+}
+#amazing-classic-hits h2:hover {
+	background: var(--classic-hits);
+}
+#amazing-smooth-jazz h2:hover {
+	background: var(--smooth-and-jazz);
+}
+#amazing-vocals h2:hover {
+	background: var(--vocals);
+}
+
+.fav {
+	color: var(--favouriteNormal);
+}
+.fav.active {
+	color: var(--favouriteActive);
+}
+.fav:hover {
+	color: var(--favouriteHover);
+}
+
+.nowPlaying [property="name"] {
+	color: rgb(49, 46, 46);
+}

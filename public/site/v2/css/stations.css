@@ -130,30 +130,6 @@
         font-weight: 300;
         font-size: 14px;
     }
-    #stations {
-        color: var(--track);
-    }
-    #amazing-80s h2:hover {
-        background: var(--a80s);
-    }
-    #amazing-blues h2:hover {
-        background: var(--blues);
-    }
-    #amazing-chillout h2:hover {
-        background: var(--chillout);
-    }
-    #amazing-chillhop h2:hover {
-        background: var(--chillhop);
-    }
-    #amazing-classic-hits h2:hover {
-        background: var(--classic-hits);
-    }
-    #amazing-smooth-jazz h2:hover {
-        background: var(--smooth-and-jazz);
-    }
-    #amazing-vocals h2:hover {
-        background: var(--vocals);
-    }
     #stations p span {
         display: block;
         text-overflow: ellipsis;
@@ -171,23 +147,13 @@
         border: none;
         margin: 0;
         padding: 0;
-        color: var(--favouriteNormal);
         cursor: pointer;
-    }
-    .fav.active {
-        color: var(--favouriteActive);
-    }
-    .fav:hover {
-        color: var(--favouriteHover);
     }
     .Playing {
         text-transform: uppercase;
         color: var(--now-playing);
         font-size: 12px;
         text-align: center;
-    }
-    .nowPlaying [property="name"] {
-        color: rgb(49, 46, 46);
     }
 }
 
@@ -323,30 +289,6 @@
         font-weight: 300;
         font-size: 14px;
     }
-    #stations {
-        color: var(--track);
-    }
-    #amazing-80s h2:hover {
-        background: var(--a80s);
-    }
-    #amazing-blues h2:hover {
-        background: var(--blues);
-    }
-    #amazing-chillout h2:hover {
-        background: var(--chillout);
-    }
-    #amazing-chillhop h2:hover {
-        background: var(--chillhop);
-    }
-    #amazing-classic-hits h2:hover {
-        background: var(--classic-hits);
-    }
-    #amazing-smooth-jazz h2:hover {
-        background: var(--smooth-and-jazz);
-    }
-    #amazing-vocals h2:hover {
-        background: var(--vocals);
-    }
     #stations p span {
         display: block;
         text-overflow: ellipsis;
@@ -364,14 +306,7 @@
         border: none;
         margin: 0;
         padding: 0;
-        color: var(--favouriteNormal);
         cursor: pointer;
-    }
-    .fav.active {
-        color: var(--favouriteActive);
-    }
-    .fav:hover {
-        color: var(--favouriteHover);
     }
     .Playing {
         text-transform: uppercase;
@@ -431,7 +366,6 @@
     #ad {
         grid-row-start: 1;
         grid-row-end: 2;
-        /* border: 1px solid red; */
         width: 300px;
         height: 50px;
         margin: auto auto 20px auto;

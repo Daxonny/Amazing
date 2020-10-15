@@ -13,6 +13,8 @@
 	<link rel="preconnect" href="https//np.tritondigital.com">
 	<link rel="preconnect" href="https//playerservices.live.streamtheworld.com">
 
+	<link rel="preload" href="{{ lnasset('/site/fonts/ln-icons/ln-icons.woff2') }}" as="font" type="font/woff2" crossorigin>
+
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -20,42 +22,25 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	
-
-<!-- 
-	<link rel="preload" href="site/css/reset.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="site/css/optimized.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="site/css/extra.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="site/css/reset.css">
-		<link rel="stylesheet" href="site/css/optimized.css">
-		<link rel="stylesheet" href="site/css/extra.css">
-	</noscript> -->
-
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/reset.min.css') }}">
-
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/optimized.css') }}" media="screen">
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/extra.min.css') }}" media="screen">
-	
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/stations.css') }}" media="screen">
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/player.css') }}" media="screen">
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/contactUs.css') }}" media="screen">
-
+	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/mobile.css') }}" media="screen and (max-width: 701px)">
+	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/tablet.css') }}" media="screen and (min-width: 701px and max-width: 1000px)">
+	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/desktop.css') }}" media="screen and (min-width: 1000px)">
 
 	<!-- Implement Accept image/webp -->
-	<link rel="stylesheet" href="{{ asset('/site/v2/css/webp.min.css') }}" media="screen">
+	<link rel="stylesheet" href="{{ lnasset('/site/v2/css/webp.min.css') }}" media="screen">
 
 
-	<meta name="description" content="Amazing Radios is free internet radio network, providing free music in various genres" />
+	<meta name="description" content="@yield('ogDescription')" />
 	<meta name="robots" content="index,follow" />
 
 	@include('layout.headerSnippets.fb')
 	@include('layout.headerSnippets.icons')
 
 </head>
-<body id="index" vocab="http://schema.org/">
+<body id="index" vocab="http://schema.org/" class="">
 	<div id="wrap">
 		<header>
-		<a href="{{ route('index')}}"><img src="{{ asset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" /></a>
+		<a href="{{ route('index')}}"><img src="{{ lnasset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" /></a>
 
 			<input type="checkbox" name="nav" id="nav">
 			<label for="nav">menu</label>
@@ -63,11 +48,8 @@
 			<nav>
 				<ul>
 					<li>
-					<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
+						<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
 					</li>
-					{{-- <li>
-						<a href="#">{{ __('global.channels') }}</a>
-					</li> --}}
 					<li>
 						<a href="{{ route('aboutUs') }}">{{ __('global.aboutUs') }}</a>
 					</li>
@@ -90,28 +72,28 @@
 					<li>
 						<a href="{{ dialect()->current('en') }}"
 							><img 
-								src="{{ asset('flags/usa.png') }}" 
+								src="{{ lnasset('flags/usa.png') }}" 
 								alt="USA Flag"
 						/></a>
 					</li>
 					<li>
 						<a href="{{ dialect()->current('fr') }}"
 							><img
-								src="{{ asset('flags/france.png') }}"
+								src="{{ lnasset('flags/france.png') }}"
 								alt="France Flag"
 						/></a>
 					</li>
 					<li>
 						<a href="{{ dialect()->current('de') }}"
 							><img
-								src="{{ asset('flags/germany.png') }}"
+								src="{{ lnasset('flags/germany.png') }}"
 								alt="Germany Flag"
 						/></a>
 					</li>
 					<li>
 						<a href="{{ dialect()->current('mk') }}"
 							><img
-								src="{{ asset('flags/macedonia.png') }}"
+								src="{{ lnasset('flags/macedonia.png') }}"
 								alt="Macedonia Flag"
 						/></a>
 					</li>
@@ -152,7 +134,7 @@
 
 			<p>
 				{{-- <img src="{{ lncdn(lnimg('/logos/ar-logo-white.svg')) }}" alt="Amazing Radios Logo" /> --}}
-				<img src="{{ 'logos/ar-logo-white.svg' }}" alt="Amazing Radios Logo" id="logo" />
+				<img src="{{ lnasset('logos/ar-logo-white.svg') }}" alt="Amazing Radios Logo" id="logo" />
 				<span>Copyright &copy; 2019 &middot;
 					<a href="https://amazingradios.com">AMAZINGRADIOS.com</a>
 				</span>
@@ -163,15 +145,25 @@
 
 	<!-- <div id="player" ln-draggable></div> -->
 
-	<script async type="text/javascript" src="{{ asset('/site/v2/js/ar.js') }}"></script>
-	<script async type="text/javascript" src="{{ asset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
-	<script async type="text/javascript" src="{{ asset('/site/v2/js/player/player.js') }}"></script>
-	<script async type="text/javascript" src="{{ asset('/site/v2/js/obfuscator/ln-obfuscator.js') }}"></script>
+	<!-- <script async type="text/javascript" src="{{ lnasset('/site/v2/js/ar.js') }}"></script> -->
+	<script src="{{ lnasset('/site/v2/dist/app.js') }}" defer></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics --> 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180609245-1"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-180609245-1'); </script>
 
-	@yield('js') 
+	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
+	<script async type="text/javascript" src="{{ lnasset(asset('/site/v2/js/player/player.js')) }}"></script>
+	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/obfuscator/ln-obfuscator.js') }}"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180609245-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date()); gtag('config', 'UA-180609245-1');
+	</script>
+
+	@yield('js')
 
 </body>
 </html>
