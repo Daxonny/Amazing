@@ -19,7 +19,7 @@
 	<title>@yield('title') &raquo; Amazing Radios</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
 
 <!-- 
 	<link rel="preload" href="site/css/reset.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -55,7 +55,7 @@
 <body id="index" vocab="http://schema.org/">
 	<div id="wrap">
 		<header>
-			<img src="{{ asset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" />
+		<a href="{{ route('index')}}"><img src="{{ asset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" /></a>
 
 			<input type="checkbox" name="nav" id="nav">
 			<label for="nav">menu</label>

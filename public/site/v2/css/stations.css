@@ -103,7 +103,7 @@
         position: relative;
     }
     #stations li a:hover::after {
-        font-family: "Material Icons";
+        font-family: "LiveNetworks-Icons";
         font-size: 90px;
         content: 'play_circle_outline';
         position: absolute;
@@ -162,7 +162,7 @@
         line-height: 1.3em;
     }
     .fav {
-        font-family: "Material Icons";
+        font-family: "LiveNetworks-Icons";
         background: transparent;
         font-size: 20px;
         position: absolute;
@@ -296,7 +296,7 @@
         position: relative;
     }
     #stations li a:hover::after {
-        font-family: "Material Icons";
+        font-family: "LiveNetworks-Icons";
         font-size: 90px;
         content: 'play_circle_outline';
         position: absolute;
@@ -355,7 +355,7 @@
         line-height: 1.3em;
     }
     .fav {
-        font-family: "Material Icons";
+        font-family: "LiveNetworks-Icons";
         background: transparent;
         font-size: 20px;
         position: absolute;

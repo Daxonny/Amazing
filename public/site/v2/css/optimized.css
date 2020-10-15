@@ -65,6 +65,7 @@ nav ul {
 	margin: 0 auto;
 	min-height: 100vh;
 	display: grid;
+	grid-template-rows: 120px auto 150px;
 }
 
 main {
@@ -321,7 +322,7 @@ footer {
 		line-height: 1.3em;
 	}
 	.fav {
-		font-family: "Material Icons";
+		font-family: "LiveNetworks-Icons";
 		background: transparent;
 		font-size: 20px;
 		position: absolute;
@@ -554,7 +555,7 @@ footer {
 		width: 150px;
 	}
 	.fav {
-		font-family: "Material Icons";
+		font-family: "LiveNetworks-Icons";
 		background: transparent;
 		font-size: 20px;
 		position: absolute;
@@ -623,7 +624,7 @@ footer {
 	}
 	#wrap>header,
 	#wrap>footer {
-		padding: 20px 0;
+		padding: 20px 10px 20px 0px;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -657,9 +658,6 @@ footer {
 	}
 	#headerLogo img {
 		width: 100%;
-	}
-	#wrap>footer {
-		padding-bottom: 60px;
 	}
 	#wrap>footer p {
 		display: flex;
