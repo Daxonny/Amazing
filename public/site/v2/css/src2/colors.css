@@ -1,0 +1,47 @@
+:root {
+	--bg: #113041;
+	--text: #fff;
+	--track: #000;
+
+	--now-playing: #cbab30;
+	--playerBg: #b1ded7;
+	--favouriteNormal: #fff;
+	--favouriteHover: #cbab30;
+	--favouritedActive: #cbab30;
+	--favouritedButton: #fff;
+
+	--linkNormal: #cbab30;
+	--linkHover: #f7ad00;
+	--a80s: #670d53;
+	--blues: #1d1b6f;
+	--smooth-and-jazz: #730206;
+	--chillout: #f66400;
+	--classic-hits: #f7ad00;
+	--chillhop: #632c6f;
+	--vocals: #4c9ce0;
+
+	--navNormal: #fff;
+	--navHover: #cbab30;
+
+	--contentBg: 31,65,84,.8;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+a {
+	color: var(--linkNormal);
+}
+
+a:hover {
+	color: var(--linkHover);
+}
+
+nav a {
+	color: var(--navNormal);
+}
+nav a:hover {
+	color: var(--navHover)
+}

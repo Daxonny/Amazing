@@ -2,7 +2,6 @@ a {
 	color: var(--linkNormal);
 }
 
-
 nav a:hover, footer a:hover {
 	color: var(--linkHover);
 	transition: color .3s;
@@ -24,31 +23,6 @@ li.favourited button.favorurite {
 	font-family: 'LiveNetworks-Icons';
 }
 
-#amazing-blues h2 span, #amazing-blues a:hover, .player.amazing-blues {
-	background-color: var(--blues);
-}
-#amazing-smooth-jazz h2 span, #amazing-smooth-jazz a:hover, .player.amazing-smooth-jazz {
-	background-color: var(--smooth-and-jazz);
-}
-#amazing-80s h2 span, #amazing-80s a:hover, .player.amazing-80s {
-	background-color: var(--a80s);
-}
-
-#amazing-chillout h2 span, #amazing-chillout a:hover, .player.amazing-chillout {
-	background-color: var(--chillout);
-}
-
-#amazing-chillhop h2 span, #amazing-chillhop a:hover, .player.amazing-chillhop {
-	background-color: var(--chillhop);
-}
-
-#amazing-classic-hits h2 span, #amazing-classic-hits a:hover, .player.amazing-classic-hits {
-	background-color: var(--classic-hits);
-}
-#amazing-vocals h2 span, #amazing-vocals a:hover, .player.amazing-vocals{
-	background-color: var(--vocals);
-}
-
 
 
 #channels li {
@@ -62,12 +36,6 @@ li.favourited button.favorurite {
 
 
 @media only screen and (min-width: 1000px) {
-
-
-	body {
-		background-size: cover;
-		background-position: center top;
-	}
 
 	#wrap > footer {
 		border-top: 4px solid var(--linkHover);
@@ -96,37 +64,6 @@ li.favourited button.favorurite {
 		transition: background-color .5s ease-out;
 	}
 
-	#channels li a:hover:before {
-		font-family: "LiveNetworks-Icons";
-	}
-	#channels li a:hover:after {
-		background-color: rgba(0, 0, 0, .5);
-		color: #fff;
-	}
-	#channels {
-		color: var(--track);
-	}
-
-	#channels li p {
-		background-color: #fff;
-	}
-
-	#channels li p:before {
-		color: var(--now-playing);
-	}
-
-
-	.player {
-		border-color: var(--linkHover);
-		background-color: var(--playerBg);
-	}
-
-
-	#wrap .share {
-		background-color: var(--linkHover);
-		color: #fff;
-		font-family: 'LiveNetworks-Icons';
-	}
 
 	#wrap .share:before {
 		border: 2px solid #fff;
@@ -168,7 +105,7 @@ li.favourited button.favorurite {
 	font-family: 'LiveNetworks-Icons';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/fonts/ln-icons/ln-icons.woff2') format('woff2');
+	src: url('/site/fonts/ln-icons/ln-icons.woff2') format('woff2');
 }
 
 .ln-icon {

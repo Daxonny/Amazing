@@ -18,8 +18,167 @@
 	grid-template-columns: auto auto;
 	grid-template-rows: auto auto auto;
 }
+.player {
+	border-width: 4px 0;
+	border-style: solid;
+	position: relative;
+	height: 280px;
+	width: 100%;
+	overflow: hidden;
+}
+.stationList li a {
+	position: relative;
+}
+.stationList li a:hover::after {
+	font-size: 90px;
+	left: 53px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	line-height: 220px;
+}
+.stationList li a:hover img {
+	opacity: .3;
+}
+.stationList p span {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.3em;
+}
 
+.stationList img {
+	margin: auto;
+	width: 90%;
+	height: 180px;
+	display: block;
+	padding: 10px;
+}
+#languages ul {
+	width: 12rem;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	position: relative;
+}
+#languages ul li img {
+	width: 30px;
+	height: 16px;
+}
+#content-station {
+	display: grid;
+	grid-template-columns: auto 300px;
+}
+#channels ul {
+	grid-template-columns: 200px 200px 200px 200px;
+}
+.content {
+	padding: 50px;
+	line-height: 1.5em;
+}
+.content .sections {
+	margin-left: 80px;
+	list-style: decimal;
+}
 
+.content tr ol {
+	list-style: lower-alpha;
+}
+.content td {
+	padding: 20px;
+}
+td ul {
+	margin-left: 15px;
+}
+.content .sectionPrivacy {
+	padding: 0px;
+	margin-left: 0px;
+}
+#headerLogo h1 {
+	margin-top:41px;
+	margin-left: 713px;
+	font-size: 30px;
+}
+#headerLogo p{
+	margin-top: 77px;
+	margin-left: 712px;
+	font-size: 30px;
+
+}
+#player {
+	background: linear-gradient(180deg, rgba(203, 171, 48, 1) 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
+	padding: 20px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 250px 70px 300px auto;
+	grid-template-rows: auto auto auto;
+}
+#player picture {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+#player img {
+	border: 5px solid white;
+	width: 200px;
+	height: 200px;
+}
+#player button {
+	color: white;
+	background-color: darkred;
+}
+#player button:hover {
+	cursor: pointer;
+}
+#playControl,
+#stopControl {
+	height: 70px;
+	width: 70px;
+	font-size: 50px;
+	border-radius: 100%;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	margin: auto;
+}
+#playControl {
+	visibility: hidden;
+}
+#volumeControl {
+	width: 200px;
+	padding: 5px;
+	background-color: darkred;
+	display: flex;
+	line-height: 30px;
+	margin-top: -6px;
+	border-radius: 0px 0px 15px 15px;
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+#volumeControl input[type="range"] {
+	border: none;
+	outline: none;
+}
+#player #nowPlaying {
+	background: none;
+	margin: auto 15px;
+	border-radius: 0;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+#player .Playing {
+	color: darkred;
+}
+#player h1 {
+	font-size: 20px;
+	text-align: center;
+	margin: 0px;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	background-color: darkred;
+	line-height: 45px;
+	width: 210px;
+	border-radius: 15px 15px 0px 0px;
+}
 @media only screen and (min-width: 1000px) {
 	input[name=nav]+label {
 		display: none;
@@ -36,6 +195,7 @@
 	#logo {
 		width: 250px;
 	}
+
 	#wrap>header nav {
 		width: 100%;
 		display: flex;
@@ -91,7 +251,6 @@
 		text-align: center;
 	}
 	#channels a:hover:after {
-		font-family: "LiveNetworks-Icons";
 		content: 'play';
 		font-size: 90px;
 		line-height: 100px;
@@ -100,21 +259,11 @@
 		border-radius: 50%;
 		width: 100px;
 		height: 100px;
-		/* z-index: 100; */
 		position: absolute;
 		left: 50%;
 		top: 100px;
 		transform: translate(-50%, -50%);
 	}
-	/* 
-	#channels a:hover:after {
-		content: '';
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-	} */
 	#channels h2 span {
 		display: block;
 		padding: 7px 5px;
@@ -135,14 +284,7 @@
 	#channels p:before {
 		font-size: 10px;
 	}
-	.player {
-		border-width: 4px 0;
-		border-style: solid;
-		position: relative;
-		height: 280px;
-		width: 100%;
-		overflow: hidden;
-	}
+
 	.carusel li {
 		height: 280px;
 	}
@@ -173,52 +315,32 @@
 		height: 600px;
 		grid-area: ad;
 	}
+	.ad {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        /* border: 1px solid red; */
+        width: 728px;
+        height: 90px;
+    }
 	.share,
 	.stationList {
 		list-style: none;
 		margin: 0;
 	}
-	.content {
-		background-color: rgba(31, 65, 84, .9);
-		padding: 50px;
-		line-height: 1.5em;
-	}
-	.content .sections {
-		margin-left: 80px;
-		color: var(--linkHover);
-		list-style: decimal;
-	}
-	.content tr {
-		background-color: rgba(255, 255, 255, .2);
-	}
-	.content tr ol {
-		list-style: lower-alpha;
-	}
-	.content tr:nth-child(even) {
-		background-color: rgba(255, 255, 255, .3);
-	}
-	.content td {
-		padding: 20px;
-		border: 1px solid rgb(167, 167, 167);
-	}
-	
-
-	td ul {
-		margin-left: 15px;
-	}
-	.content .sectionPrivacy {
-		padding: 0px;
-		margin-left: 0px;
-	}
 	.stationList {
-		list-style: none;
-	}
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: auto;
+        column-gap: 17px;
+        row-gap: 40px;
+    }
 	.nameRadio {
 		font-size: 15px;
 	}
 	.nowPlaying span {
 		width: 150px;
 	}
+
 }
 
 @media only screen and (min-width: 1170px) {
@@ -229,13 +351,18 @@
 		display: grid;
 	   
 	}
-	#channels ul {
-		grid-template-columns: 200px 200px 200px 200px;
-	}
+	.ad {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 300px;
+        height: 600px;
+    }
 	/*Ads*/
 	main .ad-1 {
 		width: 160px;
 		height: 600px;
 		grid-area: ad;
-	}
+	}	
+
+
 }

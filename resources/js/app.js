@@ -1,1 +1,2 @@
-require('@livenetworks/popup/ln-popup.js');
+require('ln-popup/');
+require('ln-obfuscator/');

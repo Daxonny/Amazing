@@ -22,9 +22,9 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/mobile.css') }}" media="screen and (max-width: 701px)">
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/tablet.css') }}" media="screen and (min-width: 701px and max-width: 1000px)">
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/desktop.css') }}" media="screen and (min-width: 1000px)">
+	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/mobile.css') }}" media="screen and (min-width: 320px) and (max-width: 767px)">
+	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/tablet.css') }}" media="screen and (min-width: 768px) and (max-width: 1024px)">
+	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/desktop.css') }}" media="screen and (min-width: 1025px)">
 
 	<!-- Implement Accept image/webp -->
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/css/webp.min.css') }}" media="screen">
@@ -37,15 +37,20 @@
 	@include('layout.headerSnippets.icons')
 
 </head>
-<body id="index" vocab="http://schema.org/" class="">
+<body vocab="http://schema.org/" class="">
 	<div id="wrap">
 		<header>
-		<a href="{{ route('index')}}"><img src="{{ lnasset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" /></a>
+			<a href="{{ route('index')}}">
+				<img src="{{ lnasset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" />
+			</a>
 
-			<input type="checkbox" name="nav" id="nav">
-			<label for="nav">menu</label>
+			<div>
+				<input type="checkbox" name="nav" id="nav">
+				<label for="nav">menu</label>
+			</div>
 
 			<nav>
+
 				<ul>
 					<li>
 						<a href="{{ route('index')}}" ln-ajaxify-target="main">{{ __('global.home') }}</a>
@@ -103,9 +108,6 @@
 
 		<main id="main">
 			@include('Home.View._partials.share')
-			<section id="headerLogo">
-				@yield('logoHeader')
-			</section>
 			<section id="content" class="@yield('contentClass')">
 				@yield('content')
 			</section>
@@ -136,7 +138,7 @@
 				{{-- <img src="{{ lncdn(lnimg('/logos/ar-logo-white.svg')) }}" alt="Amazing Radios Logo" /> --}}
 				<img src="{{ lnasset('logos/ar-logo-white.svg') }}" alt="Amazing Radios Logo" id="logo" />
 				<span>Copyright &copy; 2019 &middot;
-					<a href="https://amazingradios.com">AMAZINGRADIOS.com</a>
+					<a href="{{ route('index') }}">AMAZINGRADIOS.com</a>
 				</span>
 			</p>
 
@@ -151,7 +153,6 @@
 
 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
 	<script async type="text/javascript" src="{{ lnasset(asset('/site/v2/js/player/player.js')) }}"></script>
-	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/obfuscator/ln-obfuscator.js') }}"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180609245-1"></script>

@@ -1,0 +1,19 @@
+@media (min-width: 1025px) {
+
+	#wrap {
+		width: 1000px;
+	}
+
+	#logo {
+		height: 120px;
+	}
+
+}
+
+@media (min-width: 1281px) {
+
+	#wrap {
+		
+	}
+
+}

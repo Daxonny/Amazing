@@ -1,9 +1,10 @@
 body {
-	background-color: var(--bg);
-	color: var(--text);
 	font-family: Montserrat, sans-serif;
 	font-size: 11pt;
 	line-height: 1.5em;
+
+	background-size: cover;
+	background-position: center top;
 }
 
 input[name=nav] {
@@ -58,17 +59,8 @@ main .ad-1 {
 }
 
 .content {
-	border-top: 4px solid var(--linkHover);
-	background-color: rgba(var(--contentBg));
 	padding: 15px;
 	line-height: 1.5em;
-}
-
-.content a {
-	color: var(--linkHover);
-}
-.content a:hover {
-	color: var(--linkColor);
 }
 
 .content input[type=text],
@@ -76,7 +68,6 @@ main .ad-1 {
 .content textarea {
 	width: 100%;
 	padding: 12px;
-	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
@@ -89,8 +80,6 @@ main .ad-1 {
 }
 
 .content input[type=submit] {
-	background-color: var(--bg);
-	color: white;
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
@@ -98,51 +87,20 @@ main .ad-1 {
 	width: 100px;
 }
 
-.content input[type=submit]:hover {
-	color: var(--linkHover);
-}
-
 .content {
 	padding: 20px;
 	font-size: 20px;
 }
 
-
-
-#channels li {
-	position: relative;
-}
-
-#channels p {
-	font-size: 15px;
-	font-weight: 400;
-	text-align: center;
-}
-
-#channels p:before {
+.stationList p[property="track"]:before {
 	content: attr(data-label);
-	/* 'Now Playing'; */
 	text-transform: uppercase;
 	font-size: 10px;
-}
-
-#channels p span {
-	display: block;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-	line-height: 1.3em;
-}
-
-#channels [property="track"] [property="name"] {
-	font-weight: 300;
-	font-size: 14px;
 }
 
 button,
 label[for=nav] {
 	font-family: "LiveNetworks-Icons";
-	background: transparent;
 	border: none;
 	outline: none;
 }
@@ -160,4 +118,109 @@ button.favourite {
 }
 footer {
 	margin-top: 30px;
+}
+
+#headerLogo {
+	margin-bottom: 10px;
+}
+
+#headerLogo h1 {
+	position: absolute;
+	margin-top: 41px;
+	width: 30%;
+	text-transform: uppercase;
+	font-weight: bold; 
+}
+#headerLogo p{
+	margin-top: 77px;
+	position: absolute;
+	width: 30%;
+	font-weight: bold;
+}
+
+[typeof="MusicRecords"] [property="name"] {
+	font-size: 15px;
+	padding: 2px;
+	text-transform: none;
+}
+
+[property="byArtist"] {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.3em;
+	font-size: 16px;
+}
+[property="track"] {
+	font-weight: 300;
+	font-size: 14px;
+}
+[typeof="RadioStation"] [property="name"] {
+	justify-content: center;
+    padding: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    width: auto;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    height: 50px;
+}
+.nowPlaying {
+	position: relative;
+	height: 75px;
+}
+
+.stationList [property="track"] {
+	margin: 0;
+	position: absolute;
+	border-bottom-right-radius: 70px;
+	font-size: 15px;
+	padding: 2px 22px 10px 22px;
+	text-align: center;
+	font-weight: 400;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+
+.Playing {
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+}
+.fav {
+	font-family: "LiveNetworks-Icons";
+	font-size: 20px;
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.stationList li {
+	position: relative;
+}
+
+.stationList h2 {
+	font-size: 20px;
+}
+
+#stationLogo {
+	padding: 30px;
+	width: 200px;
+	height: 200px;
+}
+
+.stationList li a:hover:after {
+	font-family: "LiveNetworks-Icons";
+	content: 'play_circle_outline';
+	position: absolute;
 }

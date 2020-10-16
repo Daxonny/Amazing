@@ -86,10 +86,115 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/@livenetworks/popup/ln-popup.js":
-/*!******************************************************!*\
-  !*** ./node_modules/@livenetworks/popup/ln-popup.js ***!
-  \******************************************************/
+/***/ "./node_modules/ln-obfuscator/ln-obfuscator.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/ln-obfuscator/ln-obfuscator.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Usage:
+// Add the tag "ln-obfuscate" with the ROT number and all obfuscated HTML inside will be deobfuscated by the ROT amount
+
+(function () {
+  const DOM_SELECTOR = "ln-obfuscator";
+  const DOM_ATTRIBUTE = "lnObfuscator";
+
+  // if the component is already defined, return
+  if (window[DOM_ATTRIBUTE] != undefined || window[DOM_ATTRIBUTE] != null) {
+    return;
+  }
+
+  function constructor(domRoot) {
+    _findElements(domRoot);
+  }
+
+  function _findElements(domRoot) {
+    if(domRoot.TEXT_NODE && domRoot.childNodes.length == 0) {
+      return;
+    }
+    let items =
+      Array.from(domRoot.querySelectorAll("[" + DOM_SELECTOR + "]")) || [];
+
+    if (domRoot.hasAttribute(DOM_SELECTOR)) {
+      items.push(domRoot);
+    }
+
+    items.forEach(function (item) {
+      if (!item[DOM_ATTRIBUTE]) {
+        item[DOM_ATTRIBUTE] = new _constructor(item);
+      }
+    });
+  }
+
+  function _constructor(dom) {
+    this.dom = dom;
+    _init.call(this);
+    return this;
+  }
+
+  // Listens for DOM changes
+  function _domObserver() {
+    let observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        if (mutation.type == "childList") {
+          mutation.addedNodes.forEach(function (item) {
+            _findElements(item);
+          });
+        }
+      });
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+    });
+  }
+
+  _domObserver();
+
+  function _init() {
+    let obfuscationNum = _handleParam.call(this);
+    this.dom.innerHTML = deObfuscate(obfuscationNum, this.dom.innerHTML);
+  }
+
+  // Retrieves the ROT number
+  function _handleParam() {
+    return Number(this.dom.getAttribute(DOM_SELECTOR));
+  }
+
+  // Obfuscate algorithm
+  function obfuscate(obfuscationNum, sourceContent) {
+    return sourceContent.replace(/[a-zA-Z]/g, function (c) {
+      return String.fromCharCode(
+        (c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + obfuscationNum)
+          ? c
+          : c - 26
+      );
+    });
+  }
+  // Deobfuscation algorithm
+  function deObfuscate(obfuscationNum, sourceContent) {
+    let result = "";
+    obfuscationNum = (26 - obfuscationNum) % 26;
+    result = obfuscate(obfuscationNum, sourceContent);
+    return result;
+  }
+
+  // make lnObfuscate globaly avaliable
+  window[DOM_ATTRIBUTE] = constructor;
+  // Ads an obfuscate method to lnObfuscate
+  window[DOM_ATTRIBUTE].obfuscate = obfuscate;
+})();
+
+window.lnObfuscator(document.body);
+
+
+/***/ }),
+
+/***/ "./node_modules/ln-popup/ln-popup.js":
+/*!*******************************************!*\
+  !*** ./node_modules/ln-popup/ln-popup.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -105,23 +210,22 @@
 	const DOM_SELECTOR = 'ln-popup';
 	const DOM_ATTRIBUTE = 'lnPopup';
 
-	let _target = null;
-
 	// if the component is already defined, return
 	if (window[DOM_ATTRIBUTE] != undefined || window[DOM_ATTRIBUTE] != null) {
 		return;
 	}
 
 	function constructor(domRoot) {
-		// this._event = null;
 		_findElements(domRoot);
 	}
 
 	function _findElements(domRoot) {
 		let items = domRoot.querySelectorAll('[' + DOM_SELECTOR + ']') || [];
 
+		console.log(domRoot.querySelectorAll('[' + DOM_SELECTOR + ']'));
+
 		if (domRoot.hasAttribute(DOM_SELECTOR)) {
-			items.push(dom);
+			items.push(domRoot);
 		}
 
 		items.forEach(function(item) {
@@ -179,14 +283,14 @@
 	
 	// Edit Below
 
+	let _target = null;
+
 	function _init() {
-		let thiz = this;
 		this.dom.onclick = function(event) {
 			event = event || window.event;
 			event.preventDefault();
 			
 			_target = event.target;
-			console.log(_target);
 
 			window.open(_target.href, _target.target, _handleParams.call(this));
 			_target = null;
@@ -196,7 +300,6 @@
 	}
 
 	function _handleParams() {
-		console.log(_target);
 		if (!_shouldCenter.call(this)) {
 			return _target.getAttribute('ln-popup');
 		}
@@ -224,16 +327,9 @@
 	function _joinToString(options) {
 		result = [];
 		for(let item in options) {
-			console.log(item);
 			result.push(item + '=' + options[item]);
 		}
 		return result.join(',');
-	}
-
-
-	// https://stackoverflow.com/questions/5999998/check-if-a-variable-is-of-function-type
-	function isFunction(functionToCheck) {
-		return functionToCheck && {}.toString.call(functionToCheck) === '[object Function]';
 	}
 
 	// make lnPopup globaly avaliable
@@ -252,7 +348,9 @@ window.lnPopup(document.body);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! @livenetworks/popup/ln-popup.js */ "./node_modules/@livenetworks/popup/ln-popup.js");
+__webpack_require__(/*! ln-popup/ */ "./node_modules/ln-popup/ln-popup.js");
+
+__webpack_require__(/*! ln-obfuscator/ */ "./node_modules/ln-obfuscator/ln-obfuscator.js");
 
 /***/ }),
 

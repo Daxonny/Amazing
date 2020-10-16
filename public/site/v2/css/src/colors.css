@@ -22,30 +22,44 @@
 	--linkColor: rgb(224, 224, 166);
 }
 
-
-#stations {
-	color: var(--track);
-}
-#amazing-80s h2:hover {
-	background: var(--a80s);
-}
-#amazing-blues h2:hover {
+#amazing-blues h2:hover, #amazing-blues h2 span, #amazing-blues a:hover, .player.amazing-blues {
 	background: var(--blues);
 }
-#amazing-chillout h2:hover {
-	background: var(--chillout);
-}
-#amazing-chillhop h2:hover {
-	background: var(--chillhop);
-}
-#amazing-classic-hits h2:hover {
-	background: var(--classic-hits);
-}
-#amazing-smooth-jazz h2:hover {
+#amazing-smooth-jazz h2:hover, #amazing-smooth-jazz h2 span, #amazing-smooth-jazz a:hover, .player.amazing-smooth-jazz {
 	background: var(--smooth-and-jazz);
 }
-#amazing-vocals h2:hover {
+#amazing-80s h2:hover, #amazing-80s h2 span, #amazing-80s a:hover, .player.amazing-80s {
+	background: var(--a80s);
+}
+
+#amazing-chillout h2:hover, #amazing-chillout h2 span, #amazing-chillout a:hover, .player.amazing-chillout {
+	background: var(--chillout);
+}
+
+#amazing-chillhop h2:hover, #amazing-chillhop h2 span, #amazing-chillhop a:hover, .player.amazing-chillhop {
+	background: var(--chillhop);
+}
+
+#amazing-classic-hits h2:hover, #amazing-classic-hits h2 span, #amazing-classic-hits a:hover, .player.amazing-classic-hits {
+	background: var(--classic-hits);
+}
+#amazing-vocals h2:hover, #amazing-vocals h2 span, #amazing-vocals a:hover, .player.amazing-vocals{
 	background: var(--vocals);
+}
+
+
+#headerLogo h1, #headerLogo p {
+	color:black;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--text);
+}
+
+footer {
+	border-top: 4px solid var(--linkHover);
+	background-color: rgba(31, 65, 84, .5);
 }
 
 .fav {
@@ -57,7 +71,119 @@
 .fav:hover {
 	color: var(--favouriteHover);
 }
+.fav:active {
+	color: var(--favouriteHover);
+}
 
+.stationList [property="track"] {
+	background-color: white;
+}
 .nowPlaying [property="name"] {
 	color: rgb(49, 46, 46);
+}
+
+.player {
+	border-color: var(--linkHover);
+	background-color: var(--playerBg);
+}
+
+.stationList {
+	color: var(--track);
+}
+.stationList h2 {
+	background: rgb(194, 188, 188);
+	background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
+	transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
+}
+.stationList li {
+	background-color: rgb(186, 186, 186);
+	-webkit-box-shadow: 9px 9px 10px -3px rgba(0, 0, 0, 0.55);
+	-moz-box-shadow: 9px 9px 10px -3px rgba(0, 0, 0, 0.55);
+	box-shadow: 9px 9px 10px -3px rgba(0, 0, 0, 0.55);
+}
+.stationList li a:hover::after{
+	color: #fff;
+}
+.stationList li a:hover{
+	background-color: transparent;
+}
+.content a {
+	color: var(--linkHover);
+}
+.content a:hover {
+	color: var(--linkColor);
+}
+.content {
+	border-top: 4px solid var(--linkHover);
+	background-color: rgba(var(--contentBg));
+}
+.content .sections {
+	color: var(--linkHover);
+}
+.content tr {
+	background-color: rgba(255, 255, 255, .2);
+}
+.content tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, .3);
+}
+.content input[type=submit] {
+	background-color: var(--bg);
+	color: white;
+}
+.content input[type=submit]:hover {
+	color: var(--linkHover);
+}
+.content td {
+	border: 1px solid rgb(167, 167, 167);
+}
+.content input[type=text],
+.content select,
+.content textarea{
+	border: 1px solid #ccc;
+}
+
+[typeof="MusicRecords"] [property="name"]{
+	background-color: white;
+}
+[property="byArtist"] {
+	color: black;
+}
+.stationList h2 a {
+	display: block;
+	-webkit-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+	-moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+	box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
+}
+
+.fav {
+	background: transparent;
+}
+button,
+label[for=nav] {
+	background: transparent;
+}
+.Playing{
+	color: var(--now-playing);
+}
+
+#wrap .share {
+	background-color: var(--linkHover);
+	color: #fff;
+	font-family: 'LiveNetworks-Icons';
+}
+
+#channels li a:hover:after {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+}
+#channels {
+	color: var(--track);
+}
+
+#channels li p {
+	background-color: #fff;
+}
+
+#channels li p:before {
+	color: var(--now-playing);
 }

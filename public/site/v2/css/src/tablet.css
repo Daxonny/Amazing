@@ -1,7 +1,16 @@
 
-@media only screen and (min-width: 701px) and (max-width: 1000px) {
+@media only screen and (min-width: 700px) and (max-width: 999px) {
 	h3 {
 		margin: 0px;
+	}
+	#headerLogo h1 {
+        margin-left: 55%;
+        font-size: 20px;
+	}
+	#headerLogo p {
+		margin-top: 70px;
+		margin-left: 55%;
+		font-size: 20px;
 	}
 	header {
 		width: 100%;
@@ -10,7 +19,6 @@
 		text-align: center;
 		position: sticky;
 		top: 0;
-		background-color: var(--bg);
 		z-index: 100;
 	}
 	header #logo {
@@ -57,41 +65,16 @@
 	#headerLogo img {
 		width: 100%;
 	}
-	#headerLogo h1 {
-		position: absolute;
-		margin-top: 41px;
-		position: absolute;
-		width: 30%;
-		margin-left: 55%;
-		font-size: 20px;
-		color:black;
-		text-transform: uppercase;
-		font-weight: bold; 
-	}
-	#headerLogo p{
-		position: absolute;
-		margin-top: 70px;
-		position: absolute;
-		width: 30%;
-		margin-left: 55%;
-		font-size: 20px;
-		color: black;
-		font-weight: bold;
-	}
-	#content-station {
-		display: flex;
-		margin-top: 10px;
-	}
+    #content-station {
+        display: grid;
+        grid-template-rows: auto auto;
+        margin-top: 10px;
+    }
 	#stations li {
-		background-color: rgb(186, 186, 186);
 		position: relative;
-		-webkit-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
-		-moz-box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
-		box-shadow: 9px 16px 34px -3px rgba(0, 0, 0, 0.55);
 	}
 	#stations {
 		margin: auto;
-		color: var(--track);
 	}
 	.stationList {
 		margin: auto;
@@ -109,60 +92,13 @@
 		margin-bottom: 25px;
 		margin: auto auto 25px auto;
 	}
-	.stationList h2 {
-		background: rgb(194, 188, 188);
-		background: linear-gradient(172deg, rgba(194, 188, 188, 1) 32%, rgba(252, 251, 245, 1) 100%);
-		transition: background 5s 5s ease-out, background 10s 10s ease-out, all 0.5s 0s ease;
-	}
 	#stations img {
 		width: 180px;
 		height: 180px;
 		padding: 10px;
 	}
-	[typeof="RadioStation"] [property="name"] {
-		display: block;
-		padding: 3px;
-		text-transform: uppercase;
-		text-align: center;
-		width: auto;
-		font-size: 15px;
-		-webkit-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
-		-moz-box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
-		box-shadow: -1px 17px 34px -3px rgba(0, 0, 0, 0.52);
-	}
-	.nowPlaying {
-		background-color: white;
-		position: relative;
-		border-bottom-right-radius: 70px;
-		font-size: 15px;
-		padding: 2px 22px 10px 22px;
-		text-align: center;
-		font-weight: 400;
-	}
-	[typeof="MusicRecords"] [property="name"] {
-		background-color: white;
-		font-size: 15px;
-		padding: 2px;
-		text-transform: none;
-	}
 	#stations li a {
 		position: relative;
-	}
-	#stations li a:hover{
-		background-color: transparent;
-	}
-	[property="byArtist"] {
-		display: block;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-		line-height: 1.3em;
-		font-size: 16px;
-		color: black;
-	}
-	[property="track"] {
-		font-weight: 300;
-		font-size: 14px;
 	}
 	#stations p span {
 		display: block;
@@ -173,28 +109,6 @@
 	}
 	#stations .nowPlaying span {
 		width: 150px;
-	}
-	.fav {
-		font-family: "LiveNetworks-Icons";
-		background: transparent;
-		font-size: 20px;
-		position: absolute;
-		bottom: 3px;
-		right: 3px;
-		border: none;
-		margin: 0;
-		padding: 0;
-		cursor: pointer;
-	}
-	.Playing {
-		text-transform: uppercase;
-		color: var(--now-playing);
-		font-size: 12px;
-		text-align: center;
-	}
-	footer {
-		border-top: 4px solid var(--linkHover);
-		background-color: rgba(31, 65, 84, .5);
 	}
 	footer nav {
 		margin: auto;
@@ -219,4 +133,85 @@
 		grid-template-columns: auto auto;
 		grid-template-rows: auto auto auto;
 	}
+	#ad {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 728px;
+        height: 90px;
+        margin: auto auto 20px auto;
+	}
+	#player {
+        background: linear-gradient(180deg, rgba(203, 171, 48, 1) 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
+        padding: 20px;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 250px 70px 300px auto;
+        grid-template-rows: auto auto auto;
+    }
+    #player picture {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #player img {
+        border: 5px solid white;
+        width: 200px;
+        height: 200px;
+    }
+    #player button {
+        color: white;
+        background-color: darkred;
+    }
+    #player button:hover {
+        cursor: pointer;
+    }
+    #playControl,
+    #stopControl {
+        height: 70px;
+        width: 70px;
+        font-size: 50px;
+        border-radius: 100%;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: auto;
+    }
+    #playControl {
+        visibility: hidden;
+    }
+    #volumeControl {
+        width: 200px;
+        padding: 5px;
+        background-color: darkred;
+        display: flex;
+        line-height: 30px;
+        margin-top: -6px;
+        border-radius: 0px 0px 15px 15px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #volumeControl input[type="range"] {
+        border: none;
+        outline: none;
+    }
+    #player #nowPlaying {
+        background: none;
+        margin: auto 15px;
+        border-radius: 0;
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #player .Playing {
+        color: darkred;
+    }
+    #player h1 {
+        font-size: 20px;
+        text-align: center;
+        margin: 0px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: darkred;
+        line-height: 45px;
+        width: 210px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
 }

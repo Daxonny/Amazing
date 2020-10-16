@@ -1,0 +1,25 @@
+body {
+	font-family: Montserrat, sans-serif;
+}
+
+#wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	display: flex;
+}
+
+#logo {
+	aspect-ratio: 250/120;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav ul {
+	display: flex;
+}
