@@ -19,18 +19,20 @@ mix
 	'public/site/v2/css/src2/colors.css',
 	'public/site/v2/css/src2/layout.css',
 	'public/site/v2/css/src2/mobile.css',
-], 'public/site/v2/dist/css/mobile.css')
-.styles([
-	'public/site/v2/css/src2/reset.css',
-	'public/site/v2/css/src2/fonts.css',
-	'public/site/v2/css/src2/colors.css',
-	'public/site/v2/css/src2/layout.css',
 	'public/site/v2/css/src2/tablet.css',
-], 'public/site/v2/dist/css/tablet.css')
-.styles([
-	'public/site/v2/css/src2/reset.css',
-	'public/site/v2/css/src2/fonts.css',
-	'public/site/v2/css/src2/colors.css',
-	'public/site/v2/css/src2/layout.css',
 	'public/site/v2/css/src2/desktop.css',
-], 'public/site/v2/dist/css/desktop.css')
+], 'public/site/v2/dist/css/styles.css')
+// .styles([
+// 	'public/site/v2/css/src2/reset.css',
+// 	'public/site/v2/css/src2/fonts.css',
+// 	'public/site/v2/css/src2/colors.css',
+// 	'public/site/v2/css/src2/layout.css',
+// 	'public/site/v2/css/src2/tablet.css',
+// ], 'public/site/v2/dist/css/tablet.css')
+// .styles([
+// 	'public/site/v2/css/src2/reset.css',
+// 	'public/site/v2/css/src2/fonts.css',
+// 	'public/site/v2/css/src2/colors.css',
+// 	'public/site/v2/css/src2/layout.css',
+// 	'public/site/v2/css/src2/desktop.css',
+// ], 'public/site/v2/dist/css/desktop.css')

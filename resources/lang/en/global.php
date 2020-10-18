@@ -7,7 +7,7 @@ return [
 	'contactUs' => "Contact us",
 	'register' => "Register",
 	'privacy' => "Privacy",
-	'tac' => "TAC",
+	'terms' => "Terms",
 	'contact' => "Contact",
 	'login' => "Log in",
 	'name' => "Your name",

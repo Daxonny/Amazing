@@ -1,4 +1,4 @@
-<ul class="share">
+<ul class="share ln-icon">
 	<li>
 		<a
 			href="https://www.facebook.com/sharer/sharer.php?u=http://amazingradios.com"

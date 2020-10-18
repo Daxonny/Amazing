@@ -34,6 +34,7 @@
 @endsection
 
 @section('js')
-<script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $vm->tritonStationId }}"></script>
-<script async type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}"></script>
+	<script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $vm->tritonStationId }}" defer></script>
+
+	<script type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}" defer></script>
 @endsection

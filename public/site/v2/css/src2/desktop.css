@@ -4,16 +4,91 @@
 		width: 1000px;
 	}
 
+	#wrap > header, #wrap > footer {
+		position: relative;
+		padding: 20px 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: stretch;
+		justify-content: space-between;
+	}
+	#wrap > footer {
+		padding: 20px;
+	}
+
 	#logo {
 		height: 120px;
 	}
+
+	#wrap nav {
+		display: flex;
+	}
+
+	#wrap nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	/* Share icons */
+	#wrap .share:before {
+		border: 2px solid #fff;
+		-webkit-transition: -webkit-transform .4s ease-in-out;
+		-ms-transition: -ms-transform .4s ease-in-out;
+		transition: transform .4s ease-in-out;
+	}
+
+	#wrap .share {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		line-height: 50px;
+		font-size: 42px;
+	}
+
+	#heroBox h1, #heroBox p {
+		position: absolute;
+	}
+
+	#heroBox h1 {
+
+	}
+
+
+	#channels {
+		display: grid;
+		grid-template-areas: 
+			'stationList ad1'
+			'stationList ad2';
+		grid-gap: 20px;
+		margin-top: 20px;
+	}
+
+
+	.stationList {
+		grid-area: stationList;
+		grid-template-columns: 200px 200px 200px;
+		grid-gap: 40px;
+	}
+
+	#ad1, #ad2 {
+		width: 300px;
+		height: 250px
+	}
+
 
 }
 
 @media (min-width: 1281px) {
 
 	#wrap {
-		
+		width: 1210px;
+	}
+
+	.stationList {
+		grid-template-columns: 200px 200px 200px 200px;
+		grid-gap: 30px;
 	}
 
 }

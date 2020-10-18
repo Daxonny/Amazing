@@ -28,6 +28,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
@@ -36,6 +37,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
@@ -44,6 +46,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -52,6 +55,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -60,6 +64,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 /* latin-ext */
 @font-face {
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -68,6 +73,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 /* latin */
 @font-face {
+  font-display: swap;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -100,7 +106,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	--navNormal: #fff;
 	--navHover: #cbab30;
 
-	--contentBg: 31,65,84,.8;
+	--contentBg: 31,65,84;
 }
 
 body {
@@ -118,34 +124,267 @@ a:hover {
 
 nav a {
 	color: var(--navNormal);
+	transition: color .3s;
 }
 nav a:hover {
 	color: var(--navHover)
+}
+
+
+#amazing-blues h2 span, #amazing-blues a:hover, .player.amazing-blues {
+	background-color: var(--blues);
+}
+#amazing-smooth-jazz h2 span, #amazing-smooth-jazz a:hover, .player.amazing-smooth-jazz {
+	background-color: var(--smooth-and-jazz);
+}
+#amazing-80s h2 span, #amazing-80s a:hover, .player.amazing-80s {
+	background-color: var(--a80s);
+}
+
+#amazing-chillout h2 span, #amazing-chillout a:hover, .player.amazing-chillout {
+	background-color: var(--chillout);
+}
+
+#amazing-chillhop h2 span, #amazing-chillhop a:hover, .player.amazing-chillhop {
+	background-color: var(--chillhop);
+}
+
+#amazing-classic-hits h2 span, #amazing-classic-hits a:hover, .player.amazing-classic-hits {
+	background-color: var(--classic-hits);
+}
+
+#amazing-vocals h2 span, #amazing-vocals a:hover, .player.amazing-vocals {
+	background-color: var(--vocals);
+}
+
+
+#wrap > footer {
+	border-top: 4px solid var(--linkHover);
+	background-color: rgba(var(--contentBg), .5);
+}
+
+#wrap .share {
+	background-color: var(--linkHover);
+	color: #fff;
+}
+#wrap .share a {
+	color: #fff;
+}
+
+.content {
+	border-top: 4px solid var(--linkHover);
+	background-color: rgba(var(--contentBg), .8);
+}
+
+
+.content tr {
+	background-color: rgba(255, 255, 255, .2);
+}
+.content tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.content td {
+	border: 1px solid rgb(167, 167, 167);
+}
+
+
+.content input[type=submit] {
+	background-color: var(--bg);
+	color: white;
+}
+.content input[type=submit]:hover {
+	color: var(--linkHover);
+}
+.content input[type=text],
+.content select,
+.content textarea{
+	border: 1px solid #ccc;
+}
+
+
+.stationList li {
+	background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(186,186,186,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(186,186,186,1) 100%);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(186,186,186,1) 100%);
+
+	-webkit-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.3);
+
+}
+
+.stationList li a {
+	-webkit-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 3px 5px 2px rgba(0,0,0,0.3);
+
+
+	-webkit-transition: background-color .5s ease-out;
+	-moz-transition: background-color .5s ease-out;
+	-o-transition: background-color .5s ease-out;
+	transition: background-color .5s ease-out;
+}
+
+.stationList li a:hover:after {
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+}
+
+.nowPlaying p[typeof="MusicRecording"]:before {
+	color: var(--now-playing);
 }
 body {
 	font-family: Montserrat, sans-serif;
 }
 
-#wrap {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+
+h1{
+	font-size: 1.7em;
+	margin-top:20px;
 }
 
-header {
-	display: flex;
+h2 {
+	font-size: 1.4em;
 }
+
+h3 {
+	font-size: 1.17em;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+p {
+	font-size: 17px;
+	margin: 10px 0;
+}
+strong {
+	font-weight: bold;
+}
+ul {
+	list-style: circle;
+	margin-left: 60px;
+}
+
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 
 #logo {
 	aspect-ratio: 250/120;
 }
 
-header nav {
-	display: flex;
+#heroBox {
+	position: relative;
 }
 
-header nav ul {
+nav ul, nav ul li, .share {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+#main {
+	position: relative;
+}
+
+
+.content {
+	padding: 20px;
+	font-size: 20px;
+	line-height: 1.3em;
+}
+
+button, label[for=nav] {
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+button.favourite {
+	font-size: 48px;
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+
+.stationList {
+	display: grid;
+}
+.stationList, .stationList li {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.stationList p {
+	margin: 0;
+	font-size: 11pt;
+}
+
+.stationList a {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.stationList a:hover:after {
+	font-family: "LiveNetworks-Icons";
+	content: 'play_circle_outline';
+	font-size: 90px;
+	line-height: 100px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 40px;
+}
+
+.stationList picture {
+	display: block;
+	margin: 10px;
+}
+
+.stationList span {
+	display: block;
+}
+
+.stationList [typeof="RadioStation"] [property="name"] {
+	justify-content: center;
+	padding: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	width: auto;
+	font-size: 15px;
+	align-items: center;
+	display: flex;
+	height: 50px;
+}
+
+.nowPlaying p[typeof="MusicRecording"]:before {
+	content: attr(data-label);
+	display: block;
+	text-transform: uppercase;
+	font-size: 10pt;
+	padding-top: 10px;
+}
+
+[property="track"] [property="name"] {
+	font-weight: 300;
+	font-size: 14px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

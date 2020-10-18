@@ -66,6 +66,8 @@
 				this.artist.innerText = xmlDoc.querySelectorAll("[name='track_artist_name']")[0].childNodes[0].nodeValue;
 				this.track.innerText = xmlDoc.querySelectorAll("[name='cue_title']")[0].childNodes[0].nodeValue;
 
+				this.artist.setAttribute('title', 'Artist: ' + this.artist.innerText);
+				this.track.setAttribute('title', 'Track: ' + this.track.innerText);
 
 				setTimeout(function() { _tritonTrack.call(this) }, this.interval);
 

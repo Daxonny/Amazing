@@ -2,24 +2,195 @@ body {
 	font-family: Montserrat, sans-serif;
 }
 
-#wrap {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+
+h1{
+	font-size: 1.7em;
+	margin-top:20px;
 }
 
-header {
-	display: flex;
+h2 {
+	font-size: 1.4em;
 }
+
+h3 {
+	font-size: 1.17em;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+p {
+	font-size: 17px;
+	margin: 10px 0;
+}
+strong {
+	font-weight: bold;
+}
+ul {
+	list-style: circle;
+	margin-left: 60px;
+}
+
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 
 #logo {
 	aspect-ratio: 250/120;
 }
 
-header nav {
-	display: flex;
+#heroBox {
+	position: relative;
 }
 
-header nav ul {
+nav ul, nav ul li, .share {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+#main {
+	position: relative;
+}
+
+
+.content {
+	padding: 20px;
+	font-size: 20px;
+	line-height: 1.3em;
+}
+
+button, label[for=nav] {
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+button.fav {
+	font-size: 19px;
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+
+.stationList {
+	display: grid;
+}
+.stationList, .stationList li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	position: relative;
+}
+
+.stationList li {
+	height: 314px;
+}
+
+.stationList p {
+	margin: 0;
+	font-size: 11pt;
+}
+
+.stationList a {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.stationList a:hover:after {
+	font-family: "LiveNetworks-Icons";
+	content: 'play_circle_outline';
+	font-size: 90px;
+	line-height: 100px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin-top: 44px;
+}
+
+.stationList picture {
+	display: block;
+	margin: 10px;
+}
+
+.stationList span {
+	display: block;
+}
+
+.stationList [typeof="RadioStation"] [property="name"] {
+	justify-content: center;
+	padding: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	width: auto;
+	font-size: 15px;
+	align-items: center;
+	display: flex;
+	height: 50px;
+}
+
+.nowPlaying p[typeof="MusicRecording"]:before {
+	content: attr(data-label);
+	display: block;
+	text-transform: uppercase;
+	font-size: 10pt;
+	padding-top: 3px;
+	line-height: 1.3em;
+}
+
+[property="track"] [property="name"] {
+	font-weight: 300;
+}
+
+.stationList .nowPlaying {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 250px;
+	padding: 2px 5px 10px 5px;
+	border-bottom-right-radius: 70px;
+}
+
+.stationList .nowPlaying p[typeof="MusicRecording"] span {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.3em;
+}
+
+
+footer {
+	margin-top: 30px;
+}
+
+
+.ad {
+	overflow: hidden;
+	border: 1px solid red;
+}
+
+
+#ad1 {
+	grid-area: ad1;
+}
+#ad2 {
+	grid-area: ad2;
 }

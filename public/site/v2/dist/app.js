@@ -361,7 +361,7 @@ __webpack_require__(/*! ln-obfuscator/ */ "./node_modules/ln-obfuscator/ln-obfus
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/milena/projects/Amazing/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/sojic/projects/liveNetworks/ar/Amazing/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })
