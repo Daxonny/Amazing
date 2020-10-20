@@ -66,6 +66,27 @@ nav ul, nav ul li, .share {
 	line-height: 1.3em;
 }
 
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+#wrap footer p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#wrap footer img {
+	width: 95px;
+}
+
+
+#logoFooter {
+	height: auto;
+	width: 95px;
+}
+
 button, label[for=nav] {
 	background: transparent;
 	border: none;
@@ -150,13 +171,10 @@ button.fav {
 	display: block;
 	text-transform: uppercase;
 	font-size: 10pt;
-	padding-top: 3px;
+	padding-top: 7px;
 	line-height: 1.3em;
 }
 
-[property="track"] [property="name"] {
-	font-weight: 300;
-}
 
 .stationList .nowPlaying {
 	position: absolute;
@@ -174,8 +192,14 @@ button.fav {
 	overflow: hidden;
 	white-space: nowrap;
 	line-height: 1.3em;
+	margin-left: 4px;
+    margin-right: 18px;
 }
-
+.stationList [typeof="MusicRecording"] [property="name"] {
+	font-size: 14px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 
 footer {
 	margin-top: 30px;
@@ -193,4 +217,95 @@ footer {
 }
 #ad2 {
 	grid-area: ad2;
+}
+#player {
+	padding: 20px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 250px 70px 300px auto;
+	grid-template-rows: auto auto auto;
+	border-style: solid;
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+}
+
+#playControl, #stopControl {
+	height: 70px;
+	width: 70px;
+	font-size: 50px;
+	border-radius: 100%;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	margin: auto;
+}
+#playControl, #stopControl {
+	font-family: "LiveNetworks-Icons";
+}
+#player li {
+	height: 280px;
+}
+#player img {
+	width: 200px;
+	height: 200px;
+}
+#player h1 {
+	margin: 0px;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	line-height: 31px;
+	width: 205px;
+	border-radius: 15px 15px 0px 0px;
+	justify-content: center;
+	padding: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+	display: flex;
+	height: 55px;
+	align-items: center;
+
+}
+#player picture {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+#volumeControl {
+	width: 200px;
+	padding: 5px;
+	display: flex;
+	line-height: 30px;
+	margin-top: -6px;
+	border-radius: 0px 0px 15px 15px;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	margin-top: -42px;
+}
+#volumeControl button {
+	font-family: "LiveNetworks-Icons";
+}
+
+#player #nowPlaying {
+	background: none;
+	margin: auto 15px;
+	border-radius: 0;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+.Playing {
+	text-transform: uppercase;
+	font-size: 15px;
+	text-align: center;
+}
+#player [property="byArtist"] {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.3em;
+	font-size: 19px;
+}
+#player [property="track"] {
+	font-weight: 300;
+	font-size: 17px;
 }

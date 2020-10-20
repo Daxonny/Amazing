@@ -173,12 +173,21 @@ nav a:hover {
 #wrap .share a {
 	color: #fff;
 }
+#wrap .share:after {
+    border-bottom: 50px solid var(--linkHover);
+    border-left: 50px solid transparent;
+}
+#wrap .share:before {
+	border: 2px solid #fff;
+	-webkit-transition: -webkit-transform .4s ease-in-out;
+	-ms-transition: -ms-transform .4s ease-in-out;
+	transition: transform .4s ease-in-out;
+}
 
 .content {
 	border-top: 4px solid var(--linkHover);
 	background-color: rgba(var(--contentBg), .8);
 }
-
 
 .content tr {
 	background-color: rgba(255, 255, 255, .2);
@@ -247,19 +256,45 @@ nav a:hover {
 	background-color: #fff;
 	color: #000;
 }
+.nowPlaying [property="name"] {
+	color: rgb(107, 105, 105);
+}
 
 .nowPlaying p[typeof="MusicRecording"]:before {
 	color: var(--now-playing);
 }
 
+#player {
+	background-color:var(--linkHover);
+	background: linear-gradient(180deg, #f7ad00 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
+}
+#player h1{
+	background-color: var(--smooth-and-jazz);
+}
+#player img {
+	border: 5px solid white;
+}
 
-
+#volumeControl {
+	background-color: var(--smooth-and-jazz);
+}
+#player button {
+	color: white;
+	background-color: var(--smooth-and-jazz);
+}
+#player [property="byArtist"] {
+	color: black;
+}
+.Playing {
+	color: var(--smooth-and-jazz);
+}
 .fav {
 	color: var(--text);
 }
 .fav:hover {
 	color: var(--linkHover);
 }
+
 body {
 	font-family: Montserrat, sans-serif;
 }
@@ -326,6 +361,27 @@ nav ul, nav ul li, .share {
 	padding: 20px;
 	font-size: 20px;
 	line-height: 1.3em;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+#wrap footer p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#wrap footer img {
+	width: 95px;
+}
+
+
+#logoFooter {
+	height: auto;
+	width: 95px;
 }
 
 button, label[for=nav] {
@@ -412,13 +468,10 @@ button.fav {
 	display: block;
 	text-transform: uppercase;
 	font-size: 10pt;
-	padding-top: 3px;
+	padding-top: 7px;
 	line-height: 1.3em;
 }
 
-[property="track"] [property="name"] {
-	font-weight: 300;
-}
 
 .stationList .nowPlaying {
 	position: absolute;
@@ -436,8 +489,14 @@ button.fav {
 	overflow: hidden;
 	white-space: nowrap;
 	line-height: 1.3em;
+	margin-left: 4px;
+    margin-right: 18px;
 }
-
+.stationList [typeof="MusicRecording"] [property="name"] {
+	font-size: 14px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
 
 footer {
 	margin-top: 30px;
@@ -456,21 +515,217 @@ footer {
 #ad2 {
 	grid-area: ad2;
 }
-@media (min-width: 320px) {
+#player {
+	padding: 20px;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 250px 70px 300px auto;
+	grid-template-rows: auto auto auto;
+	border-style: solid;
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+}
 
-	#wrap {
-		width: 100%;
-	}
-
-
+#playControl, #stopControl {
+	height: 70px;
+	width: 70px;
+	font-size: 50px;
+	border-radius: 100%;
+	grid-column: 2/3;
+	grid-row: 2/3;
+	margin: auto;
+}
+#playControl, #stopControl {
+	font-family: "LiveNetworks-Icons";
+}
+#player li {
+	height: 280px;
+}
+#player img {
+	width: 200px;
+	height: 200px;
+}
+#player h1 {
+	margin: 0px;
+	grid-column: 1/2;
+	grid-row: 1/2;
+	line-height: 31px;
+	width: 205px;
+	border-radius: 15px 15px 0px 0px;
+	justify-content: center;
+	padding: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+	display: flex;
+	height: 55px;
+	align-items: center;
 
 }
+#player picture {
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+#volumeControl {
+	width: 200px;
+	padding: 5px;
+	display: flex;
+	line-height: 30px;
+	margin-top: -6px;
+	border-radius: 0px 0px 15px 15px;
+	grid-column: 1/2;
+	grid-row: 3/4;
+	margin-top: -42px;
+}
+#volumeControl button {
+	font-family: "LiveNetworks-Icons";
+}
+
+#player #nowPlaying {
+	background: none;
+	margin: auto 15px;
+	border-radius: 0;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+.Playing {
+	text-transform: uppercase;
+	font-size: 15px;
+	text-align: center;
+}
+#player [property="byArtist"] {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.3em;
+	font-size: 19px;
+}
+#player [property="track"] {
+	font-weight: 300;
+	font-size: 17px;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	#wrap {
-		width: 700px;
+		width: 768px;
+	}
+	#wrap > header, #wrap > footer {
+		position: relative;
+		padding: 20px 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: stretch;
+	}
+	#wrap > footer {
+		padding: 20px;
 	}
 
+	#logo {
+		height: 100px;
+	}
+	#wrap nav {
+		display: flex;
+	}
+
+	#wrap nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	/* Share icons */
+	#wrap .share {
+		display: flex;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		line-height: 50px;
+		font-size: 42px;
+	}
+
+	#wrap .share li {
+		float: left;
+		margin: 0px 7px;
+	}
+	#wrap .share:after {
+		position: absolute;
+		left: -49px;
+		top: 0px;
+		content: '';
+	}
+
+	#wrap nav {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+	#wrap nav a {
+		position: relative;
+		display: block;
+		padding: 20px;
+	}
+
+	#wrap nav ul li {
+		font-size: 14px;
+	}
+	
+	#navMenu {
+		visibility: hidden;
+	}
+	#channels {
+		display: grid;
+		grid-template-areas: 
+		'ad1'
+		'stationList'
+		'ad2';
+		margin-top: 20px;
+	}
+	#ad1, #ad2 {
+		width: 728px;
+		height: 90px;
+		margin: 20px;
+	}
+	#ad1 {
+		grid-area: ad1;
+	}
+	#ad2 {
+		grid-area: ad2;
+	}
+
+	.stationList {
+		grid-area: stationList;
+		grid-template-columns: 200px 200px 200px;
+		grid-gap: 40px;
+		margin:auto;
+	}
+	#heroBox img{
+			width:768px;
+	}
+	#heroBox h1{
+		margin-left: 60%;
+		margin-top: 7%;
+		position: absolute;
+	}
+	#heroBox p {
+		position: absolute;
+		margin-left: 60%;
+		margin-top: 10%;
+
+	}
+	footer p{
+		font-size: 14px;
+	}
+	#player img {
+		margin-bottom: 42px;
+	}
+	#player #ad3 {
+		grid-column: 4/5;
+		grid-row: 2/3;
+		width: 320px;
+		height: 50px;
+	}
 }
 @media (min-width: 1025px) {
 
@@ -485,7 +740,6 @@ footer {
 		flex-direction: row;
 		align-items: center;
 		align-content: stretch;
-		justify-content: space-between;
 	}
 	#wrap > footer {
 		padding: 20px;
@@ -506,14 +760,8 @@ footer {
 
 
 	/* Share icons */
-	#wrap .share:before {
-		border: 2px solid #fff;
-		-webkit-transition: -webkit-transform .4s ease-in-out;
-		-ms-transition: -ms-transform .4s ease-in-out;
-		transition: transform .4s ease-in-out;
-	}
-
 	#wrap .share {
+		display: flex;
 		position: absolute;
 		right: 0;
 		bottom: 0;
@@ -521,14 +769,51 @@ footer {
 		font-size: 42px;
 	}
 
+	#wrap .share li {
+		float: left;
+		margin: 0px 7px;
+	}
+	#wrap .share:after {
+		position: absolute;
+		left: -49px;
+		top: 0px;
+		content: '';
+	}
+
+	#wrap nav {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+	#wrap nav a {
+		position: relative;
+		display: block;
+		padding: 20px;
+	}
+
+	#wrap nav ul li {
+		font-size: 14px;
+	}
+	
+	#navMenu {
+		visibility: hidden;
+	}
+	#heroBox img {
+		width: 100%;
+	}
+
 	#heroBox h1, #heroBox p {
 		position: absolute;
 	}
 
 	#heroBox h1 {
-
+		margin-left: 700px;
+    	margin-top: 60px;
 	}
-
+	#heroBox p{
+		margin-left: 702px;
+		margin-top: 100px;
+	}
 
 	#channels {
 		display: grid;
@@ -545,12 +830,27 @@ footer {
 		grid-template-columns: 200px 200px 200px;
 		grid-gap: 40px;
 	}
-
+	.nowPlaying [property="name"] {
+		width: 165px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-align: center;
+		overflow: hidden;
+	}
 	#ad1, #ad2 {
 		width: 300px;
-		height: 250px
+		height: 250px;
 	}
-
+	
+	#player #ad3 {
+		grid-column: 4/5;
+		grid-row: 1/3;
+		width: 300px;
+		height: 250px;
+	}
+	#player img {
+		margin-bottom: 42px;
+	}
 
 }
 
@@ -564,5 +864,7 @@ footer {
 		grid-template-columns: 200px 200px 200px 200px;
 		grid-gap: 30px;
 	}
-
+	#player #ad3 {
+		margin-left: 170px;
+	}
 }

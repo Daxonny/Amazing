@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{tongue()->current()}}" dir="{{tongue()->leftOrRight()}}">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,15 +23,17 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180609245-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){
+
+		function gtag() {
 			dataLayer.push(arguments);
 		}
-		gtag('js', new Date()); gtag('config', 'UA-180609245-1');
+		gtag('js', new Date());
+		gtag('config', 'UA-180609245-1');
 	</script>
 
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
-	
-<!-- 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/mobile.css') }}" media="screen and (min-width: 320px) and (max-width: 767px)">
+
+	<!-- 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/mobile.css') }}" media="screen and (min-width: 320px) and (max-width: 767px)">
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/tablet.css') }}" media="screen and (min-width: 768px) and (max-width: 1024px)">
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/desktop.css') }}" media="screen and (min-width: 1025px)"> -->
 
@@ -45,18 +48,13 @@
 	@include('layout.headerSnippets.icons')
 
 </head>
+
 <body vocab="http://schema.org/" class="">
 	<div id="wrap">
 		<header>
 			<a href="{{ route('index')}}">
 				<img src="{{ lnasset('logos/ar-logo.svg') }}" alt="Amazing Radios Logo" id="logo" />
 			</a>
-
-			<div>
-				<input type="checkbox" name="nav" id="nav">
-				<label for="nav" class="ln-icon">menu</label>
-			</div>
-
 			<nav>
 
 				<ul>
@@ -70,16 +68,21 @@
 						<a href="{{ route('contactUs') }}">{{ __('global.contactUs') }}</a>
 					</li>
 				</ul>
+				<div id="navMenu">
+					<input type="checkbox" name="nav" id="nav">
+					<label for="nav" class="ln-icon">menu</label>
+				</div>
 
 				{{-- <ul id="userNav">
 					<li>
 						<a href="#">{{ __('global.register') }}</a>
-					</li>
-					<li>
-						<a href="#">{{ __('global.login') }}</a>
-					</li>
+				</li>
+				<li>
+					<a href="#">{{ __('global.login') }}</a>
+				</li>
 				</ul> --}}
 			</nav>
+
 			<!-- <section id="languages">
 				<ul>
 					<li>
@@ -144,7 +147,7 @@
 			</nav>
 
 			<p>
-				<img src="{{ lnasset('logos/ar-logo-white.svg') }}" alt="Amazing Radios Logo" id="logo" />
+				<img src="{{ lnasset('logos/ar-logo-white.svg') }}" alt="Amazing Radios Logo" id="logoFooter" />
 				<span>Copyright &copy; 2019 &middot;
 					<a href="{{ route('index') }}">AMAZINGRADIOS.com</a>
 				</span>
@@ -159,9 +162,11 @@
 	<script src="{{ lnasset('/site/v2/dist/app.js') }}" async></script>
 
 
-<!-- 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
- -->	<script async type="text/javascript" src="{{ lnasset(asset('/site/v2/js/player/player.js')) }}"></script>
+	<!-- 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
+ -->
+	<script async type="text/javascript" src="{{ lnasset(asset('/site/v2/js/player/player.js')) }}"></script>
 	@yield('js')
 
 </body>
+
 </html>

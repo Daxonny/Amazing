@@ -90,12 +90,21 @@ nav a:hover {
 #wrap .share a {
 	color: #fff;
 }
+#wrap .share:after {
+    border-bottom: 50px solid var(--linkHover);
+    border-left: 50px solid transparent;
+}
+#wrap .share:before {
+	border: 2px solid #fff;
+	-webkit-transition: -webkit-transform .4s ease-in-out;
+	-ms-transition: -ms-transform .4s ease-in-out;
+	transition: transform .4s ease-in-out;
+}
 
 .content {
 	border-top: 4px solid var(--linkHover);
 	background-color: rgba(var(--contentBg), .8);
 }
-
 
 .content tr {
 	background-color: rgba(255, 255, 255, .2);
@@ -164,13 +173,38 @@ nav a:hover {
 	background-color: #fff;
 	color: #000;
 }
+.nowPlaying [property="name"] {
+	color: rgb(107, 105, 105);
+}
 
 .nowPlaying p[typeof="MusicRecording"]:before {
 	color: var(--now-playing);
 }
 
+#player {
+	background-color:var(--linkHover);
+	background: linear-gradient(180deg, #f7ad00 0%, rgba(203, 171, 48, 0.49093140674238445) 100%);
+}
+#player h1{
+	background-color: var(--smooth-and-jazz);
+}
+#player img {
+	border: 5px solid white;
+}
 
-
+#volumeControl {
+	background-color: var(--smooth-and-jazz);
+}
+#player button {
+	color: white;
+	background-color: var(--smooth-and-jazz);
+}
+#player [property="byArtist"] {
+	color: black;
+}
+.Playing {
+	color: var(--smooth-and-jazz);
+}
 .fav {
 	color: var(--text);
 }

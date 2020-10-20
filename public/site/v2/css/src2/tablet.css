@@ -1,7 +1,120 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	#wrap {
-		width: 700px;
+		width: 768px;
+	}
+	#wrap > header, #wrap > footer {
+		position: relative;
+		padding: 20px 0;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: stretch;
+	}
+	#wrap > footer {
+		padding: 20px;
 	}
 
+	#logo {
+		height: 100px;
+	}
+	#wrap nav {
+		display: flex;
+	}
+
+	#wrap nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	/* Share icons */
+	#wrap .share {
+		display: flex;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		line-height: 50px;
+		font-size: 42px;
+	}
+
+	#wrap .share li {
+		float: left;
+		margin: 0px 7px;
+	}
+	#wrap .share:after {
+		position: absolute;
+		left: -49px;
+		top: 0px;
+		content: '';
+	}
+
+	#wrap nav {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+
+	#wrap nav a {
+		position: relative;
+		display: block;
+		padding: 20px;
+	}
+
+	#wrap nav ul li {
+		font-size: 14px;
+	}
+	
+	#navMenu {
+		visibility: hidden;
+	}
+	#channels {
+		display: grid;
+		grid-template-areas: 
+		'ad1'
+		'stationList'
+		'ad2';
+		margin-top: 20px;
+	}
+	#ad1, #ad2 {
+		width: 728px;
+		height: 90px;
+		margin: 20px;
+	}
+	#ad1 {
+		grid-area: ad1;
+	}
+	#ad2 {
+		grid-area: ad2;
+	}
+
+	.stationList {
+		grid-area: stationList;
+		grid-template-columns: 200px 200px 200px;
+		grid-gap: 40px;
+		margin:auto;
+	}
+	#heroBox img{
+			width:768px;
+	}
+	#heroBox h1{
+		margin-left: 60%;
+		margin-top: 7%;
+		position: absolute;
+	}
+	#heroBox p {
+		position: absolute;
+		margin-left: 60%;
+		margin-top: 10%;
+
+	}
+	footer p{
+		font-size: 14px;
+	}
+	#player img {
+		margin-bottom: 42px;
+	}
+	#player #ad3 {
+		grid-column: 4/5;
+		grid-row: 2/3;
+		width: 320px;
+		height: 50px;
+	}
 }

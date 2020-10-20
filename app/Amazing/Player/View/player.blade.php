@@ -19,13 +19,16 @@
 	</section>
 	<button id="playControl" ln-player-action="play" type="button">play</button>
 	<button id="stopControl" ln-player-action="stop" type="button">stop</button>
-	<div id="volumeControl">
+	<div id="volumeControl" class="ln-icon">
 		<button ln-player-action="mute" type="button">volume_up</button>
 		<input name="range" type="range" min="0" max="100" ln-player-volume="50">
 	</div>
 	<audio autoplay>
 		<source src="{{ $vm->url }}" />
 	</audio>
+	<div id="ad3" class="ad">
+		<p>Reklama</p>
+	</div>
 </section>
 <section id="description" class="content">
 	<h2>{!! $vm->slogan !!}</h2>
