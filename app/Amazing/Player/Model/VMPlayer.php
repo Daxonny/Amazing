@@ -17,6 +17,7 @@ class VMPlayer extends AVM {
 	public $slogan;
 	public $description;
 	public $tritonStationId;
+	public $slug;
 
 	protected function _execute(){
 		$station = (new PlayerInteractor())->execute();
@@ -29,6 +30,7 @@ class VMPlayer extends AVM {
 		$this->slogan 			= $station->slogan;
 		$this->description 		= $station->description;
 		$this->tritonStationId 	= $station->tritonStationId;
+		$this->slug				= $station->slug;
 
 		return $this;
 	}

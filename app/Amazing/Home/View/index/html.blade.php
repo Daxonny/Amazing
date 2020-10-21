@@ -14,7 +14,7 @@
 <div id="channels">
 
 	<div id="ad1" class="ad">
-		<img src="https://via.placeholder.com/300x250?text=300x250+Half+Page+Ad" />
+		
 	</div>
 
 
@@ -42,7 +42,7 @@
 	</ul>
 
 	<div id="ad2" class="ad">
-		<img src="https://via.placeholder.com/300x250?text=300x250+Half+Page+Ad" />
+	
 	</div>
 
 </div>

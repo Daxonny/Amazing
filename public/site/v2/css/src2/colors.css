@@ -47,29 +47,29 @@ nav a:hover {
 	color: var(--navHover)
 }
 
-#amazing-blues h2 span, #amazing-blues a:hover, .player.amazing-blues {
+#amazing-blues h2 span, #amazing-blues a:hover, .player.amazing-blues, #player .amazing-blues {
 	background-color: var(--blues);
 }
-#amazing-smooth-jazz h2 span, #amazing-smooth-jazz a:hover, .player.amazing-smooth-jazz {
+#amazing-smooth-jazz h2 span, #amazing-smooth-jazz a:hover, .player.amazing-smooth-jazz, #player .amazing-smooth-jazz {
 	background-color: var(--smooth-and-jazz);
 }
-#amazing-80s h2 span, #amazing-80s a:hover, .player.amazing-80s {
+#amazing-80s h2 span, #amazing-80s a:hover, .player.amazing-80s, #player .amazing-80s {
 	background-color: var(--a80s);
 }
 
-#amazing-chillout h2 span, #amazing-chillout a:hover, .player.amazing-chillout {
+#amazing-chillout h2 span, #amazing-chillout a:hover, .player.amazing-chillout, #player .amazing-chillout {
 	background-color: var(--chillout);
 }
 
-#amazing-chillhop h2 span, #amazing-chillhop a:hover, .player.amazing-chillhop {
+#amazing-chillhop h2 span, #amazing-chillhop a:hover, .player.amazing-chillhop, #player .amazing-chillhop {
 	background-color: var(--chillhop);
 }
 
-#amazing-classic-hits h2 span, #amazing-classic-hits a:hover, .player.amazing-classic-hits {
+#amazing-classic-hits h2 span, #amazing-classic-hits a:hover, .player.amazing-classic-hits, #player .amazing-classic-hits {
 	background-color: var(--classic-hits);
 }
 
-#amazing-vocals h2 span, #amazing-vocals a:hover, .player.amazing-vocals {
+#amazing-vocals h2 span, #amazing-vocals a:hover, .player.amazing-vocals, #player  	.amazing-vocals {
 	background-color: var(--vocals);
 }
 
@@ -197,7 +197,6 @@ nav a:hover {
 }
 #player button {
 	color: white;
-	background-color: var(--smooth-and-jazz);
 }
 #player [property="byArtist"] {
 	color: black;
@@ -210,4 +209,10 @@ nav a:hover {
 }
 .fav:hover {
 	color: var(--linkHover);
+}
+button, label[for=nav] {
+	background: transparent;
+}
+.ad {
+	/* border: 1px solid red; */
 }

@@ -4,7 +4,7 @@
 
 @section('content')
 <section id="player" data-station="live" ln-player>
-	<h1>{{ $vm->name }}</h1>
+	<h1 class="{{$vm->slug}}">{{ $vm->name }}</h1>
 	<picture title="{{$vm->name}}">
 		<source srcset="{{$vm->logo}}.webp, {{$vm->logo2x}}.webp 2x" type="image/webp">
 		<img src="{{ $vm->logo }}.png" srcset="{{$vm->logo}}.png ,{{$vm->logo2x}}.png 2x" alt="{{$vm->name}}">
@@ -17,9 +17,9 @@
 			<span property="name"></span>
 		</p>
 	</section>
-	<button id="playControl" ln-player-action="play" type="button">play</button>
-	<button id="stopControl" ln-player-action="stop" type="button">stop</button>
-	<div id="volumeControl" class="ln-icon">
+	<button id="playControl" ln-player-action="play" type="button" class="{{$vm->slug}}">play</button>
+	<button id="stopControl" ln-player-action="stop" type="button" class="{{$vm->slug}}">stop</button>
+	<div id="volumeControl" class="ln-icon {{$vm->slug}}">
 		<button ln-player-action="mute" type="button">volume_up</button>
 		<input name="range" type="range" min="0" max="100" ln-player-volume="50">
 	</div>
@@ -27,7 +27,7 @@
 		<source src="{{ $vm->url }}" />
 	</audio>
 	<div id="ad3" class="ad">
-		<p>Reklama</p>
+	
 	</div>
 </section>
 <section id="description" class="content">
