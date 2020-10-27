@@ -4,7 +4,7 @@
 	font-family: 'LiveNetworks-Icons';
 	font-style: normal;
 	font-weight: 400;
-	src: url('/site/fonts/ln-icons/ln-icons.woff2') format('woff2');
+	src: url('https://cdn.amazingradios.com/fonts/ln-icons/ln-icons.woff2') format('woff2');
 }
 
 .ln-icon {

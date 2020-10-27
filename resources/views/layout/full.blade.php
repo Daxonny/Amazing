@@ -164,7 +164,7 @@
 
 	<!-- 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
  -->
-	<script async type="text/javascript" src="{{ lnasset(asset('/site/v2/js/player/player.js')) }}"></script>
+	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/player/player.js') }}"></script>
 	@yield('js')
 
 </body>

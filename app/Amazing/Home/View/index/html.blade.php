@@ -8,7 +8,7 @@
 <section id="heroBox">
 	<h1>AMAZING RADIOS </h1>
 	<p>Listen live now</p>
-	<img src="{{ lnasset('https://dcdn.amazingradios.com/headers/site/header_amazing-radios-01-w1210.webp') }}" alt="Amazing Radios Logo" class="ar-logo">
+	<img src="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.webp') }}" alt="Amazing Radios Logo" class="ar-logo">
 </section>
 
 <div id="channels">
@@ -51,5 +51,5 @@
 @section('js')
 	<script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $station->tritonStationId }}"></script>
 	
-	<script async type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}"></script>
+	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}"></script>
 @endsection
