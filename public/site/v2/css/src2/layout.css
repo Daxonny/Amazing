@@ -6,6 +6,7 @@ body {
 h1{
 	font-size: 1.7em;
 	margin-top:20px;
+	line-height: 1em;
 }
 
 h2 {
@@ -71,7 +72,13 @@ nav ul, nav ul li, .share {
 	font-size: 20px;
 	line-height: 1.3em;
 }
-
+.content td {
+	border: 1px solid rgb(167, 167, 167);
+	padding: 8px;
+}
+.content td ul{
+	margin-left: 25px;
+}
 footer {
 	display: flex;
 	justify-content: space-between;
@@ -86,7 +93,6 @@ footer {
 #wrap footer img {
 	width: 95px;
 }
-
 
 #logoFooter {
 	height: auto;
@@ -230,7 +236,7 @@ footer {
 	grid-template-rows: auto auto auto;
 	border-style: solid;
 	position: relative;
-	height: 300px;
+	height: 310px;
 	overflow: hidden;
 }
 
@@ -279,11 +285,13 @@ footer {
 	padding: 5px;
 	display: flex;
 	line-height: 30px;
-	margin-top: -6px;
 	border-radius: 0px 0px 15px 15px;
 	grid-column: 1/2;
 	grid-row: 3/4;
 	margin-top: -42px;
+}
+#player #volumeControl {
+	height: 35px;
 }
 #volumeControl button {
 	font-family: "LiveNetworks-Icons";
@@ -350,4 +358,5 @@ footer {
     margin-top: 6px;
     margin-bottom: 16px;
 	resize: vertical;
+	font-family: Montserrat, sans-serif;
 }

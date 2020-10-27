@@ -16,16 +16,16 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::group([ 'middleware' => [ 'speaks-tongue' ]], function() {
-	Route::get('/', 'Home\Controller\HomeController@index')->name('index');
+	Route::get('/', 'GlobalController@home')->name('index');
 
-	Route::get('/terms', 'TAC\Controller\TACController@index')->name('terms');
-	Route::get('/privacy', 'PrivacyPolicy\Controller\PrivacyController@index')->name('privacy');
-	Route::get('/contact', 'ContactUs\Controller\ContactUsController@index')->name('contactUs');
+	Route::get('/terms', 'GlobalController@terms')->name('terms');
+	Route::get('/privacy', 'GlobalController@privacy')->name('privacy');
+	Route::get('/contact', 'GlobalController@contactUs')->name('contactUs');
 	Route::post('/contact/send', 'ContactUs\Controller\ContactUsController@send');
-	Route::get('/about-us', 'AboutUs\Controller\AboutUsController@index')->name('aboutUs');
+	Route::get('/about-us', 'GlobalController@aboutUs')->name('aboutUs');
 
 
 
-	Route::get('/{station}', 'Player\Controller\PlayerController@index')->name('player');
+	Route::get('/{station}', 'GlobalController@player')->name('player');
 
 });

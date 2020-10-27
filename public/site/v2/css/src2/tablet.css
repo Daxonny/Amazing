@@ -1,8 +1,9 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
 	#wrap {
-		width: 768px;
+		width: 774px;
 	}
+
 	#wrap > header, #wrap > footer {
 		position: relative;
 		padding: 20px 0;
@@ -11,6 +12,11 @@
 		align-items: center;
 		align-content: stretch;
 	}
+
+	footer p{
+		font-size: 14px;
+	}
+
 	#wrap > footer {
 		padding: 20px;
 	}
@@ -26,6 +32,7 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	
 	/* Share icons */
 	#wrap .share {
 		display: flex;
@@ -65,18 +72,11 @@
 	#navMenu {
 		visibility: hidden;
 	}
-	#channels {
-		display: grid;
-		grid-template-areas: 
-		'ad1'
-		'stationList'
-		'ad2';
-		margin-top: 20px;
-	}
+	/* Ads */
 	#ad1, #ad2 {
-		width: 728px;
-		height: 90px;
-		margin: 20px;
+		width: 300px;
+		height: 250px;
+		margin: 20px auto;
 	}
 	#ad1 {
 		grid-area: ad1;
@@ -85,6 +85,15 @@
 		grid-area: ad2;
 	}
 
+	/* stationList */
+	#channels {
+		display: grid;
+		grid-template-areas: 
+		'ad1'
+		'stationList'
+		'ad2';
+		margin-top: 20px;
+	}
 	.stationList {
 		grid-area: stationList;
 		grid-template-columns: 200px 200px 200px;
@@ -92,7 +101,7 @@
 		margin:auto;
 	}
 	#heroBox img{
-			width:768px;
+			width: 100%;
 	}
 	#heroBox h1{
 		margin-left: 60%;
@@ -105,16 +114,36 @@
 		margin-top: 10%;
 
 	}
-	footer p{
-		font-size: 14px;
-	}
+	/* Player */
 	#player img {
 		margin-bottom: 42px;
 	}
 	#player #ad3 {
-		grid-column: 4/5;
-		grid-row: 2/3;
-		width: 320px;
-		height: 50px;
+		grid-column: 2/4;
+    	grid-row: 1/3;
+		width: 300px;
+		height: 250px;
 	}
+	#playControl, #stopControl {
+		height: 60px;
+		width: 60px;
+		font-size: 45px;
+		border-radius: 100%;
+		grid-column: 2/3;
+		grid-row: 3/4;
+		margin: auto;
+		margin-top: -45px;
+	}
+	#player #nowPlaying {
+		margin-top: 193px;
+		grid-column: 3/4;
+   		grid-row: 2/4;
+	}
+	#player {
+		height: 330px;
+	}
+	#volumeControl {
+		margin-top: -44px;
+	}
+
 }

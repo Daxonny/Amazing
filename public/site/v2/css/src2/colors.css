@@ -100,7 +100,6 @@ nav a:hover {
 	-ms-transition: -ms-transform .4s ease-in-out;
 	transition: transform .4s ease-in-out;
 }
-
 .content {
 	border-top: 4px solid var(--linkHover);
 	background-color: rgba(var(--contentBg), .8);
@@ -117,7 +116,6 @@ nav a:hover {
 	border: 1px solid rgb(167, 167, 167);
 }
 
-
 .content input[type=submit] {
 	background-color: var(--bg);
 	color: white;
@@ -130,7 +128,9 @@ nav a:hover {
 .content textarea{
 	border: 1px solid #ccc;
 }
-
+.sections {
+	color: var(--favouriteHover);
+}
 .stationList li {
 	background-color: rgb(186, 186, 186);
 }
@@ -215,4 +215,7 @@ button, label[for=nav] {
 }
 .ad {
 	/* border: 1px solid red; */
+}
+#heroBox p, #heroBox h1 {
+	color:rgb(83, 81, 81);
 }
