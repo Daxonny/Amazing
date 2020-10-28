@@ -30,6 +30,9 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-180609245-1');
 	</script>
+
+	<script async src="{{ lnasset('/site/v2/dist/app.js') }}"></script>
+	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/player/player.js') }}"></script>
 	@yield('js')
 
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
@@ -160,12 +163,11 @@
 	<!-- <div id="player" ln-draggable></div> -->
 
 	<!-- <script async type="text/javascript" src="{{ lnasset('/site/v2/js/ar.js') }}"></script> -->
-	<script src="{{ lnasset('/site/v2/dist/app.js') }}" async></script>
+	
 
 
 	<!-- 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
  -->
-	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/player/player.js') }}"></script>
 	
 
 </body>
