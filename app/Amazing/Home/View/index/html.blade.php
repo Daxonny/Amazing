@@ -8,7 +8,10 @@
 <section id="heroBox">
 	<h1>AMAZING RADIOS </h1>
 	<p>Listen live now</p>
-	<img src="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.webp') }}" alt="Amazing Radios Logo" class="ar-logo">
+	<picture title="Amazing Radios Logo">
+		<source srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.webp') }}" type="image/webp">
+		<img src="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" alt="Amazing Radios Logo" class="ar-logo">	
+	</picture>
 </section>
 
 <div id="channels">

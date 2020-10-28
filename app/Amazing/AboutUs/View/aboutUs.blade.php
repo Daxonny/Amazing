@@ -9,9 +9,9 @@
 
 <p>If you love music half of the way we love it, we are sure you will appreciate our warm, vibrant Radio Stations.</p>
 
-<p>From America to Russia, from Australia to Mozambico, everyone can appreciate at least one of the Amazing Radios!</p>
+<p>From America to Russia, from Australia to Mozambique, everyone can appreciate at least one of the Amazing Radios!</p>
 
-<p>Wheter you like musica populara from Espana, or English classic pop melodies, you can find a place for yourself between the notes of our Radios!</p>
+<p>Whether you like music popular from Spain, or English classic pop melodies, you can find a place for yourself between the notes of our Radios!</p>
 
 <p>We are dedicated both to Modern Radio Hits and to timeless Vocal Symphonies, thinking only to one thing: QUALITY!</p>
 
