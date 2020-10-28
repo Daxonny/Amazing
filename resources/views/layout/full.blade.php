@@ -30,6 +30,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-180609245-1');
 	</script>
+	@yield('js')
 
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
 
@@ -165,7 +166,7 @@
 	<!-- 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
  -->
 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/player/player.js') }}"></script>
-	@yield('js')
+	
 
 </body>
 
