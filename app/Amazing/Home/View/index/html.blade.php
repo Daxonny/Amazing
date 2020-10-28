@@ -39,7 +39,7 @@
 					<span property="name"></span>
 				</p>
 			</div>
-			<button class="fav ln-icon">star</button>
+			<button class="fav ln-icon" title="{{ __('Add to favourites') }}">star</button>
 		</li>
 		@endforeach
 	</ul>

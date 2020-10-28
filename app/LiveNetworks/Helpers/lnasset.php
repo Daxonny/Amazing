@@ -1,6 +1,5 @@
 <?php
-
-function lnasset($asset) {	
+function lnasset($asset) {
 	if( !Config::get('ln.cdnUse') ) {
 		return asset($asset);
 	}
