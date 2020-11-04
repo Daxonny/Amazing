@@ -10,7 +10,7 @@
 	<p>Listen live now</p>
 	<picture title="Amazing Radios Logo">
 		<source srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.webp') }}" type="image/webp">
-		<img src="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" alt="Amazing Radios Logo" class="ar-logo">	
+		<img src="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" loading="lazy" width="1210" height="290" alt="Amazing Radios Logo" class="ar-logo">	
 	</picture>
 </section>
 
@@ -28,7 +28,7 @@
 				<a href="{{ route('player',['station'=>$station->slug]) }}">
 					<picture title="{{ $station->name }}">
 						<source srcset="{{ $station->logo }}.webp, {{ $station->logo2x }}.webp 2x" type="image/webp">
-						<img src="{{ $station->logo }}.png" srcset="{{ $station->logo }}.png ,{{ $station->logo2x }}.png 2x" alt="{{ $station->name }}">
+						<img src="{{ $station->logo }}.png"  srcset="{{ $station->logo }}.png ,{{ $station->logo2x }}.png 2x" loading="lazy" alt="{{ $station->name }}">
 					</picture>
 					<span property="name">{{ $station->name }}</span>
 				</a>

@@ -10,7 +10,7 @@
 		<a
 			href="https://twitter.com/home?status=http://amazingradios.com"
 			target="frameShare"
-			ln-popup="width=200,height=100"
+			ln-popup="width=555,height=453"
 		>twitter</a>
 	</li>
 	<li>

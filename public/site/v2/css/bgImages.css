@@ -1,0 +1,11 @@
+body {
+	background-image: url(//cdn.amazingradios.com/site/v2/img/bg.png);
+}
+body.webp {
+	background-image: url(//cdn.amazingradios.com/site/v2/img/bg.webp);
+}
+
+
+#slider .amazing-radios {
+	background-image: url(/headers/site/header_amazing-radios-01.jpg);
+}

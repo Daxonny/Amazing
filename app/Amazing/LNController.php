@@ -4,12 +4,19 @@ namespace App\Amazing;
 
 // use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use View;
 
 abstract class LNController extends Controller
 {
 	public $view;
 
-	public function getView() {	
+	public function __construct()
+	{
+		$webp = (supportsWebp()) ? 'webp' : '';
+		View::share('webp', $webp);
+	}
+
+	public function getView() {
 		$this->_request = Request();
 		$this->_viewMime();
 
@@ -17,6 +24,8 @@ abstract class LNController extends Controller
 		header('Cache-Control: no-store, no-cache, must-revalidate');
 		header('Cache-Control: post-check=0, pre-check=0', FALSE);
 		header('Pragma: no-cache');
+
+
 		return $this->view . '.' . $this->_mime;
 	}
 

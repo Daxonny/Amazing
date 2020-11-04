@@ -53,7 +53,7 @@
 
 </head>
 
-<body vocab="http://schema.org/" class="">
+<body vocab="http://schema.org/" class="{{ $webp }}">
 	<div id="wrap">
 		<header>
 			<a href="{{ route('index')}}">

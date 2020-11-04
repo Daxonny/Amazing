@@ -43,7 +43,8 @@
             "database/factories"
         ],
         "files": [
-            "app/LiveNetworks/Helpers/lnasset.php"
+            "app/LiveNetworks/Helpers/lnasset.php",
+            "app/LiveNetworks/Helpers/lnwebpHelper.php"
         ]
     },
     "autoload-dev": {

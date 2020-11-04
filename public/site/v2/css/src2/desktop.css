@@ -70,7 +70,8 @@
 		visibility: hidden;
 	}
 	#heroBox img {
-		width: 100%;
+		/* width: 100%; */
+		aspect-ratio: 1210px / 290px * 100%;
 	}
 
 	#heroBox h1, #heroBox p {
