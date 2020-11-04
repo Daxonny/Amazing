@@ -135,7 +135,7 @@ nav a:hover {
 	background-color: rgb(186, 186, 186);
 }
 
-.stationList li h2 {
+.stationList li h2, #player picture {
 	background: -moz-linear-gradient(180deg, rgba(186,186,186,1) 20%, rgba(255,255,255,1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(186,186,186,1) 20%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(180deg, rgba(186,186,186,1) 20%, rgba(255,255,255,1) 100%);
@@ -188,9 +188,7 @@ nav a:hover {
 #player h1{
 	background-color: var(--smooth-and-jazz);
 }
-#player img {
-	border: 5px solid white;
-}
+
 
 #volumeControl {
 	background-color: var(--smooth-and-jazz);
@@ -214,7 +212,7 @@ button, label[for=nav] {
 	background: transparent;
 }
 .ad {
-	/* border: 1px solid red; */
+	border: 1px solid red;
 }
 #heroBox p, #heroBox h1 {
 	color:rgb(83, 81, 81);

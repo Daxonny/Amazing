@@ -218,7 +218,7 @@ nav a:hover {
 	background-color: rgb(186, 186, 186);
 }
 
-.stationList li h2 {
+.stationList li h2, #player picture {
 	background: -moz-linear-gradient(180deg, rgba(186,186,186,1) 20%, rgba(255,255,255,1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(186,186,186,1) 20%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(180deg, rgba(186,186,186,1) 20%, rgba(255,255,255,1) 100%);
@@ -271,9 +271,7 @@ nav a:hover {
 #player h1{
 	background-color: var(--smooth-and-jazz);
 }
-#player img {
-	border: 5px solid white;
-}
+
 
 #volumeControl {
 	background-color: var(--smooth-and-jazz);
@@ -297,7 +295,7 @@ button, label[for=nav] {
 	background: transparent;
 }
 .ad {
-	/* border: 1px solid red; */
+	border: 1px solid red;
 }
 #heroBox p, #heroBox h1 {
 	color:rgb(83, 81, 81);
@@ -533,7 +531,7 @@ footer {
 #ad2 {
 	grid-area: ad2;
 }
-#player {
+/* #player {
 	padding: 20px;
 	overflow: hidden;
 	display: grid;
@@ -543,34 +541,28 @@ footer {
 	position: relative;
 	height: 310px;
 	overflow: hidden;
-}
+} */
 
 #playControl, #stopControl {
 	height: 70px;
 	width: 70px;
 	font-size: 50px;
 	border-radius: 100%;
-	grid-column: 2/3;
-	grid-row: 2/3;
-	margin: auto;
-}
-#playControl, #stopControl {
 	font-family: "LiveNetworks-Icons";
 }
-#player li {
+#playerComponent li {
 	height: 280px;
 }
-#player img {
-	width: 200px;
-	height: 200px;
+#playerComponent picture {
+	width: 180px;
+    display: block;
+    height: 180px;
+    padding: 10px;
+	
 }
-#player h1 {
+#playerComponent h1 {
 	margin: 0px;
-	grid-column: 1/2;
-	grid-row: 1/2;
 	line-height: 31px;
-	width: 205px;
-	border-radius: 15px 15px 0px 0px;
 	justify-content: center;
 	padding: 3px;
 	text-transform: uppercase;
@@ -581,40 +573,37 @@ footer {
 	align-items: center;
 
 }
-#player picture {
+
+
+/* #player picture {
 	grid-column: 1/2;
 	grid-row: 2/3;
-}
-#volumeControl {
+} */
+ #playerComponent {
 	width: 200px;
-	padding: 5px;
-	display: flex;
-	line-height: 30px;
-	border-radius: 0px 0px 15px 15px;
-	grid-column: 1/2;
-	grid-row: 3/4;
-	margin-top: -42px;
-}
-#player #volumeControl {
-	height: 35px;
+	border-radius: 15px;
+	overflow:hidden;
 }
 #volumeControl button {
 	font-family: "LiveNetworks-Icons";
 }
-
-#player #nowPlaying {
+#volumeControl{
+	display: flex;
+	height: 35px;
+	
+}
+#nowComponent #nowPlaying {
 	background: none;
 	margin: auto 15px;
 	border-radius: 0;
-	grid-column: 3/4;
-	grid-row: 2/3;
 }
 .Playing {
 	text-transform: uppercase;
 	font-size: 15px;
 	text-align: center;
 }
-#player [property="byArtist"] {
+
+ #player [property="byArtist"] {
 	display: block;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -744,7 +733,7 @@ footer {
 
 	/* HeroBox */
 	#heroBox img {
-		width: 100%;;
+		width: 100%;
 	}
 
 	#heroBox h1, #heroBox p {
@@ -978,8 +967,6 @@ footer {
 		margin-bottom: 42px;
 	}
 	#player #ad3 {
-		grid-column: 2/4;
-    	grid-row: 1/3;
 		width: 300px;
 		height: 250px;
 	}
@@ -988,22 +975,44 @@ footer {
 		width: 60px;
 		font-size: 45px;
 		border-radius: 100%;
-		grid-column: 2/3;
-		grid-row: 3/4;
-		margin: auto;
-		margin-top: -45px;
+
 	}
-	#player #nowPlaying {
-		margin-top: 193px;
-		grid-column: 3/4;
-   		grid-row: 2/4;
+	#playControl{
+		display: none;
 	}
+	
+	
 	#player {
-		height: 330px;
+		display:grid;
+		grid-template-areas: 
+		"playerComponent ad3" 
+		"playerComponent nowComponent ";
+		grid-template-columns: 250px 500px;
+		grid-template-rows: auto auto;
+		
 	}
-	#volumeControl {
-		margin-top: -44px;
+	#playerComponent{
+		grid-area:playerComponent;
+		margin: 25px;
 	}
+	#nowComponent{
+		grid-area: nowComponent;
+		align-items: center;
+		display: flex;
+		justify-content: left;
+		
+	}
+	#nowPlaying{
+		display: flex;
+		justify-content: center;
+	}
+	#ad3{
+		grid-area:ad3;
+		margin: auto;
+	}
+	
+	
+  
 
 }
 @media (min-width: 1025px) {
@@ -1121,17 +1130,35 @@ footer {
 		width: 300px;
 		height: 250px;
 	}
+	#player {
+		display: grid;
+		grid-template-columns: 250px 300px 650px;
+		grid-template-areas:
+		'playerComponent nowComponent ad3'
+		
+	}
+	#playerComponent {
+		grid-area: playerComponent;
+		grid-template-columns: auto;
+		display: block;
+		margin: 25px;
+	}
+	#nowComponent {
+		grid-area: nowComponent;
+		grid-template-columns: auto;
+		margin: auto 0;
+
+	}
 	
 	#player #ad3 {
-		grid-column: 4/5;
-		grid-row: 1/3;
+		grid-area: ad3;
+		grid-template-columns: auto;
 		width: 300px;
 		height: 250px;
-		margin-top: 20px;
-	}
-	#player img {
-		margin-bottom: 42px;
-	}
+		margin:auto;
+
+	} 
+	
 
 }
 
@@ -1146,6 +1173,6 @@ footer {
 		grid-gap: 30px;
 	}
 	#player #ad3 {
-		margin-left: 170px;
+		margin: auto;
 	}
 }
