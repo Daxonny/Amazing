@@ -138,40 +138,33 @@
 	/* Player */
 	#player {
 		display: grid;
-		grid-template-rows: auto auto auto auto auto auto;
-		grid-template-columns: auto;
-		height: auto;
+		grid-template-areas: 
+		"playerComponent"
+		"nowComponent"
+		"ad3"
+		;
 	}
-	#player h1 {
-		grid-row:1/2;
-		grid-column:1/2;
-		margin: 0px auto;
+	#playerComponent {
+		grid-area: playerComponent;
+		margin: 30px auto;
 	}
-	#player img {
-		grid-row: 2/3;
-		grid-column:1/2;
-		margin: 0px auto;
+	#nowComponent {
+		grid-area: nowComponent;
+		margin: auto;
 	}
-	#player #volumeControl {
-		grid-row: 3/4;
-		grid-column:1/2;
-		margin: 0px auto;
-	}
-	#player #nowPlaying {
-		grid-row: 4/5;
-		grid-column:1/2;
-		margin: 0px auto;
-	}
-	#player #stopControl, #playControl {
-		grid-row: 5/6;
-		grid-column:1/2;
-	}
-	#player #ad3 {
-		grid-row: 6/7;
-		grid-column:1/2;
-		margin: 20px auto ;
+	#ad3 {
+		margin: 20px auto;
 		width: 300px;
 		height: 250px;
+		grid-area: ad3;
+		margin: 30px auto;
+	}
+	
+	#playControl {
+		display: none;
+	}
+	#playControl, #stopControl {
+		margin: auto 35%;
 	}
 	#player [property="byArtist"] {
 		text-align: center;

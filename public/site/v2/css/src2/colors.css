@@ -212,7 +212,7 @@ button, label[for=nav] {
 	background: transparent;
 }
 .ad {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 #heroBox p, #heroBox h1 {
 	color:rgb(83, 81, 81);
