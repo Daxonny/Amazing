@@ -4,6 +4,7 @@
 /public/headers
 /public/fonts
 /public/logo
+/public/ads.txt
 /storage/*.key
 /vendor
 .env

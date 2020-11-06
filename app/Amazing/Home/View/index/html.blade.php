@@ -9,11 +9,10 @@
 	<h1>AMAZING RADIOS </h1>
 	<p>Listen live now</p>
 	<picture title="Amazing Radios">
-		<source media="(min-width: 1281px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}">
-		<source media="(min-width: 1025px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1000.png') }}">
-		<source media="(min-width: 768px) and (max-width: 1024px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w750.png') }}">
-		<source media="(max-width: 767px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w300.png') }}">
-		<source srcset="https://cdn.amazingradios.com/headers/site/header_amazing-radios-01-w1210.webp" type="image/webp">
+		<source media="(min-width: 1281px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.webp') }}" type="image/webp">
+		<source media="(min-width: 1025px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1000.webp') }}" type="image/webp">
+		<source media="(min-width: 768px) and (max-width: 1024px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w750.webp') }}" type="image/webp">
+		<source media="(max-width: 767px)" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w300.webp') }}" type="image/webp">
 		<img src="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" srcset="{{ lnasset('/headers/site/header_amazing-radios-01-w1210.png') }}" loading="lazy" alt="Amazing Radios" class="ar-logo">	
 	</picture>
 </section>

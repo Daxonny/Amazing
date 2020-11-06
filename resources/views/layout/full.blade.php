@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://playerservices.live.streamtheworld.com">
 
 	<!-- Preload Fonts -->
-	<link rel="preload" href="{{ asset('/fonts/ln-icons/ln-icons.woff2') }}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{{ lnasset('/fonts/ln-icons/ln-icons.woff2') }}" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin>
 
 	<!-- CSRF Token -->
@@ -38,14 +38,6 @@
 	@yield('js')
 
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
-
-	<!-- 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/mobile.css') }}" media="screen and (min-width: 320px) and (max-width: 767px)">
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/tablet.css') }}" media="screen and (min-width: 768px) and (max-width: 1024px)">
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/desktop.css') }}" media="screen and (min-width: 1025px)"> -->
-
-	<!-- Implement Accept image/webp -->
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/css/webp.min.css') }}" media="screen">
-
 
 	<meta name="description" content="@yield('ogDescription')" />
 	<meta name="robots" content="index,follow" />

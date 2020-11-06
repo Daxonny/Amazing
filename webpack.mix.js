@@ -21,6 +21,7 @@ mix
 	'public/site/v2/css/src2/mobile.css',
 	'public/site/v2/css/src2/tablet.css',
 	'public/site/v2/css/src2/desktop.css',
+	'public/site/v2/css/src2/bgImages.css',
 ], 'public/site/v2/dist/css/styles.css')
 // .styles([
 // 	'public/site/v2/css/src2/reset.css',
