@@ -175,6 +175,7 @@ button.fav {
 	align-items: center;
 	display: flex;
 	height: 50px;
+	box-sizing: border-box;
 }
 
 .nowPlaying p[typeof="MusicRecording"]:before {
@@ -277,6 +278,7 @@ footer {
 	grid-row: 2/3;
 } */
  #playerComponent {
+	margin: auto;
 	width: 200px;
 	border-radius: 15px;
 	overflow:hidden;

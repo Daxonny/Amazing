@@ -18,6 +18,7 @@
 
 	#logo {
 		height: 120px;
+		width: 249px;
 	}
 
 	#wrap nav {
@@ -70,8 +71,8 @@
 		visibility: hidden;
 	}
 	#heroBox img {
-		/* width: 100%; */
-		aspect-ratio: 1210px / 290px * 100%;
+		width: 1000px;
+    	height: 239px;
 	}
 
 	#heroBox h1, #heroBox p {
@@ -150,7 +151,10 @@
 	#wrap {
 		width: 1210px;
 	}
-
+	#heroBox img {
+		width: 1210px;
+    	height: 290px;
+	}
 	.stationList {
 		grid-template-columns: 200px 200px 200px 200px;
 		grid-gap: 30px;

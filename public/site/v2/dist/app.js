@@ -638,7 +638,7 @@ __webpack_require__(/*! @livenetworks/player */ "./node_modules/@livenetworks/pl
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/milena/projects/Amazing/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/martina/PRAKSA/Amazing/resources/js/app.js */"./resources/js/app.js");
 
 
 /***/ })

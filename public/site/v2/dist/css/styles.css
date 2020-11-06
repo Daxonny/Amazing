@@ -478,6 +478,7 @@ button.fav {
 	align-items: center;
 	display: flex;
 	height: 50px;
+	box-sizing: border-box;
 }
 
 .nowPlaying p[typeof="MusicRecording"]:before {
@@ -580,6 +581,7 @@ footer {
 	grid-row: 2/3;
 } */
  #playerComponent {
+	margin: auto;
 	width: 200px;
 	border-radius: 15px;
 	overflow:hidden;
@@ -732,8 +734,15 @@ footer {
 	}
 
 	/* HeroBox */
+	#heroBox {
+		/* width: 300px;
+		margin: auto; */
+		display: none;
+	}
+
 	#heroBox img {
-		width: 100%;
+		width: 300px;
+		height: 72px;
 	}
 
 	#heroBox h1, #heroBox p {
@@ -800,17 +809,50 @@ footer {
 		"nowComponent"
 		"ad3"
 		;
+<<<<<<< Updated upstream
 	}
 	#playerComponent {
 		grid-area: playerComponent;
 		margin: 30px auto;
+=======
+		
+	}
+	#playerComponent {
+		grid-area: playerComponent;
+		margin: auto;
+>>>>>>> Stashed changes
 	}
 	#nowComponent {
 		grid-area: nowComponent;
 		margin: auto;
 	}
 	#ad3 {
+<<<<<<< Updated upstream
 		margin: 20px auto;
+=======
+		grid-area: ad3;
+		margin: auto;
+
+	}
+	#player h1 {
+		margin: 0px auto;
+	}
+	#player img {
+		margin: 0px auto;
+	}
+	#player #volumeControl {
+		margin: 0px auto;
+	}
+	#player #nowPlaying {
+		margin: 0px auto;
+	}
+	#player #stopControl, #playControl {
+		
+	}
+	#player #ad3 {
+		
+		margin: 20px auto ;
+>>>>>>> Stashed changes
 		width: 300px;
 		height: 250px;
 		grid-area: ad3;
@@ -864,6 +906,7 @@ footer {
 
 	#logo {
 		height: 100px;
+		width: 207px;
 	}
 	#wrap nav {
 		display: flex;
@@ -942,7 +985,8 @@ footer {
 		margin:auto;
 	}
 	#heroBox img{
-			width: 100%;
+		width: 775px;
+		height: 179px;
 	}
 	#heroBox h1{
 		margin-left: 60%;
@@ -1028,6 +1072,7 @@ footer {
 
 	#logo {
 		height: 120px;
+		width: 249px;
 	}
 
 	#wrap nav {
@@ -1080,8 +1125,8 @@ footer {
 		visibility: hidden;
 	}
 	#heroBox img {
-		/* width: 100%; */
-		aspect-ratio: 1210px / 290px * 100%;
+		width: 1000px;
+    	height: 239px;
 	}
 
 	#heroBox h1, #heroBox p {
@@ -1160,7 +1205,10 @@ footer {
 	#wrap {
 		width: 1210px;
 	}
-
+	#heroBox img {
+		width: 1210px;
+    	height: 290px;
+	}
 	.stationList {
 		grid-template-columns: 200px 200px 200px 200px;
 		grid-gap: 30px;

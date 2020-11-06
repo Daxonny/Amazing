@@ -23,6 +23,7 @@
 
 	#logo {
 		height: 100px;
+		width: 207px;
 	}
 	#wrap nav {
 		display: flex;
@@ -101,7 +102,8 @@
 		margin:auto;
 	}
 	#heroBox img{
-			width: 100%;
+		width: 775px;
+		height: 179px;
 	}
 	#heroBox h1{
 		margin-left: 60%;
