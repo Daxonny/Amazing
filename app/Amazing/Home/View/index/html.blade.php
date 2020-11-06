@@ -17,7 +17,13 @@
 <div id="channels">
 
 	<div id="ad1" class="ad">
-		
+		<ins class="adsbygoogle"
+			style="display:block; text-align:center;"
+			data-ad-layout="in-article"
+			data-ad-format="fluid"
+			data-ad-client="ca-pub-5401857225374045"
+			data-ad-slot="8574456020">
+		</ins>
 	</div>
 
 
@@ -45,7 +51,13 @@
 	</ul>
 
 	<div id="ad2" class="ad">
-	
+		<ins class="adsbygoogle"
+			style="display:block; text-align:center;"
+			data-ad-layout="in-article"
+			data-ad-format="fluid"
+			data-ad-client="ca-pub-5401857225374045"
+			data-ad-slot="8574456020">
+		</ins>
 	</div>
 
 </div>

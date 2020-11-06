@@ -28,6 +28,6 @@ class MyServiceProvider extends ServiceProvider
 	public function boot()
 	{
 		View::composer(['Home.View.index.html'], StationsComposer::class);
-		View::composer(['Player.View.player'], PlayerComposer::class);
+		View::composer(['Player.View.player.html'], PlayerComposer::class);
 	}
 }

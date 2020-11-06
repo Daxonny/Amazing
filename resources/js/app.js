@@ -1,2 +1,3 @@
-require('ln-popup/');
-require('ln-obfuscator/');
+require('@livenetworks/popup');
+require('@livenetworks/ln-obfuscator');
+require('@livenetworks/player');

@@ -32,7 +32,13 @@
 	</audio>
 
 	<div id="ad3" class="ad">
-
+		<ins class="adsbygoogle"
+			style="display:block; text-align:center;"
+			data-ad-layout="in-article"
+			data-ad-format="fluid"
+			data-ad-client="ca-pub-5401857225374045"
+			data-ad-slot="8574456020">
+		</ins>
 	</div>
 </section>
 <section id="description" class="content">
@@ -43,6 +49,5 @@
 
 @section('js')
 <script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $vm->tritonStationId }}" defer></script>
-
 <script type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}" defer></script>
 @endsection
