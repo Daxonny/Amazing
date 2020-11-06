@@ -142,7 +142,9 @@
 		margin:auto;
 
 	} 
-	
+	#playControl {
+		display: none;
+	}
 
 }
 
