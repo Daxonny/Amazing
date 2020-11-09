@@ -12,27 +12,27 @@ class GlobalController extends LNController
 	}
 
 	public function aboutUs() {
-		$this->view='AboutUs.View.aboutUs';
+		$this->view='AboutUs.View';
 		return view($this->getView());
 	}
 
 	public function contactUs() {
-		$this->view='ContactUs.View.contactUs';
+		$this->view='ContactUs.View';
 		return view($this->getView());
 	}
 
 	public function player() {
-		$this->view='Player.View.player';
+		$this->view='Player.View';
 		return view($this->getView());
 	}
 
 	public function privacy() {
-		$this->view='PrivacyPolicy.View.privacyPolicy';
+		$this->view='PrivacyPolicy.View';
 		return view($this->getView());
 	}
 
 	public function terms() {
-		$this->view='TAC.View.tac';
+		$this->view='TAC.View';
 		return view($this->getView());
 	}
 

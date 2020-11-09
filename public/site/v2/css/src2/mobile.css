@@ -150,27 +150,17 @@
 		"nowComponent"
 		"ad3"
 		;
-<<<<<<< Updated upstream
-	}
-	#playerComponent {
-		grid-area: playerComponent;
-		margin: 30px auto;
-=======
 		
 	}
 	#playerComponent {
 		grid-area: playerComponent;
 		margin: auto;
->>>>>>> Stashed changes
 	}
 	#nowComponent {
 		grid-area: nowComponent;
 		margin: auto;
 	}
 	#ad3 {
-<<<<<<< Updated upstream
-		margin: 20px auto;
-=======
 		grid-area: ad3;
 		margin: auto;
 
@@ -187,13 +177,10 @@
 	#player #nowPlaying {
 		margin: 0px auto;
 	}
-	#player #stopControl, #playControl {
-		
-	}
+	
 	#player #ad3 {
 		
 		margin: 20px auto ;
->>>>>>> Stashed changes
 		width: 300px;
 		height: 250px;
 		grid-area: ad3;
@@ -204,7 +191,7 @@
 		display: none;
 	}
 	#playControl, #stopControl {
-		margin: auto 35%;
+		margin-left: 28px;
 	}
 	#player [property="byArtist"] {
 		text-align: center;
