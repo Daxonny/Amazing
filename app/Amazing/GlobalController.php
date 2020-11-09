@@ -22,7 +22,7 @@ class GlobalController extends LNController
 	}
 
 	public function player() {
-		$this->view='Player.View';
+		$this->view='Player.View.player';
 		return view($this->getView());
 	}
 
