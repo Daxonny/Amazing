@@ -131,10 +131,6 @@
 		border-radius: 100%;
 
 	}
-	#playControl{
-		display: none;
-	}
-	
 	
 	#player {
 		display:grid;

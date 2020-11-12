@@ -187,9 +187,6 @@
 		margin: 30px auto;
 	}
 	
-	#playControl {
-		display: none;
-	}
 	#playControl, #stopControl {
 		margin-left: 28px;
 	}
