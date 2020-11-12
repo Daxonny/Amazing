@@ -9,7 +9,7 @@
             "slogan": "",
             "description": "",
             "tritonStationId": 123288,
-            "mountName": "AMAZING_80S_S01",
+            "mountName": "80s",
             "streams": [{
                 "bitrate": 128,
                 "url": "https://stream.amazingradios.com/80s"
@@ -21,7 +21,7 @@
             "slogan": "",
             "description": "",
             "tritonStationId": 123332,
-            "mountName": "AMAZING_BLUES_S01",
+            "mountName": "blues",
             "streams": [{
                 "bitrate": 128,
                 "url": "https://stream.amazingradios.com/blues"
@@ -33,7 +33,7 @@
             "slogan": "",
             "description": "",
             "tritonStationId": 123323,
-            "mountName": "AMAZING_CHILLOUT_S01",
+            "mountName": "chillout",
             "streams": [{
                 "bitrate": 128,
                 "url": "https://stream.amazingradios.com/chillout"
@@ -45,7 +45,7 @@
             "slogan": "",
             "description": "",
             "tritonStationId": 123290,
-            "mountName": "AMAZING_CHILLOP_S01",
+            "mountName": "chillhop",
             "streams": [{
                 "bitrate": 128,
                 "url": "https://stream.amazingradios.com/chillhop"
@@ -57,7 +57,7 @@
             "slogan": "",
             "description": "",
             "tritonStationId": 123292,
-            "mountName": "AMAZING_CLASSIC_HITS_S01",
+            "mountName": "classic-hits",
             "streams": [{
                 "bitrate": 128,
                 "url": "https://stream.amazingradios.com/classic-hits"
@@ -69,7 +69,7 @@
             "slogan": "",
             "description": "",
             "tritonStationId": 123321,
-            "mountName": "AMAZING_SMOOTH_AND_JAZZ_S01",
+            "mountName": "jazz",
             "streams": [{
                 "bitrate": 128,
                 "url": "https://stream.amazingradios.com/jazz"
@@ -81,7 +81,7 @@
             "slogan": "",
             "description": "",
             "tritonStationId": 123293,
-            "mountName": "AMAZING_VOCALS_S01",
+            "mountName": "vocals",
             "streams": [{
                 "bitrate": 128,
                 "url": "https://stream.amazingradios.com/vocals"

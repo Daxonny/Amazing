@@ -69,7 +69,7 @@
 				this.artist.setAttribute('title', 'Artist: ' + this.artist.innerText);
 				this.track.setAttribute('title', 'Track: ' + this.track.innerText);
 
-				setTimeout(function() { _tritonTrack.call(this) }, this.interval);
+				setTimeout(() => { _tritonTrack.call(this) }, this.interval);
 
 			} else {}
 		};
@@ -82,7 +82,7 @@
 	}
 
 	function _tritonTrack() {
-		this.xhr.open('GET', "https://np.tritondigital.com/public/nowplaying?mountName=" + this.mountName + "&numberToFetch=1&eventType=track");
+		this.xhr.open('GET', "https://amazingradios.com/track/" + this.mountName);
 		this.xhr.send();
 	}
 
