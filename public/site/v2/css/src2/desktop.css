@@ -2,6 +2,7 @@
 
 	#wrap {
 		width: 1000px;
+		display: block;
 	}
 
 	#wrap > header, #wrap > footer {
