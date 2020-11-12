@@ -12,6 +12,7 @@
 
 	<!-- Preload Fonts -->
 	<link rel="preload" href="{{ lnasset('/fonts/ln-icons/ln-icons.woff2') }}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin>
 
 	<!-- CSRF Token -->
