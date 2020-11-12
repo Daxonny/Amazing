@@ -35,7 +35,6 @@
 	</script>
 
 	<script async src="{{ lnasset('/site/v2/dist/app.js') }}"></script>
-	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/player/player.js') }}"></script>
 	@yield('js')
 
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
