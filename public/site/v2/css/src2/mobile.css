@@ -154,7 +154,7 @@
 	}
 	#playerComponent {
 		grid-area: playerComponent;
-		margin: auto;
+		margin: 20px auto;
 	}
 	#nowComponent {
 		grid-area: nowComponent;
@@ -187,9 +187,6 @@
 		margin: 30px auto;
 	}
 	
-	#playControl, #stopControl {
-		margin-left: 28px;
-	}
 	#player [property="byArtist"] {
 		text-align: center;
 	}

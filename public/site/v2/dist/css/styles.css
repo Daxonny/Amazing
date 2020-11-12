@@ -813,7 +813,7 @@ footer {
 	}
 	#playerComponent {
 		grid-area: playerComponent;
-		margin: auto;
+		margin: 20px auto;
 	}
 	#nowComponent {
 		grid-area: nowComponent;
@@ -846,12 +846,6 @@ footer {
 		margin: 30px auto;
 	}
 	
-	#playControl {
-		display: none;
-	}
-	#playControl, #stopControl {
-		margin-left: 28px;
-	}
 	#player [property="byArtist"] {
 		text-align: center;
 	}
@@ -1001,10 +995,6 @@ footer {
 		border-radius: 100%;
 
 	}
-	#playControl{
-		display: none;
-	}
-	
 	
 	#player {
 		display:grid;
@@ -1173,6 +1163,7 @@ footer {
 		grid-area: nowComponent;
 		grid-template-columns: auto;
 		margin: auto 0;
+		display: block;
 
 	}
 	
@@ -1183,9 +1174,6 @@ footer {
 		height: 250px;
 		margin:auto;
 
-	} 
-	#playControl {
-		display: none;
 	}
 
 }
