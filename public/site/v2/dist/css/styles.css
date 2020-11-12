@@ -1163,8 +1163,7 @@ footer {
 		grid-area: nowComponent;
 		grid-template-columns: auto;
 		margin: auto 0;
-		display: block;
-
+		height: 150px;
 	}
 	
 	#player #ad3 {
