@@ -1,15 +1,28 @@
 @extends('layout.ln')
 
-@section('title', $vm->fullName)
+@section('title', $vm->name)
+@section('description', $vm->meta->description)
 
 @section('content')
 <section id="player" data-station="live" ln-player>
 
 	<div id="playerComponent">
 		<h1 class="{{$vm->slug}}">{{ $vm->name }}</h1>
-		<picture title="{{$vm->name}}">
-			<source srcset="{{$vm->logo}}.webp, {{$vm->logo2x}}.webp 2x" type="image/webp">
-			<img src="{{ $vm->logo }}.png" srcset="{{$vm->logo}}.png ,{{$vm->logo2x}}.png 2x" alt="{{$vm->name}}">
+		<picture>
+				<source1 data-srcset="{{ lnasset($vm->logo . '-w360.webp') }} 2x, {{ lnasset($vm->logo . '-w180.webp') }} 1x" type="image/webp">
+				<img 
+					data-src="{{ lnasset($vm->logo . '-w180.png') }}"
+					data-srcset="{{ lnasset($vm->logo . '-w360.png') }} 2x, {{ lnasset($vm->logo . '-w180.png') }} 1x"
+					loading="lazy"
+					class="lazyload" 
+					alt="{{ $vm->name }} Logo"
+					title="{{ $vm->name }} Logo">
+				<noscript>
+					<img src="{{ lnasset($vm->logo . '.png') }}"
+						alt="{{ $vm->name }} Logo"
+						property="image"
+						title="{{ $vm->name }} Logo">
+				</noscript>
 		</picture>
 		<div id="volumeControl" class="ln-icon {{$vm->slug}}">
 			<button ln-player-action="mute" type="button">volume_up</button>
@@ -21,7 +34,6 @@
 		<button id="stopControl" ln-player-action="stop" type="button" class="{{$vm->slug}}">stop</button>
 		<section id="nowPlaying" ln-triton-track="{{ $vm->mountName }}" ln-triton-track-interval="10">
 			<p property="track" typeof="MusicRecording" data-label="Now Playing">
-				<span class="Playing">Now Playing</span>
 				<span property="byArtist"></span>
 				<span property="name"></span>
 			</p>

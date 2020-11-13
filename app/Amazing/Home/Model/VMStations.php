@@ -7,7 +7,6 @@ use App\Amazing\AVM;
 class Station {
 	public $name;
 	public $logo;
-	public $logo2x;
 	public $mountName;
 	public $url;
 	public $slug;
@@ -26,7 +25,6 @@ class VMStations extends AVM{
 			$s = new Station();
 			$s->name 			= $station->name;
 			$s->logo 			= $station->logo;
-			$s->logo2x 			= $station->logo2x;
 			$s->mountName		= $station->mountName;
 			$s->url 				= $station->streams[0]->url;
 			$s->slug				= $station->slug;

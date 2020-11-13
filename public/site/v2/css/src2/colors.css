@@ -16,7 +16,7 @@
 	--blues: #1d1b6f;
 	--smooth-and-jazz: #730206;
 	--chillout: #f66400;
-	--classic-hits: #f7ad00;
+	--classic-hits: #000;
 	--chillhop: #632c6f;
 	--vocals: #4c9ce0;
 
@@ -179,6 +179,10 @@ nav a:hover {
 
 .nowPlaying p[typeof="MusicRecording"]:before {
 	color: var(--now-playing);
+}
+
+#player p[typeof="MusicRecording"]:before {
+	color: var(--smooth-and-jazz);
 }
 
 #player {

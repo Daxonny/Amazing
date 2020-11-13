@@ -104,6 +104,10 @@
 		grid-template-columns: 200px 200px 200px;
 		grid-gap: 40px;
 	}
+	.stationList img {
+		width: 180px;
+    	height: 180px;
+	}
 	.nowPlaying [property="name"] {
 		width: 165px;
 		text-overflow: ellipsis;

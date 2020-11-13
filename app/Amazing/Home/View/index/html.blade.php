@@ -32,24 +32,7 @@
 
 	<ul id="stations" class="stationList">
 		@foreach ($vm->stations as $station)
-		<li id="{{ $station->slug }}">
-			<h2 typeof="RadioStation">
-				<a href="{{ route('player',['station'=>$station->slug]) }}">
-					<picture title="{{ $station->name }}">
-						<source srcset="{{ $station->logo }}.webp, {{ $station->logo2x }}.webp 2x" type="image/webp">
-						<img src="{{ $station->logo }}.png"  srcset="{{ $station->logo }}.png ,{{ $station->logo2x }}.png 2x" loading="lazy" alt="{{ $station->name }}">
-					</picture>
-					<span property="name">{{ $station->name }}</span>
-				</a>
-			</h2>
-			<div class="nowPlaying" ln-triton-track="{{ $station->mountName }}" ln-triton-track-interval="10">
-				<p property="track" typeof="MusicRecording" data-label="{{ __('global.nowPlaying') }}">
-					<span property="byArtist"></span>
-					<span property="name"></span>
-				</p>
-			</div>
-			<button class="fav ln-icon" title="{{ __('Add to favourites') }}">star</button>
-		</li>
+			@include('Home.View._partials.channelListItem', ['channel' => $station])
 		@endforeach
 	</ul>
 

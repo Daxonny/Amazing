@@ -154,7 +154,7 @@
 
 	<h2 id="section13">How to complain about content uploaded by other users</h2>
 
-	<p>If you wish to complain about content uploaded by other users, please contact us <a href="{{ route('contactUs') }}"></a>.</p>
+	<p>If you wish to complain about content uploaded by other users, please<a href="{{ route('contactUs') }}"> contact us</a>.</p>
 
 	<h2 id="section14">Our responsibility for loss or damage suffered by you</h2>
 

@@ -142,6 +142,9 @@
 	.stationList li {
 		height: 280px;
 	}
+	.stationList [typeof="RadioStation"] [property="name"] {
+		height: 55px;
+	}
 	/* Player */
 	#player {
 		display: grid;

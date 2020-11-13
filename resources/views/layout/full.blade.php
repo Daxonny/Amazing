@@ -34,12 +34,12 @@
 		gtag('config', 'UA-180609245-1');
 	</script>
 
-	<script async src="{{ lnasset('/site/v2/dist/app.js') }}"></script>
+	<script defer src="{{ mix('site/v2/dist/app.js') }}"></script>
 	@yield('js')
 
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
 
-	<meta name="description" content="@yield('ogDescription')" />
+	<meta name="description" content="@yield('description')" />
 	<meta name="robots" content="index,follow" />
 
 	@include('layout.headerSnippets.fb')
@@ -145,7 +145,10 @@
 			</nav>
 
 			<p>
-				<img src="{{ lnasset('logos/ar-logo-white.svg') }}" alt="Amazing Radios Logo" id="logoFooter" />
+				<img data-src="{{ lnasset('logos/ar-logo-white.svg') }}" alt="Amazing Radios Logo" id="logoFooter" class="lazyload" data-expand="100" />
+				<noscript>
+					<img src="{{ lnasset('logos/ar-logo-white.svg') }}" alt="Amazing Radios Logo" />
+				</noscript>
 				<span>Copyright &copy; 2019 &middot;
 					<a href="{{ route('index') }}">AMAZINGRADIOS.com</a>
 				</span>
@@ -155,14 +158,6 @@
 	</div>
 
 	<!-- <div id="player" ln-draggable></div> -->
-
-	<!-- <script async type="text/javascript" src="{{ lnasset('/site/v2/js/ar.js') }}"></script> -->
-	
-
-
-	<!-- 	<script async type="text/javascript" src="{{ lnasset('/site/v2/js/draggable/ln-draggable.js') }}"></script>
- -->
-	
 
 </body>
 

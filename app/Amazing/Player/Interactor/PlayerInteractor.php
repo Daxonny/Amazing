@@ -30,6 +30,8 @@ class PlayerInteractor extends AInteractor{
 	private function _getDescription() {
 		$stationDetails = json_decode(file_get_contents('descriptions/'.$this->_stationSlug.'.json'));
 		$this->_station->description = implode('', $stationDetails->description->{$this->_lang}->description);
+		$this->_station->meta = new \StdClass();
+		$this->_station->meta->description = strip_tags($stationDetails->description->{$this->_lang}->description[0]);
 		$this->_station->slogan = $stationDetails->description->{$this->_lang}->slogan;
 	}
 }

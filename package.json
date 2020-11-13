@@ -22,6 +22,7 @@
     "dependencies": {
         "@livenetworks/ln-obfuscator": "^1.0.1",
         "@livenetworks/player": "^1.0.1",
-        "@livenetworks/popup": "^1.1.5"
+        "@livenetworks/popup": "^1.1.5",
+        "lazysizes": "^5.2.2"
     }
 }
