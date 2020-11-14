@@ -34,7 +34,7 @@
 		gtag('config', 'UA-180609245-1');
 	</script>
 
-	<script defer src="{{ mix('site/v2/dist/app.js') }}"></script>
+	<script defer src="{{ lnasset(mix('site/v2/dist/app.js')) }}"></script>
 	@yield('js')
 
 	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
