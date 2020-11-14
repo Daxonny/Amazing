@@ -11,8 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/site/v2/dist/')
-	.version();
+mix.js([
+	'resources/js/app.js',
+	'public/site/v2/js/ln-triton-track/ln-triton-track.js'
+
+], 'public/site/v2/dist/')
+.version();
 
 
 mix
@@ -26,17 +30,4 @@ mix
 	'public/site/v2/css/src2/desktop.css',
 	'public/site/v2/css/src2/bgImages.css',
 ], 'public/site/v2/dist/css/styles.css')
-// .styles([
-// 	'public/site/v2/css/src2/reset.css',
-// 	'public/site/v2/css/src2/fonts.css',
-// 	'public/site/v2/css/src2/colors.css',
-// 	'public/site/v2/css/src2/layout.css',
-// 	'public/site/v2/css/src2/tablet.css',
-// ], 'public/site/v2/dist/css/tablet.css')
-// .styles([
-// 	'public/site/v2/css/src2/reset.css',
-// 	'public/site/v2/css/src2/fonts.css',
-// 	'public/site/v2/css/src2/colors.css',
-// 	'public/site/v2/css/src2/layout.css',
-// 	'public/site/v2/css/src2/desktop.css',
-// ], 'public/site/v2/dist/css/desktop.css')
+.version();

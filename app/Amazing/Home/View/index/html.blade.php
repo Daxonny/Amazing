@@ -48,7 +48,3 @@
 
 </div>
 @endsection
-
-@section('js')
-	<script type="text/javascript" src="{{ lnasset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}" async></script>
-@endsection

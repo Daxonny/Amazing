@@ -37,7 +37,7 @@
 	<script defer src="{{ lnasset(mix('site/v2/dist/app.js')) }}"></script>
 	@yield('js')
 
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
+	<link rel="stylesheet" href="{{ lnasset(mix('/site/v2/dist/css/styles.css')) }}" media="screen">
 
 	<meta name="description" content="@yield('description')" />
 	<meta name="robots" content="index,follow" />
