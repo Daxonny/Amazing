@@ -200,6 +200,9 @@
 	#player [typeof="MusicRecording"] [property="name"] {
 		text-align: center;
 	}
+	#player p[typeof="MusicRecording"]:before {
+		margin: auto;
+	}
 	#contactForm {
 		display: block;
 
