@@ -4,9 +4,11 @@ function lnasset($asset) {
 		return asset($asset);
 	}
 
+	if (filter_var($asset, FILTER_VALIDATE_URL)) {
+		return $asset;
+	}
+
 	$cdnBase = Config::get('ln.cdnBase');
-	$localBase = Config::get('ln.localBase');
-	$asset = str_replace(asset(''), '', $asset);
 
 	return rtrim($cdnBase, "/") . "/" . ltrim( $asset, "/");
 }

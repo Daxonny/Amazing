@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
     "/site/v2/dist/app.js": "/site/v2/dist/app.js?id=a69094fe4efc314a694a",
     "/site/v2/dist/css/styles.css": "/site/v2/dist/css/styles.css?id=7665eee7099adb514ea4"
+=======
+    "/site/v2/dist/app.js": "/site/v2/dist/app.js?id=e02a4856a79806230e52",
+    "/site/v2/dist/css/styles.css": "/site/v2/dist/css/styles.css?id=a814398c687b0dae2974"
+>>>>>>> e4360903ae7b17f9671e28d60f97e8d1ba0f94cc
 }

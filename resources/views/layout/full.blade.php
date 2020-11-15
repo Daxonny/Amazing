@@ -15,6 +15,11 @@
 	<link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin>
 
+	<script defer src="{{ lnasset(mix('site/v2/dist/app.js')) }}"></script>
+	@yield('js')
+
+	<link rel="stylesheet" href="{{ lnasset(mix('/site/v2/dist/css/styles.css')) }}" media="screen">
+
 	<!-- CSRF Token -->
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -34,17 +39,11 @@
 		gtag('config', 'UA-180609245-1');
 	</script>
 
-	<script defer src="{{ mix('site/v2/dist/app.js') }}"></script>
-	@yield('js')
-
-	<link rel="stylesheet" href="{{ lnasset('/site/v2/dist/css/styles.css') }}" media="screen">
-
 	<meta name="description" content="@yield('description')" />
 	<meta name="robots" content="index,follow" />
 
 	@include('layout.headerSnippets.fb')
 	@include('layout.headerSnippets.icons')
-
 </head>
 
 <body vocab="http://schema.org/" class="{{ $webp }}">

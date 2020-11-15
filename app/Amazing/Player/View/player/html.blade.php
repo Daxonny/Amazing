@@ -9,7 +9,7 @@
 	<div id="playerComponent">
 		<h1 class="{{$vm->slug}}">{{ $vm->name }}</h1>
 		<picture>
-				<source1 data-srcset="{{ lnasset($vm->logo . '-w360.webp') }} 2x, {{ lnasset($vm->logo . '-w180.webp') }} 1x" type="image/webp">
+				<source data-srcset="{{ lnasset($vm->logo . '-w360.webp') }} 2x, {{ lnasset($vm->logo . '-w180.webp') }} 1x" type="image/webp">
 				<img 
 					data-src="{{ lnasset($vm->logo . '-w180.png') }}"
 					data-srcset="{{ lnasset($vm->logo . '-w360.png') }} 2x, {{ lnasset($vm->logo . '-w180.png') }} 1x"
@@ -61,5 +61,4 @@
 
 @section('js')
 <script type="text/javascript" src="https://playerservices.live.streamtheworld.com/api/idsync.js?stationId={{ $vm->tritonStationId }}" async></script>
-<script type="text/javascript" src="{{ asset('/site/v2/js/ln-triton-track/ln-triton-track.js') }}" async></script>
 @endsection
