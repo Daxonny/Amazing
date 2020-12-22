@@ -1,7 +1,7 @@
 @extends('layout.ln')
 
 @section('title', __('home.title'))
-@section('ogDescription', __('home.description'))
+@section('description', __('home.description'))
 
 @section('content')
 
