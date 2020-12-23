@@ -1,5 +1,6 @@
 @extends('layout.ln')
-@section('title', 'Privacy Policy')
+@section('title', 'privacyPolicy.title')
+@section('description', __('privacyPolicy.description'))
 @section('content')
 <section class="content">
 	<h1>Privacy Policy<h1>

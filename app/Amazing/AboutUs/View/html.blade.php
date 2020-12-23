@@ -1,6 +1,7 @@
 @extends('layout.ln')
 @section('contentClass', 'content')
-@section('title', 'About Us')
+@section('title', __('aboutUs.title'))
+@section('description', __('aboutUs.description'))
 @section('content')
 <h1>ABOUT US</h1>
 <p><strong>Amazing Radios</strong> is an amazing group of online radios, that cover almost every possible musical taste!</p>

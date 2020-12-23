@@ -1,5 +1,6 @@
 @extends('layout.ln')
-@section('title', 'Contact Us')
+@section('title', __('contactUs.title'))
+@section('description', __('contactUs.description'))
 @section('content')
 <section class="content">
 	<h1>Contact us</h1>

@@ -1,5 +1,6 @@
 @extends('layout.ln')
-@section('title', 'Terms and Conditions')
+@section('title', 'title.description')
+@section('description', __('terms.description'))
 @section('content')
 <section class="content">
 	<h1>PLEASE READ THESE TERMS AND CONDITIONS CAREFULLY BEFORE USING THIS SITE</h1>
