@@ -12,7 +12,7 @@
             "mountName": "80s",
             "streams": [{
                 "bitrate": 128,
-                "url": "https://stream.amazingradios.com/80s"
+                "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/AMAZING_80S_S01.mp3"
             }]
         },
         {
